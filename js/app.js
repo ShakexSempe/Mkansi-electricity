@@ -6,6 +6,7 @@ console.log(links);
 
 toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
+    toggle.classList.toggle("active");
 });
 
 links.forEach(link => {

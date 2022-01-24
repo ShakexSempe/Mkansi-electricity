@@ -1,25 +1,35 @@
 #toggle {
+  font-size: 25px;
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
-  border: 2px solid #f4f4f4;
+  height: 1.5em;
+  width: 1.5em;
+  border: 2px solid orange;
   cursor: pointer;
   display: grid;
   place-items: center;
-  line-height: 0; }
+  transition: .3s; }
   #toggle .bar {
     background-color: #ffa500;
-    width: 70%;
-    height: 2px;
-    position: relative; }
-    #toggle .bar::after {
+    width: 60%;
+    height: .05em;
+    position: relative;
+    transition: .3s; }
+    #toggle .bar.bar-1::before {
       position: absolute;
       content: '';
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #ffa500; }
+      background-color: orange;
+      transition: .3s; }
+    #toggle .bar::before {
+      transform: translateY(0.3em); }
+  #toggle.active {
+    transform: rotate(90deg); }
+    #toggle.active .bar-1::before {
+      opacity: 1;
+      transform: translateY(0.3em) skewY(-40deg); }
 
 * {
   padding: 0;

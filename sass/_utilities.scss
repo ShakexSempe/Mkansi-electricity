@@ -1,28 +1,52 @@
 #toggle {
+    font-size: 25px;
     border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5em;
+    width: 1.5em;
     border: 2px solid $toggle;
     cursor: pointer;
     display: grid;
     place-items: center;
-    line-height: 0;
+    transition: .3s;
     // transform: rotate(90deg);
 
     .bar {
         background-color: $text-brand;
-        width: 70%;
-        height: 2px;
+        width: 60%;
+        height: .05em;
         position: relative;
+        transition: .3s;
 
-        &::after {
+        &.bar-1 {
+        &::before {
             position: absolute;
             content: '';
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: $text-brand;
+            // background-color: $toggle-bar;
+            // background-color: #fff;
+            // opacity: 0;
+            background-color: $toggle;
+            transition: .3s;
         }
+    }
+        &::before {
+            transform: translateY(.3em) ;
+        }
+    }
+
+    &.active {
+        transform: rotate(90deg);
+
+        .bar-1 {
+            &::before {
+                opacity: 1;
+                transform: translateY(.3em) skewY(-40deg);
+                
+            }
+        }
+
     }
 }
