@@ -1,3 +1,26 @@
+#toggle {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid #f4f4f4;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  line-height: 0; }
+  #toggle .bar {
+    background-color: #ffa500;
+    width: 70%;
+    height: 2px;
+    position: relative; }
+    #toggle .bar::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffa500; }
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +33,8 @@ body {
 #container {
   width: 100%; }
   #container #header {
+    position: fixed;
+    top: 0;
     width: 100%;
     max-height: 10vh;
     background-color: #000;
@@ -17,13 +42,13 @@ body {
     justify-content: space-between;
     align-items: center; }
     #container #header .brand {
-      border: 1px solid orange;
+      border: 1px solid #ffa500;
       padding: .2em;
       border-radius: 5px;
       display: grid;
       place-items: center; }
       #container #header .brand a {
-        color: orange;
+        color: #ffa500;
         text-decoration: none; }
         #container #header .brand a span {
           color: #fff; }
@@ -54,7 +79,7 @@ body {
             #container #header .navigation aside.active {
               right: -50vw; }
             #container #header .navigation aside ul {
-              border: 2px solid orange;
+              border: 2px solid #ffa500;
               border-radius: 3px;
               position: absolute;
               padding: .5em;
@@ -64,13 +89,7 @@ body {
                 list-style: none; }
                 #container #header .navigation aside ul li a {
                   color: #eee;
-                  text-decoration: none; }
-          #container #header .navigation #toggle {
-            border-radius: 50%;
-            height: 2rem;
-            width: 2rem;
-            border: 2px solid #f4f4f4;
-            cursor: pointer; } }
+                  text-decoration: none; } }
     @media (min-width: 768px) {
       #container #header {
         height: 10vh;
@@ -107,6 +126,12 @@ body {
                 #container #header .navigation nav ul li a {
                   color: #fff;
                   text-decoration: none;
-                  transition: .2s; }
+                  transition: .3s;
+                  padding: .5rem;
+                  border-radius: 5px; }
                   #container #header .navigation nav ul li a:hover {
-                    color: orange; } }
+                    color: #000;
+                    background-color: #ffa500; } }
+  #container #main {
+    min-height: 180vh;
+    background-color: #f4f4f4; }

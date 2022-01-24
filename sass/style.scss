@@ -1,4 +1,5 @@
 @import 'variables';
+@import '_utilities';
 * {
     padding: 0;
     margin: 0;
@@ -10,8 +11,11 @@ body {
 }
 #container {
     width: 100%;
+    // overflow-x: hidden;
 
     #header {
+        position: fixed;
+        top: 0;
         width: 100%;
         max-height: 10vh;
         background-color: $header-bg;
@@ -89,14 +93,7 @@ body {
                         }
                     }
                 }
-                #toggle {
-                    border-radius: 50%;
-                    height: 2rem;
-                    width: 2rem;
-                    border: 2px solid $toggle;
-                    cursor: pointer;
-
-                }
+                
             }
         }
         // END OF MOBILE HEADER 
@@ -156,10 +153,13 @@ body {
                             a {
                                 color: #fff;
                                 text-decoration: none;
-                                transition: .2s;
+                                transition: .3s;
+                                padding: .5rem;
+                                border-radius: 5px;
 
                                 &:hover {
-                                    color: $text-brand;
+                                    color: $text-second;
+                                    background-color: $text-brand;
                                 }
                             }
                         }
@@ -170,5 +170,10 @@ body {
         }
         // DESKTOP HEADER
         
+    }
+
+    #main {
+        min-height: 180vh;
+        background-color: $bg-main;
     }
 }
