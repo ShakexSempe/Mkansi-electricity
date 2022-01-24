@@ -12,9 +12,11 @@ toggle.addEventListener("click",  () => {
 links.forEach(link => {
     link.addEventListener("click", () => {
         aside.classList.remove("active");
+        toggle.classList.toggle("active");
     });
 });
 
 main.addEventListener("click", () => {
     aside.classList.remove("active");
+    toggle.classList.remove("active");
 });
