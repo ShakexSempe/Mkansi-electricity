@@ -1,5 +1,5 @@
 #toggle {
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 50%;
     height: 1.5em;
     width: 1.5em;
@@ -46,7 +46,7 @@
         .bar-1 {
             &::before {
                 opacity: 1;
-                transform: translateY(.25em) skewY(-30deg);
+                transform: translateY(.20em) skewY(-30deg);
                 background-color: $text-second;
                 
             }

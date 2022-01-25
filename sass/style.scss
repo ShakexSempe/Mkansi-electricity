@@ -3,6 +3,7 @@
 @import 'variables';
 @import '_utilities';
 @import '_header';
+@import '_about';
 @import '_footer';
 * {
     padding: 0;
@@ -11,7 +12,7 @@
     font-family: sans-serif;
     font-family: $font-ubuntu;
     scroll-behavior: smooth;
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 8vh;
     @media (max-width:768px) {
         scroll-padding-top: 7vh;
     }
@@ -21,13 +22,19 @@
         max-width: 100%;
 
     #main {
+        @media (min-width: 768px) {
+            margin-top: 10vh;
+            padding: 5vh 0;
+        }
+        margin-top: 5vh;
+        padding: 5vh 0;
         min-height: 100vh;
         background-color: $bg-main;
 
         &::after {
             position: fixed;
             content: '';
-            top: 7vh;
+            top: 5vh;
             left: 0;
             width: 100%;
             min-height: 100vh;
@@ -41,6 +48,18 @@
                 z-index: 1;
 
                 opacity: .8;
+            }
+        }
+
+
+        section {
+            min-height: 100vh;
+
+
+            .section-title {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.5rem;
             }
         }
     }

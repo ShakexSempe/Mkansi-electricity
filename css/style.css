@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 #toggle {
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
@@ -35,14 +35,14 @@
       background-color: #000; }
     #toggle.active .bar-1::before {
       opacity: 1;
-      transform: translateY(0.25em) skewY(-30deg);
+      transform: translateY(0.2em) skewY(-30deg);
       background-color: #000; }
 
 #header {
   position: fixed;
   top: 0;
   width: 100%;
-  max-height: 10vh;
+  max-height: 8vh;
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@
     text-transform: uppercase; }
   @media (max-width: 768px) {
     #header {
-      height: 8vh;
+      height: 7vh;
       padding: 1vh 1rem; }
       #header .brand a {
         font-size: 1.2em; }
@@ -76,13 +76,14 @@
           display: none; }
         #header .navigation aside {
           position: fixed;
-          top: 8vh;
+          top: 5vh;
           right: -100vw;
           width: 100%;
           height: 100vh;
           background-color: #161616;
           padding: 0 1em;
-          transition: .5s; }
+          transition: .5s;
+          z-index: -1; }
           #header .navigation aside ul {
             border: 2px solid #ffa500;
             border-radius: 3px;
@@ -123,7 +124,9 @@
             #header .navigation aside.active ul :nth-child(2) {
               transition-delay: .4s; }
             #header .navigation aside.active ul :nth-child(3) {
-              transition-delay: .5s; } }
+              transition-delay: .5s; }
+            #header .navigation aside.active ul :nth-child(4) {
+              transition-delay: .6s; } }
   @media (min-width: 768px) {
     #header {
       height: 10vh;
@@ -169,6 +172,7 @@
 
 #footer {
   background: #000;
+  min-height: 100vh;
   padding: 5vh 1rem; }
   #footer h2 {
     color: #fff;
@@ -232,7 +236,7 @@
   font-family: sans-serif;
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 10vh; }
+  scroll-padding-top: 8vh; }
   @media (max-width: 768px) {
     * {
       scroll-padding-top: 7vh; } }
@@ -240,12 +244,18 @@
 #container {
   max-width: 100%; }
   #container #main {
+    margin-top: 5vh;
+    padding: 5vh 0;
     min-height: 100vh;
     background-color: #f4f4f4; }
+    @media (min-width: 768px) {
+      #container #main {
+        margin-top: 10vh;
+        padding: 5vh 0; } }
     #container #main::after {
       position: fixed;
       content: '';
-      top: 7vh;
+      top: 5vh;
       left: 0;
       width: 100%;
       min-height: 100vh;
@@ -256,3 +266,9 @@
     #container #main.active::after {
       z-index: 1;
       opacity: .8; }
+    #container #main section {
+      min-height: 100vh; }
+      #container #main section .section-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem; }
