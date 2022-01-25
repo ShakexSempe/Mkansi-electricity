@@ -10,6 +10,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-family: $font-ubuntu;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+    @media (max-width:768px) {
+        scroll-padding-top: 7vh;
+    }
 }
 
 #container {
@@ -21,5 +26,25 @@
     #main {
         min-height: 80vh;
         background-color: $bg-main;
+
+        &::after {
+            position: fixed;
+            content: '';
+            top: 7vh;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: $brand;
+            opacity: 0;
+            z-index: -1;
+            transition: .2s;
+        }
+        &.active {
+            &::after {
+                z-index: 1;
+
+                opacity: .8;
+            }
+        }
     }
 }

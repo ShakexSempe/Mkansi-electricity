@@ -46,7 +46,8 @@
   background-color: #000;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 5; }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em;
@@ -202,10 +203,29 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh; }
+  @media (max-width: 768px) {
+    * {
+      scroll-padding-top: 7vh; } }
 
 #container {
   max-width: 100%; }
   #container #main {
     min-height: 80vh;
     background-color: #f4f4f4; }
+    #container #main::after {
+      position: fixed;
+      content: '';
+      top: 7vh;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      background: orange;
+      opacity: 0;
+      z-index: -1;
+      transition: .2s; }
+    #container #main.active::after {
+      z-index: 1;
+      opacity: .8; }
