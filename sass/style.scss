@@ -19,12 +19,9 @@
 
 #container {
         max-width: 100%;
-    // overflow-x: hidden;
-
-    
 
     #main {
-        min-height: 80vh;
+        min-height: 100vh;
         background-color: $bg-main;
 
         &::after {
