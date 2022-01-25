@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 #toggle {
   font-size: 25px;
   border-radius: 50%;
@@ -37,117 +38,165 @@
       transform: translateY(0.25em) skewY(-30deg);
       background-color: #000; }
 
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 10vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header .brand {
+    border: 1px solid #ffa500;
+    padding: .2em;
+    border-radius: 5px;
+    display: grid;
+    place-items: center; }
+    #header .brand a {
+      color: #ffa500;
+      text-decoration: none; }
+      #header .brand a span {
+        color: #fff; }
+  #header .navigation {
+    position: relative;
+    text-transform: uppercase; }
+  @media (max-width: 768px) {
+    #header {
+      height: 8vh;
+      padding: 1vh 1rem; }
+      #header .brand a {
+        font-size: 1.2em; }
+      #header .logo {
+        display: none; }
+      #header .navigation {
+        border: none; }
+        #header .navigation nav {
+          display: none; }
+        #header .navigation aside {
+          position: fixed;
+          top: 8vh;
+          right: -100vw;
+          width: 100%;
+          height: 100vh;
+          background-color: #161616;
+          padding: 0 1em;
+          transition: .5s; }
+          #header .navigation aside.active {
+            right: -50vw; }
+          #header .navigation aside ul {
+            border: 2px solid #ffa500;
+            border-radius: 3px;
+            position: absolute;
+            padding: .5em;
+            top: 10vh; }
+            #header .navigation aside ul li {
+              padding-bottom: 5vh;
+              list-style: none; }
+              #header .navigation aside ul li a {
+                color: #eee;
+                text-decoration: none; } }
+  @media (min-width: 768px) {
+    #header {
+      height: 10vh;
+      padding: .5em 5vw;
+      overflow: hidden; }
+      #header .brand a {
+        font-size: 1.5em; }
+      #header .logo {
+        display: none;
+        border: 1px solid green;
+        width: 50%; }
+        #header .logo figure {
+          height: 10%;
+          overflow: hidden; }
+          #header .logo figure img {
+            width: 100%;
+            object-fit: cover; }
+      #header .navigation {
+        display: grid;
+        place-items: center;
+        padding: .5em; }
+        #header .navigation #toggle {
+          display: none; }
+        #header .navigation aside {
+          display: none; }
+        #header .navigation nav {
+          display: block; }
+          #header .navigation nav ul {
+            display: flex;
+            align-items: center; }
+            #header .navigation nav ul li {
+              padding-left: 1em;
+              list-style: none; }
+              #header .navigation nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                transition: .3s;
+                padding: .5rem;
+                border-radius: 5px; }
+                #header .navigation nav ul li a:hover {
+                  color: #000;
+                  background-color: #ffa500; } }
+
+#footer {
+  background: #000;
+  padding: 5vh 1rem; }
+  #footer h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: 1.5rem;
+    text-transform: capitalize; }
+  #footer .footer-contact {
+    border: 2px solid #ffa500;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh 0; }
+    #footer .footer-contact .contact-item {
+      background: #161616;
+      border: 1px solid orange;
+      border-radius: 5px;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      height: 70%;
+      width: 70%; }
+      #footer .footer-contact .contact-item header {
+        color: #ffa500;
+        font-size: 1.3rem;
+        text-align: center;
+        text-transform: capitalize; }
+      #footer .footer-contact .contact-item .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #footer .footer-contact .contact-item .contact-info a {
+          color: #f4f4f4;
+          text-decoration: none;
+          line-height: 1.7; }
+  @media (min-width: 768px) {
+    #footer {
+      padding: 5vh 5vw; }
+      #footer h2 {
+        font-size: 2rem; }
+      #footer .footer-contact {
+        display: flex;
+        flex-direction: row; }
+        #footer .footer-contact .contact-item {
+          width: 30%; } }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif; }
-
-body {
-  width: 100vw; }
+  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif; }
 
 #container {
-  width: 100%; }
-  #container #header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-height: 10vh;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    #container #header .brand {
-      border: 1px solid #ffa500;
-      padding: .2em;
-      border-radius: 5px;
-      display: grid;
-      place-items: center; }
-      #container #header .brand a {
-        color: #ffa500;
-        text-decoration: none; }
-        #container #header .brand a span {
-          color: #fff; }
-    #container #header .navigation {
-      position: relative;
-      text-transform: uppercase; }
-    @media (max-width: 768px) {
-      #container #header {
-        height: 8vh;
-        padding: 1vh 1rem; }
-        #container #header .brand a {
-          font-size: 1.2em; }
-        #container #header .logo {
-          display: none; }
-        #container #header .navigation {
-          border: none; }
-          #container #header .navigation nav {
-            display: none; }
-          #container #header .navigation aside {
-            position: fixed;
-            top: 8vh;
-            right: -100vw;
-            width: 100%;
-            height: 100vh;
-            background-color: #161616;
-            padding: 0 1em;
-            transition: .5s; }
-            #container #header .navigation aside.active {
-              right: -50vw; }
-            #container #header .navigation aside ul {
-              border: 2px solid #ffa500;
-              border-radius: 3px;
-              position: absolute;
-              padding: .5em;
-              top: 10vh; }
-              #container #header .navigation aside ul li {
-                padding-bottom: 5vh;
-                list-style: none; }
-                #container #header .navigation aside ul li a {
-                  color: #eee;
-                  text-decoration: none; } }
-    @media (min-width: 768px) {
-      #container #header {
-        height: 10vh;
-        padding: .5em 5vw;
-        overflow: hidden; }
-        #container #header .brand a {
-          font-size: 1.5em; }
-        #container #header .logo {
-          display: none;
-          border: 1px solid green;
-          width: 50%; }
-          #container #header .logo figure {
-            height: 10%;
-            overflow: hidden; }
-            #container #header .logo figure img {
-              width: 100%;
-              object-fit: cover; }
-        #container #header .navigation {
-          display: grid;
-          place-items: center;
-          padding: .5em; }
-          #container #header .navigation #toggle {
-            display: none; }
-          #container #header .navigation aside {
-            display: none; }
-          #container #header .navigation nav {
-            display: block; }
-            #container #header .navigation nav ul {
-              display: flex;
-              align-items: center; }
-              #container #header .navigation nav ul li {
-                padding-left: 1em;
-                list-style: none; }
-                #container #header .navigation nav ul li a {
-                  color: #fff;
-                  text-decoration: none;
-                  transition: .3s;
-                  padding: .5rem;
-                  border-radius: 5px; }
-                  #container #header .navigation nav ul li a:hover {
-                    color: #000;
-                    background-color: #ffa500; } }
+  max-width: 100%; }
   #container #main {
-    min-height: 180vh;
+    min-height: 80vh;
     background-color: #f4f4f4; }
