@@ -7,7 +7,7 @@ $brand-dark: #ff7b00;
 
 $brand-overlay: linear-gradient(40deg, orange, #000);
 
-$bg-main: #f4f4f4;
+$bg-main: #ffff;
 $bg-second: #000;
 $text-main: #f4f4f4;
 $text-second: #000;
@@ -24,3 +24,6 @@ $nav-links: #eee;
 
 $border-main: orange;
 $border-second: #0000;
+
+$brand-btn: linear-gradient(0deg, $brand-dark, $brand);
+$brand-btn-hover: $brand;

@@ -1,31 +1,45 @@
 #footer {
-    background: #000;
+    // background: #000;
     // min-height: 100vh;
-    padding: 5vh 1rem;
+    // padding: 5vh 1rem;
     h2 {
-        color: #fff;
+        color: $text-second;
         text-align: center;
         margin-bottom: 2vh;
         font-size: 2rem;
-        text-transform: capitalize;
+        text-transform: uppercase;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+    .form {
+    flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $bg-main;
+        padding: 10vh 0;
     }
     .footer-contact {
+        // background: pink;
+        flex-basis: 50%;
         // border: 2px solid $text-brand;
-        border-radius: 5px;
+        // border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding: 5vh 0;
+        padding: 5vh 1rem;
 
         .contact-item {
             background: $nav-bg;
             border: 1px solid $brand;
             border-radius: 5px;
             margin: 1rem auto;
-            padding: 1rem 2rem;
-            height: 70%;
-            width: 70%;
+            padding: 1rem;
+            height: auto;
+            width: 100%;
 
 
             header {
@@ -33,6 +47,7 @@
                 font-size: 1.3rem;
                 text-align: center;
                 text-transform: capitalize;
+                margin-bottom: .5rem;
             }
             .contact-info {
                 display: flex;
@@ -40,6 +55,7 @@
                 align-items: center;
                 p {
                     color: $text-main;
+                    margin: .5rem auto;
                 }
                 a {
                     color: $text-main;
@@ -67,18 +83,19 @@
             }
         }
     }
-
+    }
     .footer-copyright {
         margin: 5vh auto .5rem;
         text-align: center;
         text-transform: capitalize;
+        background: $brand-dark;
 
         p {
             color: $text-main;
             line-height: 1.6;
-
-            &#date, span {
-                color: $brand;
+            a {
+                color: inherit;
+                text-decoration: none;
             }
         }
     }
@@ -89,41 +106,27 @@
             font-size: 2rem;
             padding: 5vh 0;
         }
-
-        .footer-contact {
-            padding: 10vh 0;
-            display: flex;
+        .contact-form {
             flex-direction: row;
+        
+        .footer-contact {
+            padding: 10vh 5vw;
+            display: flex;
+            // flex-direction: row;
             // align-items: flex-end;
-            margin: 5vh 0;
+            // margin: 5vh 0;
 
             .contact-item {
-                width: 30%;
+                // width: 30%;
                 margin: 0;
             }
         }
         .footer-copyright {
             background: $brand;
             width: 100%;
-            margin: 0;
-
-            p {
-                color: $text-second;
-
-                span {
-                    color: inherit;
-                }
-                &#date {
-                    color: $text-second;
-                }
-            }
-
-            a {
-                color: $text-second;
-            }
             
         }
-
+    }
     }
     
 }

@@ -5,6 +5,7 @@
 @import '_header';
 @import '_hero';
 @import '_about';
+@import '_form';
 @import '_footer';
 * {
     padding: 0;
@@ -20,19 +21,19 @@
 }
 
 #container {
-        max-width: 100%;
-
-        
+    max-width: 100%;
 
     #main {
         @media (min-width: 768px) {
             margin-top: 5vh;
             // padding: 5vh 0;
         }
+
         margin-top: 5vh;
         // padding: 5vh 0;
         min-height: 100vh;
         background-color: $bg-main;
+
         // ACTIVE NAV BODY OVERLAY
         &::after {
             position: fixed;
@@ -46,6 +47,7 @@
             z-index: -1;
             transition: .2s;
         }
+
         &.active {
             &::after {
                 z-index: 1;
@@ -53,6 +55,7 @@
                 opacity: .8;
             }
         }
+
         // END OF ACTIVE NAV BODY OVERLAY
 
 
@@ -64,7 +67,7 @@
             .section-title {
                 text-align: center;
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
         }
     }
