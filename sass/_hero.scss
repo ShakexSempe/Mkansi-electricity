@@ -24,15 +24,24 @@
     }
 
     .slogan {
-        
         position: absolute;
-        top: 30vh;
-        left: 20vw;
-        height: auto;
+        // overflow: hidden;
         z-index: 3;
-        background: #000;
-        border-radius: 5px;
-        padding: 1.5rem .5rem;
+
+        figure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+
+            }
+        }
 
         h1 {
             font-size: 3em;
@@ -44,18 +53,58 @@
             text-align: center;
             color: $brand;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 90%;
+            width: 70vw;
+            height: 50vh;
             text-align: center;
-            margin: 0 auto;
-            padding: 10vh 0;
+            border-radius: 5px;
 
-            h1 {
-                font-size: 2rem;
+            figure {
+                width: 70vw;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    border-radius: 10px;
+
+                }
             }
+
         }
+        
+    }
+    @media (min-width: 768px) {
+        background-size: cover;
+
+        .slogan {
+            position: absolute;
+            top: 30vh;
+            left: 20vw;
+            height: 50vh;
+            // overflow: hidden;
+            z-index: 3;
+    
+            figure {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+    
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+                }
+            }
     }
 }
