@@ -1,0 +1,39 @@
+#about {
+    .about-article {
+        // border: 1px solid $brand;
+        background: $bg-main;
+        border-radius: 5px;
+        margin: 5vh 5vw;
+        text-transform: none;
+        line-height: 1.6;
+        padding: .3em;
+        // height: 40vh;
+        overflow: hidden;
+        text-align: left;
+        p{
+            margin-bottom: 2rem;
+            span {
+                font-size: 2rem;
+                padding-right: .1em;
+                background: #000;
+                float: left;
+                margin-right: .1em;
+                border-radius: 2px;
+                box-shadow: 2px 3px 0 #4855634b;
+
+                color: #fff;
+                text-shadow: 2px 2px 0px $brand;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .about-article {
+            font-size: 1rem;
+        }
+    }
+    @media (min-width: 768px){
+        .about-article {
+            font-size: 1.2rem;
+        }
+    }
+}
