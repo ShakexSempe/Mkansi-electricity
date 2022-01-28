@@ -293,6 +293,33 @@
   #about .about-article {
     font-size: 1.2rem; } }
 
+#services {
+  background-color: #fff; }
+  #services .section-description {
+    padding: 5vh 1rem; }
+  #services .service-container .service-item {
+    padding: 0 1rem; }
+    #services .service-container .service-item .service-core h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: orange; }
+    #services .service-container .service-item .service-core i {
+      font-size: 2rem;
+      margin: 0 0 1rem; }
+    #services .service-container .service-item .service-type {
+      background-color: #f4f4f4; }
+      #services .service-container .service-item .service-type ul li {
+        padding: 1rem 0;
+        text-transform: capitalize;
+        list-style-type: square;
+        font-size: 1.1rem; }
+  @media (min-width: 768px) {
+    #services .section-description {
+      padding: 5vh 5vw;
+      font-size: 1.2rem; }
+    #services .service-container .service-item {
+      padding: 0 5vw; } }
+
 #projects .gallery {
   background: #f4f4f4;
   display: grid;
