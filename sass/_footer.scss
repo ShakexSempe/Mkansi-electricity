@@ -33,11 +33,11 @@
         padding: 5vh 1rem;
 
         .contact-item {
-            background: $nav-bg;
+            // background: $nav-bg;
             border: 1px solid $brand;
             border-radius: 5px;
             margin: 1rem auto;
-            padding: 1rem;
+            padding: 1rem 0;
             height: auto;
             width: 100%;
 
@@ -45,41 +45,72 @@
             header {
                 color: $text-brand;
                 font-size: 1.3rem;
+                font-weight: 500;
+                letter-spacing: .1em;
                 text-align: center;
                 text-transform: capitalize;
                 margin-bottom: .5rem;
             }
             .contact-info {
                 display: flex;
+                // background: yellow;
                 flex-direction: column;
                 align-items: center;
+                button {
+                    // border: 1px solid red;
+                    border: none;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    transition: .5s;
+                    background: #fff;
+
+                    i {
+                        // flex-basis: 10%;
+                        transition: .5s;
+                        color: $brand-dark;
+                        opacity: 0;
+                    }
+                    a {
+                        color: $text-main;
+                        text-decoration: none;
+                        line-height: 1.7;
+                        background: $brand-dark;
+                        border-radius: 10px;
+                        padding: .2rem 1rem;
+                        // margin: 1rem auto;
+                        text-transform: uppercase;
+                        transition: .5s;
+                        box-shadow: inset 2px 2px 2px #fffa,
+                                    inset -2px -2px 2px #000a;
+    
+                        &:hover {
+                            // transform: scale(.98);
+                        }
+                        &:active {
+                            transform: scale(.95);
+                        }
+                    }
+                }
                 p {
-                    color: $text-main;
+                    color: $text-second;
                     margin: .5rem auto;
+                    // width: 50%;
+
                 }
-                a {
-                    color: $text-main;
-                    text-decoration: none;
-                    line-height: 1.7;
-                    background: $brand-dark;
-                    border-radius: 20px;
-                    padding: .2rem 1rem;
-                    margin: 1rem auto;
-                    text-transform: uppercase;
-                    transition: .2s;
-                    box-shadow: inset 2px 2px 2px #fffa,
-                                inset -2px -2px 2px #000a;
+            }
 
-                    &:hover {
-                        transform: scale(.98);
-                    }
-                    &:active {
-                        transform: scale(.95);
-                    }
+            &:hover {
+                button {
+                        a {
+                            transform: translateX(20%);
+                        }
+                        i {
+                            transform: scale(2);
+                            opacity: 1;
+                        }
+                    
                 }
-
-                // CONTACT BUTTON
-
             }
         }
     }
@@ -120,6 +151,18 @@
             .contact-item {
                 // width: 30%;
                 margin: 0;
+
+                &:hover {
+                    button {
+                            a {
+                                transform: translateX(50%);
+                            }
+                            i {
+                                transform: scale(2);
+                            }
+                        
+                    }
+                }
             }
         }
         .footer-copyright {
