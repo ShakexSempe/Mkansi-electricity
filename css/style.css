@@ -182,7 +182,8 @@
                 border-radius: 5px; }
                 #header .navigation nav ul li a:hover {
                   color: #000;
-                  background-color: #ffa500; } }
+                  background-color: #ffa500;
+                  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a; } }
 
 #hero {
   height: 100vh;
@@ -428,10 +429,11 @@
             transform: scale(0.95); }
 
 #footer .footer-copyright {
-  margin: 5vh auto .5rem;
+  margin: 5vh auto 0;
   text-align: center;
   text-transform: capitalize;
-  background: #ff7b00; }
+  background: #ff7b00;
+  padding: 5vh 0; }
   #footer .footer-copyright p {
     color: #f4f4f4;
     line-height: 1.6; }
@@ -472,12 +474,13 @@
   max-width: 100%; }
   #container #main {
     margin-top: 5vh;
+    padding: 0;
     min-height: 100vh;
     background-color: #ffff; }
     @media (min-width: 768px) {
       #container #main {
         margin-top: 5vh;
-        padding: 5vh 0; } }
+        padding: 0; } }
     #container #main::after {
       position: fixed;
       content: '';
