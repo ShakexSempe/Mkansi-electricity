@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300;400;500&display=swap");
 #toggle {
   font-size: 20px;
   border-radius: 50%;
@@ -47,7 +47,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5; }
+  z-index: 5;
+  font-family: "Ubuntu", sans-serif; }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em;
@@ -271,7 +272,8 @@
   line-height: 1.6;
   padding: .3em;
   overflow: hidden;
-  text-align: left; }
+  text-align: left;
+  font-family: "Open Sans", sans-serif; }
   #about .about-article p {
     margin-bottom: 2rem; }
     #about .about-article p span {
@@ -296,7 +298,8 @@
 #services {
   background-color: #fff; }
   #services .section-description {
-    padding: 5vh 1rem; }
+    padding: 5vh 1rem;
+    font-family: "Open Sans", sans-serif; }
   #services .service-container .service-item {
     padding: 0 1rem; }
     #services .service-container .service-item .service-core h3 {
@@ -459,7 +462,9 @@
       #footer .contact-form .footer-contact .contact-item .contact-info {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600; }
         #footer .contact-form .footer-contact .contact-item .contact-info button {
           border: none;
           width: 50%;
@@ -527,8 +532,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 8vh; }
   @media (max-width: 768px) {
@@ -536,7 +539,8 @@
       scroll-padding-top: 7vh; } }
 
 #container {
-  max-width: 100%; }
+  max-width: 100%;
+  font-family: "Ubuntu", sans-serif; }
   #container #main {
     margin-top: 5vh;
     padding: 0;

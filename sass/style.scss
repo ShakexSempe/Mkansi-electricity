@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300;400;500&display=swap');
 
 @import 'variables';
 @import '_utilities';
@@ -13,8 +13,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    font-family: $font-ubuntu;
+    // font-family: sans-serif;
+    // font-family: $font-ubuntu;
     scroll-behavior: smooth;
     scroll-padding-top: 8vh;
     @media (max-width:768px) {
@@ -24,7 +24,7 @@
 
 #container {
     max-width: 100%;
-
+    font-family: $font-ubuntu;
     #main {
         @media (min-width: 768px) {
             margin-top: 5vh;

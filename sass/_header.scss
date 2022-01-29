@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    font-family: $font-ubuntu;
     .brand {
         border: 1px solid $text-brand;
         padding: .2em;
@@ -47,6 +48,7 @@
         // border: 1px solid yellow;
         position: relative;
         text-transform: uppercase;
+        
     }
     // MOBILE HEADER 
     @media (max-width: 768px) {
@@ -188,6 +190,7 @@
             display: grid;
             place-items: center;
             padding: .5em;
+            
             #toggle {
                 display: none;
             }
@@ -214,6 +217,7 @@
                             transition: .3s;
                             padding: .5rem;
                             border-radius: 5px;
+
 
                             &:hover {
                                 color: $text-second;
