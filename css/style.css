@@ -501,10 +501,11 @@
           #footer .contact-form .footer-contact .contact-item .contact-info button a {
             color: #f4f4f4;
             text-decoration: none;
-            line-height: 1.7;
+            line-height: 1.5;
             background: #ff7b00;
             border-radius: 10px;
-            padding: .2rem 1rem;
+            padding: .5rem 1rem;
+            width: auto;
             text-transform: uppercase;
             transition: .5s;
             box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.295); }
@@ -522,9 +523,9 @@
               transition: .2s; }
             @media (min-width: 768px) {
               #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
-                transform: translateX(50%); }
+                transform: translateX(30%); }
                 #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
-                  transform: translateX(50%) scale(0.95); } }
+                  transform: translateX(30%) scale(0.95); } }
           #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
             transform: scale(2);
             opacity: 1; }
@@ -553,7 +554,6 @@
     #footer .contact-form {
       flex-direction: row; }
       #footer .contact-form .footer-contact {
-        padding: 10vh 5vw;
         display: flex; }
         #footer .contact-form .footer-contact .contact-item {
           margin: 0; }
