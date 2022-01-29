@@ -90,9 +90,9 @@
             </div>
             <section id="about">
                 <header class="section-title">
-                    <h2>about</h2>
+                    <h2 data-scroll>about</h2>
                 </header>
-                <article data-scroll class="about-article">
+                <article class="about-article">
                     <p class="article-intro">
                         <span>N</span>hlamulo Mkansi is a highly skilled professional electrician located
                         in Johannesburg, Gauteng and operating in Limpopo, North West and Mpumalanga Provinces.
@@ -102,7 +102,7 @@
             </section>
             <section id="services">
                 <header class="section-title">
-                    <h2>services</h2>
+                    <h2 data-scroll>services</h2>
                 </header>
                 <div class="section-description">
                     <p>
@@ -129,7 +129,7 @@
             </section>
             <section id="projects">
                 <header class="section-title">
-                    <h2>projects</h2>
+                    <h2 data-scroll>projects</h2>
                 </header>
                 <div class="gallery">
                     <div data-scroll class="project-item">
@@ -165,9 +165,9 @@
                 </div>
             </section>
         </main>
-        <footer id="footer">
-            <header class="foot-section-header">
-                <h2>contact info</h2>
+        <section id="footer">
+            <header class="section-title">
+                <h2 data-scroll>contact info</h2>
             </header>
             <div class="contact-form">
                 <div class="form">
@@ -240,8 +240,16 @@
                 <p id="date">2022</p>
                 <p>powered by <a title="Shakex Sempe : Front End Developer" href="#">Shakex Sempe</a></p>
             </div>
-        </footer>
+        </section>
     </div>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+        onShown(el) {
+            el.classList.add("animated");
+        }
+        });
+    </script>
 </body>
 </html>
