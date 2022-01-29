@@ -29,10 +29,20 @@
                 background-color: #f4f4f4;
                 ul {
                     li {
-                        padding: 1rem 0;
+                        padding: 1rem .1rem;
                         text-transform: capitalize;
                         list-style-type: square;
                         font-size: 1.1rem;
+                        transition: .2s;
+                        border: 1px solid #fff;
+
+                        &:hover {
+                            background-color: $brand;
+                            color: $text-main;
+                            &::marker {
+                                color: $brand;
+                            }
+                        }
                     }
                 }
             }

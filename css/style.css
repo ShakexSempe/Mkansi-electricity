@@ -182,9 +182,7 @@
                 padding: .5rem;
                 border-radius: 5px; }
                 #header .navigation nav ul li a:hover {
-                  color: #000;
-                  background-color: #ffa500;
-                  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a; } }
+                  color: orange; } }
 
 #hero {
   height: 100vh;
@@ -312,10 +310,17 @@
     #services .service-container .service-item .service-type {
       background-color: #f4f4f4; }
       #services .service-container .service-item .service-type ul li {
-        padding: 1rem 0;
+        padding: 1rem .1rem;
         text-transform: capitalize;
         list-style-type: square;
-        font-size: 1.1rem; }
+        font-size: 1.1rem;
+        transition: .2s;
+        border: 1px solid #fff; }
+        #services .service-container .service-item .service-type ul li:hover {
+          background-color: orange;
+          color: #f4f4f4; }
+          #services .service-container .service-item .service-type ul li:hover::marker {
+            color: orange; }
   @media (min-width: 768px) {
     #services .section-description {
       padding: 5vh 5vw;

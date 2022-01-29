@@ -220,10 +220,7 @@
 
 
                             &:hover {
-                                color: $text-second;
-                                background-color: $text-brand;
-                                box-shadow: inset 2px 2px 2px #fffa,
-                                            inset -2px -2px 2px #000a;
+                                color: $brand;
                             }
                         }
                     }
