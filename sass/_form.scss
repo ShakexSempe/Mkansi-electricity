@@ -38,21 +38,9 @@
         }
     }
 
-    @media (min-width: 768px) {
-        padding: 0 5vw;
-        .contact-title {
-            font-size: 2rem;
-        }
-
-        .input-div {
-            label {}
-            input {}
-        }
-    }
-
     button {
         padding: .7rem 1rem;
-        width: 50%;
+        width: 100%;
         margin: .5rem auto 1rem;
         display: block;
         text-transform: uppercase;
@@ -98,6 +86,20 @@
         }
         &:active {
             transform: scale(.95);
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 0 5vw;
+        .contact-title {
+            font-size: 2rem;
+        }
+
+        .input-div {
+            label {}
+            input {}
+        }
+        button {
+            width: 100%;
         }
     }
 }

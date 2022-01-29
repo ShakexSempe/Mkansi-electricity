@@ -48,6 +48,7 @@
                 align-items: center;
                 font-family: $font-open-sans;
                 font-weight: 600;
+                
                 button {
                     // border: 1px solid red;
                     border: none;
@@ -61,7 +62,7 @@
                         // flex-basis: 10%;
                         transition: .5s;
                         color: $brand-dark;
-                        opacity: 0;
+                        opacity: .5;
                     }
                     a {
                         color: $text-main;
@@ -74,13 +75,31 @@
                         text-transform: uppercase;
                         transition: .5s;
                         box-shadow: inset 2px 2px 2px #fffa,
-                                    inset -2px -2px 2px #000a;
+                                    inset -2px -2px 2px #000a,
+                                    3px 3px 3px rgba(0, 0, 0, 0.295) ;
     
                         &:hover {
-                            // transform: scale(.98);
+                            transform: scale(.9);
                         }
                         &:active {
                             transform: scale(.95);
+                        }
+                    }
+                    &[data-scroll] {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                    &[data-scroll="in"] {
+                        a {
+                            transform: translateX(20%);
+                            &:hover {
+                                transform: translateX(20%) scale(.95);
+                                transition: .2s;
+                            }
+                        }
+                        i {
+                            transform: scale(2);
+                            opacity: 1;
                         }
                     }
                 }
@@ -94,13 +113,13 @@
 
             &:hover {
                 button {
-                        a {
-                            transform: translateX(20%);
-                        }
-                        i {
-                            transform: scale(2);
-                            opacity: 1;
-                        }
+                        // a {
+                        //     transform: translateX(20%);
+                        // }
+                        // i {
+                        //     transform: scale(2);
+                        //     opacity: 1;
+                        // }
                     
                 }
             }

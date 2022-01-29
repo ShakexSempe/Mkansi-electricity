@@ -387,14 +387,9 @@
     #form .input-div:hover label, #form .input-div:focus label {
       color: #ff7b00;
       transform: translateY(0) translateX(0.5rem); }
-  @media (min-width: 768px) {
-    #form {
-      padding: 0 5vw; }
-      #form .contact-title {
-        font-size: 2rem; } }
   #form button {
     padding: .7rem 1rem;
-    width: 50%;
+    width: 100%;
     margin: .5rem auto 1rem;
     display: block;
     text-transform: uppercase;
@@ -429,6 +424,13 @@
         opacity: 1; }
     #form button:active {
       transform: scale(0.95); }
+  @media (min-width: 768px) {
+    #form {
+      padding: 0 5vw; }
+      #form .contact-title {
+        font-size: 2rem; }
+      #form button {
+        width: 100%; } }
 
 #footer .contact-form {
   display: flex;
@@ -478,7 +480,7 @@
           #footer .contact-form .footer-contact .contact-item .contact-info button i {
             transition: .5s;
             color: #ff7b00;
-            opacity: 0; }
+            opacity: .5; }
           #footer .contact-form .footer-contact .contact-item .contact-info button a {
             color: #f4f4f4;
             text-decoration: none;
@@ -488,17 +490,25 @@
             padding: .2rem 1rem;
             text-transform: uppercase;
             transition: .5s;
-            box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a; }
+            box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.295); }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
+              transform: scale(0.9); }
             #footer .contact-form .footer-contact .contact-item .contact-info button a:active {
               transform: scale(0.95); }
+          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll] {
+            transform: scale(1);
+            opacity: 1; }
+          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
+            transform: translateX(20%); }
+            #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
+              transform: translateX(20%) scale(0.95);
+              transition: .2s; }
+          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
+            transform: scale(2);
+            opacity: 1; }
         #footer .contact-form .footer-contact .contact-item .contact-info p {
           color: #000;
           margin: .5rem auto; }
-      #footer .contact-form .footer-contact .contact-item:hover button a {
-        transform: translateX(20%); }
-      #footer .contact-form .footer-contact .contact-item:hover button i {
-        transform: scale(2);
-        opacity: 1; }
 
 #footer .footer-copyright {
   margin: 5vh auto 0;
