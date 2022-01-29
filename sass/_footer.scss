@@ -30,6 +30,7 @@
             padding: 1rem 0;
             height: auto;
             width: 100%;
+            transition: .2s;
 
 
             header {
@@ -96,6 +97,12 @@
                                 transform: translateX(20%) scale(.95);
                                 transition: .2s;
                             }
+                            @media (min-width: 768px) {
+                            transform: translateX(50%);
+                            &:hover {
+                                transform: translateX(50%) scale(.95);
+                            }
+                            }
                         }
                         i {
                             transform: scale(2);
@@ -110,19 +117,11 @@
 
                 }
             }
-
+            // ITEM SCALE UP ON HOVER
             &:hover {
-                button {
-                        // a {
-                        //     transform: translateX(20%);
-                        // }
-                        // i {
-                        //     transform: scale(2);
-                        //     opacity: 1;
-                        // }
-                    
-                }
+                transform: scale(1.03);
             }
+            // END OF ITEM SCALE UP ON HOVER
         }
     }
     }

@@ -455,7 +455,8 @@
       margin: 1rem auto;
       padding: 1rem 0;
       height: auto;
-      width: 100%; }
+      width: 100%;
+      transition: .2s; }
       #footer .contact-form .footer-contact .contact-item header {
         color: #ffa500;
         font-size: 1.3rem;
@@ -503,12 +504,19 @@
             #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
               transform: translateX(20%) scale(0.95);
               transition: .2s; }
+            @media (min-width: 768px) {
+              #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
+                transform: translateX(50%); }
+                #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
+                  transform: translateX(50%) scale(0.95); } }
           #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
             transform: scale(2);
             opacity: 1; }
         #footer .contact-form .footer-contact .contact-item .contact-info p {
           color: #000;
           margin: .5rem auto; }
+      #footer .contact-form .footer-contact .contact-item:hover {
+        transform: scale(1.03); }
 
 #footer .footer-copyright {
   margin: 5vh auto 0;
