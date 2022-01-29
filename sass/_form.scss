@@ -23,24 +23,39 @@
             padding: 1rem .5rem;
             transition: .2s;
             border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            outline: 2px solid #000;
             font-family: $font-open-sans;
+            transition: .5s;
             &::placeholder {
                 text-transform: capitalize;
             }
+
+            &:invalid {
+                outline: 2px solid $brand;
+            }
+
+            &:focus {
+                border-radius: 10px;
+            }
+
         }
         
         // HOVER STATE
         &:hover, &:focus {
             label {
                 color: $brand-dark;
-                transform: translateY(0) translateX(.5rem);
+                transform: translateY(-.2em) translateX(.5rem);
             }
         }
+
     }
 
     button {
         padding: .7rem 1rem;
         width: 100%;
+        font-size: 1rem;
         margin: .5rem auto 1rem;
         display: block;
         text-transform: uppercase;
@@ -50,6 +65,8 @@
         border: none;
         outline: none;
         isolation: isolate;
+        transition: .2s;
+        cursor: pointer;
         &::before, &::after {
             position: absolute;
             content: '';

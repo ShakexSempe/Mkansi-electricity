@@ -386,15 +386,24 @@
       padding: 1rem .5rem;
       transition: .2s;
       border-radius: 5px;
-      font-family: "Open Sans", sans-serif; }
+      border: none;
+      font-size: 1rem;
+      outline: 2px solid #000;
+      font-family: "Open Sans", sans-serif;
+      transition: .5s; }
       #form .input-div input::placeholder, #form .input-div textarea::placeholder {
         text-transform: capitalize; }
+      #form .input-div input:invalid, #form .input-div textarea:invalid {
+        outline: 2px solid orange; }
+      #form .input-div input:focus, #form .input-div textarea:focus {
+        border-radius: 10px; }
     #form .input-div:hover label, #form .input-div:focus label {
       color: #ff7b00;
-      transform: translateY(0) translateX(0.5rem); }
+      transform: translateY(-0.2em) translateX(0.5rem); }
   #form button {
     padding: .7rem 1rem;
     width: 100%;
+    font-size: 1rem;
     margin: .5rem auto 1rem;
     display: block;
     text-transform: uppercase;
@@ -403,7 +412,9 @@
     color: #f4f4f4;
     border: none;
     outline: none;
-    isolation: isolate; }
+    isolation: isolate;
+    transition: .2s;
+    cursor: pointer; }
     #form button::before, #form button::after {
       position: absolute;
       content: '';
