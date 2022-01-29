@@ -16,12 +16,14 @@
             transform: translateY(-1em);
             text-transform: capitalize;
             transition: .2s;
+            font-weight: 500;
 
         }
         input, textarea {
             padding: 1rem .5rem;
             transition: .2s;
             border-radius: 5px;
+            font-family: $font-open-sans;
             &::placeholder {
                 text-transform: capitalize;
             }
@@ -30,6 +32,7 @@
         // HOVER STATE
         &:hover, &:focus {
             label {
+                color: $brand-dark;
                 transform: translateY(0) translateX(.5rem);
             }
         }
