@@ -579,6 +579,7 @@
   max-width: 100%;
   font-family: "Ubuntu", sans-serif; }
   #container #main {
+    width: 100%;
     margin-top: 5vh;
     padding: 0;
     min-height: 100vh;
@@ -601,6 +602,27 @@
     #container #main.active::after {
       z-index: 1;
       opacity: .8; }
+    #container #main .parallax {
+      background-attachment: fixed;
+      background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      position: relative; }
+      #container #main .parallax::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(40deg, orange, #000);
+        opacity: .6;
+        z-index: 1;
+        transition: .2s; }
     #container #main section {
       min-height: 100vh;
       padding: 5vh 0; }

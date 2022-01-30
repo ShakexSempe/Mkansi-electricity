@@ -26,6 +26,7 @@
     max-width: 100%;
     font-family: $font-ubuntu;
     #main {
+        width: 100%;
         @media (min-width: 768px) {
             margin-top: 5vh;
             padding: 0;
@@ -60,6 +61,32 @@
 
         // END OF ACTIVE NAV BODY OVERLAY
 
+        // PARALLAX SECTION
+        .parallax {
+            background-attachment: fixed;
+            background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            // ACTIVE NAV BODY OVERLAY
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: $brand-overlay;
+            opacity: .6;
+            z-index: 1;
+            transition: .2s;
+        }
+        }
+        // END OF PARALLAX SECTION
 
         section {
             min-height: 100vh;
