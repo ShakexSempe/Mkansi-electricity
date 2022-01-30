@@ -545,8 +545,10 @@
     color: #f4f4f4;
     line-height: 1.6; }
     #footer .footer-copyright p a {
-      color: inherit;
+      color: #f4f4f4;
       text-decoration: none; }
+      #footer .footer-copyright p a:hover {
+        color: #000; }
 
 @media (min-width: 768px) {
   #footer {

@@ -137,8 +137,12 @@
             color: $text-main;
             line-height: 1.6;
             a {
-                color: inherit;
+                color: $text-main;
                 text-decoration: none;
+
+                &:hover {
+                    color: $text-second;
+                }
             }
         }
     }
