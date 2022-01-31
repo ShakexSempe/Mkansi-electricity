@@ -109,7 +109,7 @@
 
                     li {
                         // padding-bottom: 5vh;
-                        border: 1px solid yellow;
+                        border: 1px solid $brand;
                         border-radius: 5px;
                         margin: 0 auto 2rem;
                         width: 90%;
@@ -151,9 +151,9 @@
                                 font-size: 1rem;
                                 text-transform: uppercase;
                                 height: 100%;
-                                border: 1px solid yellow;
+                                border: 1px solid $brand;
                                 border-radius: 5px;
-                                background: $bg-second;
+                                background: $nav-bg;
                                 color: #fff;
                                 display: flex;
                                 justify-content: flex-start;
@@ -169,8 +169,8 @@
                                 position: absolute;
                                 top: 3rem;
                                 background: $brand;
-                                border: 1px solid #fff000;
-                                border-radius: 5px;
+                                border: 1px solid $brand;
+                                border-radius: 0;
                                 padding: 0 .5rem;
                                 display: flex;
                                 flex-direction: column;
@@ -188,7 +188,11 @@
                             }
 
                             &:hover {
-                                height: 25vh;
+                                // height: 25vh;
+                                .dropdown-btn {
+                                background: $bg-second;
+                                transition: .2s;
+                                }
                                 .dropdown-content {
                                     height: 20vh;
                                 }

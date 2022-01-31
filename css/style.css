@@ -118,7 +118,7 @@
             width: 70vw;
             height: auto; }
             #header .navigation aside ul li {
-              border: 1px solid yellow;
+              border: 1px solid orange;
               border-radius: 5px;
               margin: 0 auto 2rem;
               width: 90%;
@@ -150,9 +150,9 @@
                   font-size: 1rem;
                   text-transform: uppercase;
                   height: 100%;
-                  border: 1px solid yellow;
+                  border: 1px solid orange;
                   border-radius: 5px;
-                  background: #000;
+                  background: #161616;
                   color: #fff;
                   display: flex;
                   justify-content: flex-start;
@@ -163,8 +163,8 @@
                   position: absolute;
                   top: 3rem;
                   background: orange;
-                  border: 1px solid #fff000;
-                  border-radius: 5px;
+                  border: 1px solid orange;
+                  border-radius: 0;
                   padding: 0 .5rem;
                   display: flex;
                   flex-direction: column;
@@ -176,10 +176,11 @@
                     margin: 1rem 0 0;
                     padding: .5rem 0 1rem;
                     color: #f4f4f4; }
-                #header .navigation aside ul li.dropdown:hover {
-                  height: 25vh; }
-                  #header .navigation aside ul li.dropdown:hover .dropdown-content {
-                    height: 20vh; }
+                #header .navigation aside ul li.dropdown:hover .dropdown-btn {
+                  background: #000;
+                  transition: .2s; }
+                #header .navigation aside ul li.dropdown:hover .dropdown-content {
+                  height: 20vh; }
           #header .navigation aside.active {
             right: -30vw; }
             #header .navigation aside.active ul li {
