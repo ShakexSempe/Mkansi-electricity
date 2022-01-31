@@ -104,22 +104,26 @@
           width: 100%;
           height: 100vh;
           background-color: #161616;
-          padding: 0 1em;
+          padding: 1em;
           transition: .5s;
-          z-index: -1; }
+          z-index: -1;
+          overflow-y: auto; }
           #header .navigation aside ul {
-            border: 2px solid #ffa500;
             border-radius: 3px;
             position: absolute;
             padding: 2em .2em;
+            padding: 10vh .2em;
             top: 10vh;
-            right: 35vw;
-            width: 50vw;
+            right: 30vw;
+            width: 70vw;
             height: auto; }
             #header .navigation aside ul li {
-              margin: 0 0 2rem;
-              list-style: none;
+              border: 1px solid yellow;
+              border-radius: 5px;
+              margin: 0 auto 2rem;
+              width: 90%;
               padding: 1em .5em;
+              list-style: none;
               display: flex;
               justify-content: flex-start;
               align-items: center;
@@ -137,6 +141,45 @@
                 width: 20%; }
               #header .navigation aside ul li:hover {
                 background-color: #000; }
+              #header .navigation aside ul li.dropdown {
+                margin: 0 auto 2rem;
+                padding: 0; }
+                #header .navigation aside ul li.dropdown .dropdown-btn {
+                  padding: 1em 0;
+                  width: 100%;
+                  font-size: 1rem;
+                  text-transform: uppercase;
+                  height: 100%;
+                  border: 1px solid yellow;
+                  border-radius: 5px;
+                  background: #000;
+                  color: #fff;
+                  display: flex;
+                  justify-content: flex-start;
+                  position: relative; }
+                  #header .navigation aside ul li.dropdown .dropdown-btn .fa-caret-down {
+                    margin-left: auto; }
+                #header .navigation aside ul li.dropdown .dropdown-content {
+                  position: absolute;
+                  top: 3rem;
+                  background: orange;
+                  border: 1px solid #fff000;
+                  border-radius: 5px;
+                  padding: 0 .5rem;
+                  display: flex;
+                  flex-direction: column;
+                  height: 0vh;
+                  width: 100%;
+                  transition: .3s;
+                  overflow: hidden; }
+                  #header .navigation aside ul li.dropdown .dropdown-content a {
+                    margin: 1rem 0 0;
+                    padding: .5rem 0 1rem;
+                    color: #f4f4f4; }
+                #header .navigation aside ul li.dropdown:hover {
+                  height: 25vh; }
+                  #header .navigation aside ul li.dropdown:hover .dropdown-content {
+                    height: 20vh; }
           #header .navigation aside.active {
             right: -30vw; }
             #header .navigation aside.active ul li {

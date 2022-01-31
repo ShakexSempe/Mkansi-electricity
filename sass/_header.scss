@@ -90,27 +90,31 @@
                 width: 100%;
                 height: 100vh;
                 background-color: $nav-bg;
-                padding: 0 1em;
+                padding: 1em;
                 transition: .5s;
                 z-index: -1;
+                overflow-y: auto;
 
 
                 ul {
-                    border: 2px solid $text-brand;
+                    // border: 2px solid $text-brand;
                     border-radius: 3px;
                     position: absolute;
                     padding: 2em .2em;
+                    padding: 10vh .2em;
                     top: 10vh;
-                    right: 35vw;
-                    width: 50vw;
+                    right: 30vw;
+                    width: 70vw;
                     height: auto;
 
                     li {
                         // padding-bottom: 5vh;
-                        margin: 0 0 2rem;
-                        list-style: none;
-                        // border: 1px solid yellow;
+                        border: 1px solid yellow;
+                        border-radius: 5px;
+                        margin: 0 auto 2rem;
+                        width: 90%;
                         padding: 1em .5em;
+                        list-style: none;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
@@ -136,6 +140,59 @@
 
                         &:hover {
                             background-color: #000;
+                        }
+
+                        &.dropdown {
+                            margin: 0 auto 2rem;
+                            padding: 0;
+                            .dropdown-btn {
+                                padding: 1em 0;
+                                width: 100%;
+                                font-size: 1rem;
+                                text-transform: uppercase;
+                                height: 100%;
+                                border: 1px solid yellow;
+                                border-radius: 5px;
+                                background: $bg-second;
+                                color: #fff;
+                                display: flex;
+                                justify-content: flex-start;
+                                position: relative;
+
+                                .fa-caret-down {
+                                    margin-left: auto;
+                                }
+
+                            }
+                            .dropdown-content {
+                                // display: none;
+                                position: absolute;
+                                top: 3rem;
+                                background: $brand;
+                                border: 1px solid #fff000;
+                                border-radius: 5px;
+                                padding: 0 .5rem;
+                                display: flex;
+                                flex-direction: column;
+                                height: 0vh;
+                                width: 100%;
+                                transition: .3s;
+                                overflow: hidden;
+
+                                a {
+                                    margin: 1rem 0 0;
+                                    padding: .5rem 0 1rem;
+                                    color: $text-main;
+                                }
+
+                            }
+
+                            &:hover {
+                                height: 25vh;
+                                .dropdown-content {
+                                    height: 20vh;
+                                }
+                            }
                         }
                     }
                 }
