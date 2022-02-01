@@ -351,7 +351,7 @@
       transition: 1s; }
       #services .service-container .service-item .service-core h3[data-scroll] {
         transform: scale(1);
-        letter-spacing: .4em; }
+        letter-spacing: .25em; }
       #services .service-container .service-item .service-core h3[data-scroll="in"] {
         letter-spacing: .05em; }
     #services .service-container .service-item .service-core i {
