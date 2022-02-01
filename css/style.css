@@ -163,8 +163,8 @@
                   position: absolute;
                   top: 3rem;
                   background: orange;
-                  border: 1px solid orange;
-                  border-radius: 0;
+                  border-bottom-left-radius: 5px;
+                  border-bottom-right-radius: 5px;
                   padding: 0 .5rem;
                   display: flex;
                   flex-direction: column;
