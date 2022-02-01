@@ -112,7 +112,7 @@
             border-radius: 3px;
             position: absolute;
             padding: 2em .2em;
-            padding: 10vh .2em;
+            padding: 5vh .2em;
             top: 10vh;
             right: 30vw;
             width: 70vw;
@@ -143,7 +143,10 @@
                 background-color: #000; }
               #header .navigation aside ul li.dropdown {
                 margin: 0 auto 2rem;
-                padding: 0; }
+                padding: 0;
+                overflow: hidden;
+                position: relative;
+                height: 3.5rem; }
                 #header .navigation aside ul li.dropdown .dropdown-btn {
                   padding: 1em 0;
                   width: 100%;
@@ -155,8 +158,7 @@
                   background: #161616;
                   color: #fff;
                   display: flex;
-                  justify-content: flex-start;
-                  position: relative; }
+                  justify-content: flex-start; }
                   #header .navigation aside ul li.dropdown .dropdown-btn .fa-caret-down {
                     margin-left: auto; }
                 #header .navigation aside ul li.dropdown .dropdown-content {
@@ -166,21 +168,22 @@
                   border-bottom-left-radius: 5px;
                   border-bottom-right-radius: 5px;
                   padding: 0 .5rem;
+                  margin: 0 .5em;
                   display: flex;
                   flex-direction: column;
+                  align-items: center;
                   height: 0vh;
-                  width: 100%;
+                  width: 95%;
                   transition: .3s;
                   overflow: hidden; }
-                  #header .navigation aside ul li.dropdown .dropdown-content i {
-                    padding-left: .5rem; }
                   #header .navigation aside ul li.dropdown .dropdown-content a {
                     margin: 1rem 0 0;
                     padding: .5rem 0 1rem;
                     color: #f4f4f4;
+                    width: 100%;
                     border: 1px solid orange; }
                 #header .navigation aside ul li.dropdown:hover {
-                  height: 25vh; }
+                  height: 35vh; }
                   #header .navigation aside ul li.dropdown:hover .dropdown-btn {
                     background: #000;
                     transition: .2s; }
