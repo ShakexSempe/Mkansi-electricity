@@ -700,6 +700,9 @@
       width: 100%;
       margin: 0 auto;
       position: relative; }
+      @media (max-width: 768px) {
+        #container #main .parallax {
+          display: none; } }
       #container #main .parallax::after {
         position: absolute;
         content: '';

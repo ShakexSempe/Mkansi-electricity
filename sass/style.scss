@@ -63,6 +63,9 @@
 
         // PARALLAX SECTION
         .parallax {
+            @media (max-width: 768px) {
+                display: none;
+            }
             background-attachment: fixed;
             background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
             background-repeat: no-repeat;
