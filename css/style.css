@@ -347,10 +347,22 @@
     #services .service-container .service-item .service-core h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: orange; }
+      color: orange;
+      transition: 1s; }
+      #services .service-container .service-item .service-core h3[data-scroll] {
+        transform: scale(1);
+        letter-spacing: .4em; }
+      #services .service-container .service-item .service-core h3[data-scroll="in"] {
+        letter-spacing: .05em; }
     #services .service-container .service-item .service-core i {
       font-size: 2rem;
-      margin: 0 0 1rem; }
+      margin: 0 0 1rem;
+      animation: icon 2s infinite; }
+
+@keyframes icon {
+  50% {
+    transform: rotate(20deg);
+    color: #000a; } }
     #services .service-container .service-item .service-type {
       background-color: #f4f4f4; }
       #services .service-container .service-item .service-type ul li {

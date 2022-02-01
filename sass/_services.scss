@@ -18,10 +18,27 @@
                     font-size: 1.5rem;
                     margin-bottom: 1rem;
                     color: $brand;
+                    transition: 1s;
+
+                    &[data-scroll] {
+                        transform: scale(1);
+                        letter-spacing: .4em;
+                    }
+                    &[data-scroll="in"] {
+                        letter-spacing: .05em;
+                    }
                 }
                 i {
                     font-size: 2rem;
                     margin: 0 0 1rem;
+                    animation: icon 2s infinite;
+
+                    @keyframes icon {
+                        50% {
+                            transform: rotate(20deg);
+                            color: #000a;
+                        }
+                    }
                 }
             }
             .service-type {
