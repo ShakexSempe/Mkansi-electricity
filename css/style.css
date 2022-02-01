@@ -389,24 +389,40 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: .5rem;
-  margin: 5vh 5vw; }
+  margin: 5vh 1rem; }
   #projects .gallery .project-item figure {
     width: 100%;
     height: auto;
+    height: 90vh;
     overflow: hidden;
-    border-radius: 5px; }
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; }
     #projects .gallery .project-item figure img {
       width: 100%;
-      height: auto;
+      height: 100%;
       border-radius: 5px;
-      cursor: pointer;
-      transition: .5s; }
+      transition: .5s;
+      object-fit: cover; }
+    #projects .gallery .project-item figure::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .6;
+      transition: .5s;
+      box-shadow: inset 3px 3px 3px #fffa,  inset -3px -3px 3px #000a; }
     #projects .gallery .project-item figure:hover img {
       transform: scale(1.15); }
+    #projects .gallery .project-item figure:hover::after {
+      opacity: 1; }
 
 @media (min-width: 768px) {
   #projects {
-    padding: 5vh 5vw; }
+    padding: 5vh 5vw;
+    margin: 5vh 5vw; }
     #projects .gallery {
       grid-template-columns: 1fr 1fr 1fr; }
       #projects .gallery .project-item {
