@@ -225,6 +225,7 @@
                             placeholder="name & surname.." 
                             title="Please fill your name and surname"
                             required
+                            tabindex="1"
                             minlength="2">
                         </div>
             
@@ -236,16 +237,47 @@
                             id="email" 
                             title="Please enter your email address"
                             placeholder="your email address.." 
+                            tabindex="2"
+                            required>
+                        </div>
+
+                        <div class="input-div">
+                            <label for="tel">phone number :</label>
+                            <input 
+                            type="tel" 
+                            name="tel" 
+                            id="tel" 
+                            title="Please enter your email address"
+                            placeholder="your phone number.." 
+                            tabindex="3"
                             required>
                         </div>
             
                         <div class="input-div">
-                            <label for="message">message :</label>
-                            <textarea rows="3" cols="50" minlength="2" name="message" placeholder="leave a message..."
-                                id="message" required></textarea>
+                                <label for="subject">subject</label>
+                            <input 
+                            type="text"
+                            name="subject"
+                            id="subject"
+                            tabindex="4"
+                            title="subject of enquiry"
+                            placeholder="subject: eg. house wiring"
+                            required>
+                        </div>
+
+                        <div class="input-div">
+                            <label for="message">message</label>
+                            <textarea 
+                            name="message" 
+                            id="message"
+                            rows="3" cols="20" 
+                            minlength="2" 
+                            tabindex="5"
+                            placeholder="leave a message..."
+                            required></textarea>
                         </div>
             
-                        <button type="submit" title="submit contact form">send email</button>
+                        <button tabindex="6" type="submit" title="submit contact form">send email</button>
                         <!-- form options -->
                         <input type="hidden" name="_subject" value="New submission!">
                         <input type="hidden" name="_autoresponse" value="Shakex has received your form">

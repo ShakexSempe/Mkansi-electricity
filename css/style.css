@@ -460,15 +460,21 @@
       border-radius: 5px;
       border: none;
       font-size: 1rem;
-      outline: 2px solid #000;
+      outline: 2px solid orange;
       font-family: "Open Sans", sans-serif;
       transition: .5s; }
       #form .input-div input::placeholder, #form .input-div textarea::placeholder {
         text-transform: capitalize; }
       #form .input-div input:invalid, #form .input-div textarea:invalid {
-        outline: 2px solid orange; }
+        outline: 2px solid #000; }
       #form .input-div input:focus, #form .input-div textarea:focus {
         border-radius: 10px; }
+    #form .input-div.message {
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 1.5rem 0; }
+      #form .input-div.message input {
+        margin-bottom: 1rem; }
     #form .input-div:hover label, #form .input-div:focus label {
       color: #ff7b00;
       transform: translateY(-0.2em) translateX(0.5rem); }
