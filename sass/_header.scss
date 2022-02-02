@@ -91,7 +91,7 @@
                 height: 100vh;
                 background-color: $nav-bg;
                 padding: 1em;
-                transition: .5s;
+                transition: .7s;
                 z-index: -1;
                 overflow-y: auto;
 
@@ -100,8 +100,7 @@
                     // border: 2px solid $text-brand;
                     border-radius: 3px;
                     position: absolute;
-                    padding: 2em .2em;
-                    padding: 5vh .2em;
+                    padding: 1rem;
                     top: 10vh;
                     right: 30vw;
                     width: 70vw;
@@ -147,7 +146,10 @@
                             padding: 0;
                             overflow: hidden;
                             position: relative;
+                            height: inherit;
                             height: 3.5rem;
+                            background: #f4f4f4;
+                            transition: .5s;
 
                             .dropdown-btn {
                                 padding: 1em 0;
@@ -171,18 +173,18 @@
                                 // display: none;
                                 position: absolute;
                                 top: 3rem;
-                                background: $bg-second;
+                                background: $nav-bg;
                                 // border: 1px solid $brand;
                                 border-bottom-left-radius: 5px;
                                 border-bottom-right-radius: 5px;
-                                padding: 0 .5rem;
+                                padding: .5rem;
                                 margin: 0 .5em;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
-                                height: 0vh;
+                                height: auto;
                                 width: 95%;
-                                transition: .3s;
+                                // transition: .3s;
                                 overflow: hidden;
                                 // background-color: pink;
 
@@ -202,13 +204,13 @@
 
                             &:hover {
                                 height: 35vh;
-                                .dropdown-btn {
-                                background: $bg-second;
-                                transition: .2s;
-                                }
-                                .dropdown-content {
-                                    height: 20vh;
-                                }
+                                // .dropdown-btn {
+                                // background: $bg-second;
+                                // transition: .2s;
+                                // }
+                                // .dropdown-content {
+                                //     height: 20vh;
+                                // }
                             }
                         }
                     }
