@@ -63,31 +63,50 @@
 
         // PARALLAX SECTION
         .parallax {
-            @media (max-width: 768px) {
-                display: none;
-            }
-            background-attachment: fixed;
-            background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
             height: 100vh;
             width: 100%;
             margin: 0 auto;
             position: relative;
-            // ACTIVE NAV BODY OVERLAY
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            min-height: 100vh;
-            background: $brand-overlay;
-            opacity: .6;
-            z-index: 1;
-            transition: .2s;
-        }
+            background: #fff000;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100vh;
+                background: $brand-overlay;
+                opacity: .7;
+                z-index: 1;
+                transition: .2s;
+            }
+
+            figure {
+                height: 100%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            @media (min-width: 768px) {
+                figure {
+                    display: none;
+                }
+                background-attachment: fixed;
+                background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                  // ACTIVE NAV BODY OVERLAY
+        
+            }
+            
+            
+          
         }
         // END OF PARALLAX SECTION
 
@@ -117,6 +136,7 @@
             width: 0%;
             height: .2em;
             background: $brand;
+            background: linear-gradient(90deg, $brand-dark, $brand);
             border-radius: 5px;
             opacity: 0;
             transition: 1s .1s;

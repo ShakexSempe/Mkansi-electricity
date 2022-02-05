@@ -89,10 +89,8 @@
             <div id="hero">
                 <div class="slogan">
                     <figure>
-                        <img src="img/mkansi.png" alt="Nhlamulo Mkansi logo">
+                        <img title="Nhlamulo Mkansi logo" src="img/mkansi.png" loading="lazy" alt="Nhlamulo Mkansi logo">
                     </figure>
-                    <!-- <h1>Nhlamulo Mkansi</h1>
-                    <p>Professional electrical services</p> -->
                 </div>
             </div>
             <section id="about">
@@ -110,7 +108,11 @@
                         ensures that your installation is done in an affordable manner and correctly the first time to avoid potential issues down the road.
                     </p>
             </section>
-            <div class="parallax"></div>
+            <div class="parallax">
+                <figure>
+                    <img src="img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg" loading="lazy" alt="electrician">
+                </figure>
+            </div>
             <section id="services">
                 <header class="section-title">
                     <h2 data-scroll>services</h2>
@@ -253,18 +255,6 @@
                             tabindex="3"
                             required>
                         </div>
-            
-                        <div class="input-div">
-                                <label for="subject">subject</label>
-                            <input 
-                            type="text"
-                            name="subject"
-                            id="subject"
-                            tabindex="4"
-                            title="subject of enquiry"
-                            placeholder="subject: eg. house wiring"
-                            required>
-                        </div>
 
                         <div class="input-div">
                             <label for="message">message</label>
@@ -273,12 +263,12 @@
                             id="message"
                             rows="3" cols="20" 
                             minlength="2" 
-                            tabindex="5"
+                            tabindex="4"
                             placeholder="leave a message..."
                             required></textarea>
                         </div>
             
-                        <button tabindex="6" type="submit" title="submit contact form">send</button>
+                        <button tabindex="5" type="submit" title="submit contact form">send</button>
                         <!-- form options -->
                         <input type="hidden" name="_subject" value="New submission!">
                         <input type="hidden" name="_autoresponse" value="Shakex has received your form">
