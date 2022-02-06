@@ -48,7 +48,10 @@
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  transition: background-color .8s; }
+  #header.scroll {
+    background: orange; }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em;
@@ -232,9 +235,23 @@
                 text-decoration: none;
                 transition: .3s;
                 padding: .5rem;
-                border-radius: 5px; }
+                border-radius: 5px;
+                position: relative; }
+                #header .navigation nav ul li a::after {
+                  position: absolute;
+                  content: '';
+                  bottom: 0;
+                  left: 50%;
+                  width: 0;
+                  height: .2rem;
+                  background: #f4f4f4;
+                  border-radius: 5px;
+                  transform: translateX(-50%);
+                  transition: .5s; }
                 #header .navigation nav ul li a:hover {
-                  color: orange; } }
+                  color: #fffa; }
+                  #header .navigation nav ul li a:hover::after {
+                    width: 50%; } }
 
 #hero {
   height: 100vh;
@@ -368,13 +385,15 @@
         text-transform: capitalize;
         list-style-type: square;
         font-size: 1.1rem;
-        transition: .2s;
-        border: 1px solid #fff; }
+        transition: .3s;
+        border: 1px solid #fff;
+        cursor: pointer; }
         #services .service-container .service-item .service-type ul li:hover {
           background-color: orange;
           color: #f4f4f4; }
           #services .service-container .service-item .service-type ul li:hover::marker {
-            color: orange; }
+            color: orange;
+            transition: .3s; }
   @media (min-width: 768px) {
     #services .section-description {
       padding: 5vh 5vw;

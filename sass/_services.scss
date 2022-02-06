@@ -50,14 +50,16 @@
                         text-transform: capitalize;
                         list-style-type: square;
                         font-size: 1.1rem;
-                        transition: .2s;
+                        transition: .3s;
                         border: 1px solid #fff;
+                        cursor: pointer;
 
                         &:hover {
                             background-color: $brand;
                             color: $text-main;
                             &::marker {
                                 color: $brand;
+                                transition: .3s;
                             }
                         }
                     }

@@ -9,6 +9,11 @@
     align-items: center;
     z-index: 5;
     font-family: $font-ubuntu;
+    transition: background-color .8s;
+    // SCROLL BG
+    &.scroll {
+        background: $brand;
+    }
     .brand {
         border: 1px solid $text-brand;
         padding: .2em;
@@ -291,10 +296,27 @@
                             transition: .3s;
                             padding: .5rem;
                             border-radius: 5px;
+                            position: relative;
+                            // LINK HOVER UNDERLINE
+                            &::after {
+                                position: absolute;
+                                content: '';
+                                bottom: 0;
+                                left: 50%;
+                                width: 0;
+                                height: .2rem;
+                                background: #f4f4f4;
+                                border-radius: 5px;
+                                transform: translateX(-50%);
+                                transition: .5s;
+                            }
 
 
                             &:hover {
-                                color: $brand;
+                                color: #fffa;
+                                &::after {
+                                    width: 50%;
+                                }
                             }
                         }
                     }
