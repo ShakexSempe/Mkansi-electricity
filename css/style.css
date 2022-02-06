@@ -118,7 +118,7 @@
             #header .navigation aside ul li {
               border: 1px solid orange;
               border-radius: 5px;
-              margin: 0 auto 2rem;
+              margin: 0 auto 1rem;
               width: 90%;
               padding: 1em .5em;
               list-style: none;
@@ -144,7 +144,7 @@
                 overflow: hidden;
                 position: relative;
                 height: inherit;
-                height: 3.5rem;
+                height: 3.4rem;
                 background: #f4f4f4;
                 transition: .5s; }
                 #header .navigation aside ul li.dropdown .dropdown-btn {
