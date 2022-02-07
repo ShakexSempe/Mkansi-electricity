@@ -51,7 +51,7 @@
   font-family: "Ubuntu", sans-serif;
   transition: background-color .8s; }
   #header.scroll {
-    background: orange; }
+    background: #ffa500; }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em;
@@ -119,7 +119,7 @@
             width: 70vw;
             height: auto; }
             #header .navigation aside ul li {
-              border: 1px solid orange;
+              border: 1px solid #ffa500;
               border-radius: 5px;
               margin: 0 auto 1rem;
               width: 90%;
@@ -139,7 +139,7 @@
                 width: 100%;
                 transition: .5s; }
               #header .navigation aside ul li i {
-                color: orange;
+                color: #ffa500;
                 width: 20%; }
               #header .navigation aside ul li.dropdown {
                 margin: 0 auto 2rem;
@@ -156,7 +156,7 @@
                   font-size: 1rem;
                   text-transform: uppercase;
                   height: 100%;
-                  border: 1px solid orange;
+                  border: 1px solid #ffa500;
                   border-radius: 5px;
                   background: #161616;
                   color: #fff;
@@ -186,7 +186,7 @@
                     padding: .5rem 0 1rem;
                     color: #f4f4f4;
                     width: 100%;
-                    border: 1px solid orange;
+                    border: 1px solid #ffa500;
                     border-radius: 5px; }
                 #header .navigation aside ul li.dropdown:hover {
                   height: 35vh; }
@@ -289,7 +289,7 @@
       color: #fff000; }
     #hero .slogan p {
       text-align: center;
-      color: orange; }
+      color: #ffa500; }
     @media (max-width: 767px) {
       #hero .slogan {
         top: 50%;
@@ -342,7 +342,7 @@
       border-radius: 2px;
       box-shadow: 2px 3px 0 #4855634b;
       color: #fff;
-      text-shadow: 2px 2px 0px orange; }
+      text-shadow: 2px 2px 0px #ffa500; }
 
 @media (max-width: 768px) {
   #about .about-article {
@@ -362,7 +362,7 @@
     #services .service-container .service-item .service-core h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: orange;
+      color: #ffa500;
       transition: 1s; }
       #services .service-container .service-item .service-core h3[data-scroll] {
         transform: scale(1);
@@ -389,10 +389,10 @@
         border: 1px solid #fff;
         cursor: pointer; }
         #services .service-container .service-item .service-type ul li:hover {
-          background-color: orange;
+          background-color: #ffa500;
           color: #f4f4f4; }
           #services .service-container .service-item .service-type ul li:hover::marker {
-            color: orange;
+            color: #ffa500;
             transition: .3s; }
   @media (min-width: 768px) {
     #services .section-description {
@@ -482,7 +482,7 @@
       width: 100%;
       height: .2rem;
       transition: 1.5s;
-      background: orange;
+      background: #ffa500;
       border-radius: 5px; }
     #form .contact-title[data-scroll] {
       transform: scale(1);
@@ -509,7 +509,7 @@
       border-radius: 5px;
       border: none;
       font-size: 1rem;
-      outline: 2px solid orange;
+      outline: 2px solid #ffa500;
       font-family: "Open Sans", sans-serif;
       transition: .5s; }
       #form .input-div input::placeholder, #form .input-div textarea::placeholder {
@@ -553,11 +553,11 @@
       z-index: -1;
       border-radius: 15px; }
     #form button::before {
-      background: linear-gradient(0deg, #ff7b00, orange);
+      background: linear-gradient(0deg, #ff7b00, #ffa500);
       box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 4px rgba(0, 0, 0, 0.15); }
     #form button::after {
       opacity: 0;
-      background: orange;
+      background: #ffa500;
       box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 2px rgba(0, 0, 0, 0.25); }
     #form button:hover {
       transform: scale(0.98); }
@@ -593,7 +593,7 @@
     align-items: center;
     padding: 5vh 1rem; }
     #footer .contact-form .footer-contact .contact-item {
-      border: 1px solid orange;
+      border: 1px solid #ffa500;
       border-radius: 5px;
       margin: 1rem auto;
       padding: 1rem 0;
@@ -691,7 +691,7 @@
           #footer .contact-form .footer-contact .contact-item:hover button i {
             transform: scale(2); }
       #footer .contact-form .footer-copyright {
-        background: orange;
+        background: #ffa500;
         width: 100%; } }
 
 * {
@@ -782,8 +782,8 @@
         transform: translateX(-50%);
         width: 0%;
         height: .2em;
-        background: orange;
-        background: linear-gradient(90deg, #ff7b00, orange);
+        background: #ffa500;
+        background: linear-gradient(90deg, #ff7b00, #ffa500);
         border-radius: 5px;
         opacity: 0;
         transition: 1s .1s; }
