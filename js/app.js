@@ -1,9 +1,10 @@
 const toggle = document.getElementById("toggle");
 const header = document.getElementById("header");
 const main = document.getElementById("main");
+const topBtn = document.getElementById("top-btn");
 const aside = document.getElementById("aside");
 const links = document.querySelectorAll('#aside ul li a');
-console.log(links);
+// console.log(links);
 
 document.addEventListener("scroll", () => {
     const scroll_position = window.scrollY;
@@ -11,8 +12,11 @@ document.addEventListener("scroll", () => {
 
     if (scroll_position < 100) {
         header.classList.remove("scroll");
+        topBtn.classList.remove("active");
+
     } else {
         header.classList.add("scroll");
+        topBtn.classList.add("active");
     }
 })
 
