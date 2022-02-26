@@ -620,16 +620,18 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600; }
         #footer .contact-form .footer-contact .contact-item .contact-info button {
+          border: 1px solid red;
           border: none;
           width: 50%;
           display: flex;
           align-items: center;
           transition: .5s;
-          background: #fff; }
+          background: #fff;
+          position: relative; }
           #footer .contact-form .footer-contact .contact-item .contact-info button i {
             transition: .5s;
             color: #ff7b00;
-            opacity: .5; }
+            font-size: 1.5rem; }
           #footer .contact-form .footer-contact .contact-item .contact-info button a {
             color: #f4f4f4;
             text-decoration: none;
@@ -637,35 +639,16 @@
             background: #ff7b00;
             border-radius: 10px;
             padding: .5rem 1rem;
+            margin: 0 auto;
             width: auto;
             text-transform: uppercase;
             transition: .5s;
             box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.295); }
-            #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
-              transform: scale(0.9); }
-            #footer .contact-form .footer-contact .contact-item .contact-info button a:active {
-              transform: scale(0.95); }
-          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll] {
-            transform: scale(1);
-            opacity: 1; }
-          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
-            transform: translateX(20%); }
-            #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
-              transform: translateX(20%) scale(0.95);
-              transition: .2s; }
-            @media (min-width: 768px) {
-              #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a {
-                transform: translateX(30%); }
-                #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] a:hover {
-                  transform: translateX(30%) scale(0.95); } }
-          #footer .contact-form .footer-contact .contact-item .contact-info button[data-scroll="in"] i {
-            transform: scale(2);
-            opacity: 1; }
         #footer .contact-form .footer-contact .contact-item .contact-info p {
           color: #000;
           margin: .5rem auto; }
-      #footer .contact-form .footer-contact .contact-item:hover {
-        transform: scale(1.03); }
+          #footer .contact-form .footer-contact .contact-item .contact-info p a:hover {
+            text-decoration: none; }
 
 #footer .footer-copyright {
   margin: 5vh auto 0;
@@ -691,10 +674,6 @@
         display: flex; }
         #footer .contact-form .footer-contact .contact-item {
           margin: 0; }
-          #footer .contact-form .footer-contact .contact-item:hover button a {
-            transform: translateX(50%); }
-          #footer .contact-form .footer-contact .contact-item:hover button i {
-            transform: scale(2); }
       #footer .contact-form .footer-copyright {
         background: #ffa500;
         width: 100%; } }
