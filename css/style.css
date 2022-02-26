@@ -66,15 +66,19 @@
   #header .logo {
     overflow: hidden;
     width: 30vw;
-    height: 100%; }
+    height: 100%;
+    border-radius: 5px; }
     #header .logo figure {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden; }
       #header .logo figure img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        object-position: left; }
+        object-position: left;
+        border-radius: 5px; }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -86,16 +90,20 @@
         font-size: 1.2em; }
       #header .logo {
         overflow: hidden;
-        width: 30vw;
-        height: 100%; }
+        width: 10rem;
+        height: 100%;
+        border-radius: 5px; }
         #header .logo figure {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          border-radius: 5px;
+          overflow: hidden; }
           #header .logo figure img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            object-position: left; }
+            object-position: left;
+            border-radius: 5px; }
       #header .navigation {
         border: none; }
         #header .navigation nav {
@@ -327,12 +335,15 @@
 #about .about-article {
   background: #ffff;
   border-radius: 5px;
-  margin: 5vh 5vw;
+  margin: 5vh 1rem;
   text-transform: none;
   line-height: 1.6;
   overflow: hidden;
   text-align: left;
   font-family: "Open Sans", sans-serif; }
+  @media (min-width: 768px) {
+    #about .about-article {
+      margin: 5vh 5vw; } }
   #about .about-article p {
     margin-bottom: 2rem; }
     #about .about-article p span {
@@ -360,6 +371,7 @@
     padding: 5vh 1rem;
     font-family: "Open Sans", sans-serif; }
   #services .service-container .service-item {
+    margin: 5vh 0;
     padding: 0 1rem; }
     #services .service-container .service-item .service-core h3 {
       font-size: 1.5rem;
@@ -371,31 +383,48 @@
         letter-spacing: .25em; }
       #services .service-container .service-item .service-core h3[data-scroll="in"] {
         letter-spacing: .05em; }
+    #services .service-container .service-item .service-core p {
+      font-size: 1.1rem;
+      margin: .5rem 0; }
     #services .service-container .service-item .service-core i {
       font-size: 2rem;
-      margin: 0 0 1rem;
-      animation: icon 2s infinite; }
+      margin: 0 0 1rem; }
+      #services .service-container .service-item .service-core i.fa-wrench {
+        animation: icon 2s infinite; }
 
 @keyframes icon {
   50% {
     transform: rotate(20deg);
     color: #000a; } }
+      #services .service-container .service-item .service-core i.fa-paint-roller, #services .service-container .service-item .service-core i.fa-plug {
+        animation: upDown 2s infinite;
+        color: #000; }
+
+@keyframes upDown {
+  50% {
+    transform: translateY(1rem);
+    color: #000a; } }
     #services .service-container .service-item .service-type {
       background-color: #f4f4f4; }
-      #services .service-container .service-item .service-type ul li {
-        padding: 1rem .1rem;
-        text-transform: capitalize;
-        list-style-type: square;
-        font-size: 1.1rem;
-        transition: .3s;
-        border: 1px solid #fff;
-        cursor: pointer; }
-        #services .service-container .service-item .service-type ul li:hover {
-          background-color: #ffa500;
-          color: #f4f4f4; }
-          #services .service-container .service-item .service-type ul li:hover::marker {
-            color: #ffa500;
-            transition: .3s; }
+      #services .service-container .service-item .service-type ul {
+        margin-left: .5rem; }
+        @media (min-width: 768px) {
+          #services .service-container .service-item .service-type ul {
+            width: 50%; } }
+        #services .service-container .service-item .service-type ul li {
+          padding: 1rem .1rem;
+          text-transform: capitalize;
+          list-style-type: square;
+          font-size: 1.1rem;
+          transition: .3s;
+          border: 1px solid #fff;
+          cursor: pointer; }
+          #services .service-container .service-item .service-type ul li:hover {
+            background-color: #ffa500;
+            color: #f4f4f4; }
+            #services .service-container .service-item .service-type ul li:hover::marker {
+              color: #ffa500;
+              transition: .3s; }
   @media (min-width: 768px) {
     #services .section-description {
       padding: 5vh 5vw;
@@ -413,6 +442,9 @@
   #projects .gallery .project-item {
     overflow: hidden;
     height: auto; }
+    #projects .gallery .project-item[data-scroll] {
+      transition: 1.5s;
+      transform: scale(1); }
     #projects .gallery .project-item figure {
       width: 100%;
       height: auto;

@@ -35,17 +35,21 @@
         overflow: hidden;
         width: 30vw;
         height: 100%;
+        border-radius: 5px;
         // border: 1px solid $brand;
 
         figure {
             width: 100%;
             height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
                 object-position: left;
+                border-radius: 5px;
             }
         }
     }
@@ -67,19 +71,25 @@
         .logo {
             // display: none;
             overflow: hidden;
-            width: 30vw;
+            width: 10rem;
             height: 100%;
+            border-radius: 5px;
+
             // border: 1px solid blue;
 
             figure {
                 width: 100%;
                 height: 100%;
+                border-radius: 5px;
+                overflow: hidden;
 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                     object-position: left;
+                border-radius: 5px;
+
                 }
             }
         }

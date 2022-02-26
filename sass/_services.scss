@@ -9,6 +9,7 @@
         // border: 1px solid red;
 
         .service-item {
+            margin: 5vh 0;
             padding: 0 1rem;
 
             .service-core {
@@ -28,15 +29,33 @@
                         letter-spacing: .05em;
                     }
                 }
+
+                p {
+                    font-size: 1.1rem;
+                    margin: .5rem 0;
+                }
                 i {
                     font-size: 2rem;
                     margin: 0 0 1rem;
-                    animation: icon 2s infinite;
+                    // WRENCH ANIMATION
+                    &.fa-wrench {
+                        animation: icon 2s infinite;
+                        @keyframes icon {
+                            50% {
+                                transform: rotate(20deg);
+                                color: #000a;
+                            }
+                        }
+                    }
 
-                    @keyframes icon {
-                        50% {
-                            transform: rotate(20deg);
-                            color: #000a;
+                    &.fa-paint-roller, &.fa-plug {
+                        animation: upDown 2s infinite;
+                        color: #000;
+                        @keyframes upDown {
+                            50% {
+                                transform: translateY(1rem);
+                                color: #000a;
+                            }
                         }
                     }
                 }
@@ -45,6 +64,10 @@
                 // border: 1px solid black;
                 background-color: #f4f4f4;
                 ul {
+                    margin-left: .5rem;
+                    @media (min-width: 768px) {
+                        width: 50%;
+                    }
                     li {
                         padding: 1rem .1rem;
                         text-transform: capitalize;

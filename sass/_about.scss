@@ -3,7 +3,10 @@
         // border: 1px solid $brand;
         background: $bg-main;
         border-radius: 5px;
-        margin: 5vh 5vw;
+        margin: 5vh 1rem;
+        @media(min-width: 768px) {
+            margin: 5vh 5vw;
+        }
         text-transform: none;
         line-height: 1.6;
         // height: 40vh;

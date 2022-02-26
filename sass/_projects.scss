@@ -13,6 +13,11 @@
         .project-item {
             overflow: hidden;
             height: auto;
+            // DATA-SCROLL
+            &[data-scroll] {
+                transition: 1.5s;
+                transform: scale(1);
+            }
             figure {
                 // border: 3px solid yellow;
                 width: 100%;
