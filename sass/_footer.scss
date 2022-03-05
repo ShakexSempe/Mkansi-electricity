@@ -114,16 +114,15 @@
         text-transform: capitalize;
         background: $brand-dark;
         padding: 5vh 0;
-
-        p {
-            
         // DATA-SCROLL
         &[data-scroll] {
-            transform: translateY(100%);
+            transform: translateY(50%);
         }
         &[data-scroll="in"] {
             transform: translateY(0);
         }
+
+        p {
             color: $text-main;
             line-height: 1.6;
             a {

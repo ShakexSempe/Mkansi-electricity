@@ -740,13 +740,13 @@
   text-transform: capitalize;
   background: #ff7b00;
   padding: 5vh 0; }
+  #footer .footer-copyright[data-scroll] {
+    transform: translateY(50%); }
+  #footer .footer-copyright[data-scroll="in"] {
+    transform: translateY(0); }
   #footer .footer-copyright p {
     color: #f4f4f4;
     line-height: 1.6; }
-    #footer .footer-copyright p[data-scroll] {
-      transform: translateY(100%); }
-    #footer .footer-copyright p[data-scroll="in"] {
-      transform: translateY(0); }
     #footer .footer-copyright p a {
       color: #f4f4f4;
       text-decoration: none; }
