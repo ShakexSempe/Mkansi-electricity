@@ -720,19 +720,50 @@
             color: #f4f4f4;
             text-decoration: none;
             line-height: 1.5;
-            background: #ff7b00;
-            border-radius: 10px;
+            background: #ffa500;
+            border-radius: 20px;
             padding: .5rem 1rem;
             margin: 0 auto;
             width: auto;
             text-transform: uppercase;
-            transition: .5s;
-            box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px rgba(0, 0, 0, 0.295); }
+            transition: .3s;
+            position: relative;
+            isolation: isolate; }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a::before, #footer .contact-form .footer-contact .contact-item .contact-info button a::after {
+              position: absolute;
+              content: '';
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              transition: .2s;
+              z-index: -1;
+              border-radius: 20px;
+              border: none; }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a::before {
+              background: linear-gradient(0deg, #ff7b00, #ffa500);
+              box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25); }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a::after {
+              opacity: 0;
+              background: #ffa500;
+              box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35); }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
+              transform: scale(0.99); }
+            #footer .contact-form .footer-contact .contact-item .contact-info button a:active {
+              transform: scale(0.95); }
+              #footer .contact-form .footer-contact .contact-item .contact-info button a:active::before {
+                opacity: 0; }
+              #footer .contact-form .footer-contact .contact-item .contact-info button a:active::after {
+                opacity: 1; }
         #footer .contact-form .footer-contact .contact-item .contact-info p {
           color: #000;
           margin: .5rem auto; }
-          #footer .contact-form .footer-contact .contact-item .contact-info p a:hover {
+          #footer .contact-form .footer-contact .contact-item .contact-info p a {
+            color: #000;
             text-decoration: none; }
+            #footer .contact-form .footer-contact .contact-item .contact-info p a:hover {
+              color: #ffa500;
+              text-decoration: underline; }
 
 #footer .footer-copyright {
   margin: 5vh auto 0;

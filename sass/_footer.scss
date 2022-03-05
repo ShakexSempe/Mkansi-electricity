@@ -74,24 +74,49 @@
                         color: $text-main;
                         text-decoration: none;
                         line-height: 1.5;
-                        background: $brand-dark;
-                        border-radius: 10px;
+                        background: $brand;
+                        border-radius: 20px;
                         padding: .5rem 1rem;
                         margin: 0 auto;
                         width: auto;
                         // margin: 1rem auto;
                         text-transform: uppercase;
-                        transition: .5s;
-                        box-shadow: inset 2px 2px 2px #fffa,
-                                    inset -2px -2px 2px #000a,
-                                    3px 3px 3px rgba(0, 0, 0, 0.295) ;
+                        transition: .3s;
+                        position: relative;
+                        isolation: isolate;
+                        // box-shadow: inset 2px 2px 2px #fffa,
+                        //             inset -2px -2px 2px #000a,
+                        //             3px 3px 3px rgba(0, 0, 0, 0.295) ;
     
-                        // &:hover {
-                        //     transform: scale(.9);
-                        // }
-                        // &:active {
-                        //     transform: scale(.95);
-                        // }
+                        &::before, &::after {
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: .2s;
+                            z-index: -1;
+                            border-radius: 20px;
+                            border: none;
+                        }
+                        &::before {
+                            background: $brand-btn;
+                            box-shadow: $btn-shadow;
+                        }
+                        &::after {
+                            opacity: 0;
+                            background: $brand-btn-hover;
+                            box-shadow: $btn-shadow-hover;
+                        }
+                        &:hover {
+                            transform: scale(.99);
+                        }
+                        &:active {
+                            transform: scale(.95);
+                            &::before {opacity: 0;}
+                            &::after {opacity: 1;}
+                        }
                     }
                 }
                 p {
@@ -99,8 +124,11 @@
                     margin: .5rem auto;
                     // width: 50%;
                     a {
+                        color: $text-second;
+                        text-decoration: none;
                         &:hover {
-                            text-decoration: none;
+                            color: $brand;
+                            text-decoration: underline;
                         }
                     }
                 }
