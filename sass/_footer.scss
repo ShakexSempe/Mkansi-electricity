@@ -116,6 +116,14 @@
         padding: 5vh 0;
 
         p {
+            
+        // DATA-SCROLL
+        &[data-scroll] {
+            transform: translateY(100%);
+        }
+        &[data-scroll="in"] {
+            transform: translateY(0);
+        }
             color: $text-main;
             line-height: 1.6;
             a {
