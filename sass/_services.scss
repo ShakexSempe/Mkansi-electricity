@@ -11,24 +11,29 @@
         .service-item {
             margin: 10vh 0;
             padding: 0 1rem;
+            position: relative;
+            isolation: isolate;
+            h3 {
+                position: sticky;
+                top: 7vh;
+                font-size: 1.5rem;
+                padding: .5rem 0;
+                color: $brand;
+                transition: 1s;
+                background: #fffa;
+                z-index:2;
 
-            .service-core {
-                // border: 1px solid blue;
-
-                h3 {
-                    font-size: 1.5rem;
-                    margin-bottom: 1rem;
-                    color: $brand;
-                    transition: 1s;
-
-                    &[data-scroll] {
-                        transform: scale(1);
-                        letter-spacing: .25em;
-                    }
-                    &[data-scroll="in"] {
-                        letter-spacing: .05em;
-                    }
+                &[data-scroll] {
+                    transform: scale(1);
+                    letter-spacing: .25em;
                 }
+                &[data-scroll="in"] {
+                    letter-spacing: .05em;
+                }
+            }
+            .service-core {
+                margin: 5vh 0;
+                
 
                 p {
                     font-size: 1.1rem;
@@ -37,6 +42,7 @@
                 i {
                     font-size: 2rem;
                     margin: 0 0 1rem;
+                    z-index: 1;
                     // WRENCH ANIMATION
                     &.fa-wrench {
                         animation: icon 2s infinite;
