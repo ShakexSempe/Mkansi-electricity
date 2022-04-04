@@ -81,7 +81,7 @@
         object-fit: contain;
         object-position: left;
         border-radius: 5px;
-        transform: translateY(1rem);
+        transform: translateY(-2rem);
         transition: .3s; }
   #header .navigation {
     position: relative;
@@ -295,13 +295,17 @@
     left: 50%;
     top: 30vh;
     width: 90%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    overflow: hidden; }
     #hero .hero-title h1 {
       color: #ffa500;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       width: auto;
       text-transform: uppercase; }
+      @media (min-width: 1024px) {
+        #hero .hero-title h1 {
+          font-size: 2.5rem; } }
       #hero .hero-title h1 span {
         color: #fff; }
     #hero .hero-title ul {
@@ -312,9 +316,12 @@
       list-style: none; }
       #hero .hero-title ul li {
         color: #fff;
-        font-size: 1.5rem; }
+        font-size: 1.15rem; }
         #hero .hero-title ul li:nth-child(odd) {
           color: #ffa500; }
+        @media (min-width: 1024px) {
+          #hero .hero-title ul li {
+            font-size: 1.9rem; } }
   #hero .cta {
     text-align: center;
     position: absolute;
@@ -926,10 +933,10 @@
       transition: .3s;
       margin: 0 auto;
       transition: .5s; }
-    #container #top-btn.active {
+    #container #top-btn.active-top-btn {
       opacity: 1;
       transform: translateY(0); }
-      #container #top-btn.active:hover {
+      #container #top-btn.active-top-btn:hover {
         transition: .3s;
         transform: scale(1.1); }
     #container #top-btn:active {

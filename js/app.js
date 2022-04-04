@@ -20,6 +20,30 @@ const links = document.querySelectorAll('#aside ul li a');
 //     }
 // })
 // HERO INTERSECTION OBSERVER
+const hero = document.getElementById("hero");
+const heroOptions = {
+    rootMargin: "-50% 0px 0% 0px"
+}
+console.log(hero);
+
+
+const heroObserver = new IntersectionObserver(
+    function(entries, heroObserver){
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                console.log("header NOT IO");
+                topBtn.classList.add("active-top-btn");
+                header.classList.add("active-header");
+            } else {
+                console.log("header IS IO");
+                topBtn.classList.remove("active-top-btn");
+                header.classList.remove("active-header");
+            }
+        })
+    }, heroOptions
+);
+heroObserver.observe(hero);
+
 
 toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
