@@ -6,19 +6,20 @@ const aside = document.getElementById("aside");
 const links = document.querySelectorAll('#aside ul li a');
 // console.log(links);
 
-document.addEventListener("scroll", () => {
-    const scroll_position = window.scrollY;
-    const scroll_height = window.pageYOffset;
+// document.addEventListener("scroll", () => {
+//     const scroll_position = window.scrollY;
+//     const scroll_height = window.pageYOffset;
 
-    if (scroll_position < 100) {
-        header.classList.remove("scroll");
-        topBtn.classList.remove("active");
+//     if (scroll_position < 100) {
+//         header.classList.remove("scroll");
+//         topBtn.classList.remove("active");
 
-    } else {
-        header.classList.add("scroll");
-        topBtn.classList.add("active");
-    }
-})
+//     } else {
+//         header.classList.add("scroll");
+//         topBtn.classList.add("active");
+//     }
+// })
+// HERO INTERSECTION OBSERVER
 
 toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");

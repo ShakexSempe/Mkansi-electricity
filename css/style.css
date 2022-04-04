@@ -50,8 +50,10 @@
   z-index: 5;
   font-family: "Ubuntu", sans-serif;
   transition: background-color 1s; }
-  #header.scroll {
+  #header.active-header {
     background: #ffa500; }
+    #header.active-header .logo figure img {
+      transform: translateY(0); }
   #header .brand {
     border: 1px solid #ffa500;
     padding: .2em;
@@ -78,7 +80,9 @@
         height: 100%;
         object-fit: contain;
         object-position: left;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transform: translateY(1rem);
+        transition: .3s; }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -223,7 +227,7 @@
       #header .brand a {
         font-size: 1.5em; }
       #header .logo {
-        width: auto; }
+        width: 15rem; }
       #header .navigation {
         display: grid;
         place-items: center;
@@ -270,9 +274,7 @@
   background-size: 100%;
   background-position: center top;
   position: relative;
-  isolation: isolate;
-  display: grid;
-  align-items: center; }
+  isolation: isolate; }
   @media (max-width: 768px) {
     #hero {
       background-size: cover; } }
@@ -284,96 +286,84 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(40deg, orange, #000);
+    background-image: linear-gradient(30deg, #000, #000a);
     opacity: .5;
+    opacity: .8;
     z-index: -1; }
-  #hero .slogan {
-    overflow: hidden;
-    z-index: 3;
-    display: flex;
-    align-items: center; }
-    #hero .slogan .cta {
-      margin: 5vh auto;
-      text-align: center; }
-      @media (min-width: 768px) {
-        #hero .slogan .cta {
-          margin: 0; } }
-      #hero .slogan .cta a {
-        font-size: 1.5rem;
-        color: #fff;
-        border: none;
-        padding: .5rem;
-        width: 20rem;
-        display: block;
-        position: relative;
-        text-decoration: none;
-        text-transform: capitalize;
-        border-radius: 20px;
-        background: #ffa500;
-        isolation: isolate;
-        letter-spacing: .1rem;
-        transition: .3s; }
-        #hero .slogan .cta a::after, #hero .slogan .cta a::before {
-          position: absolute;
-          content: '';
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: .2s;
-          border-radius: 20px;
-          z-index: -1; }
-        #hero .slogan .cta a::before {
-          background: linear-gradient(0deg, #b35600, #ffa600);
-          box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25); }
-        #hero .slogan .cta a::after {
-          opacity: 0;
-          background: linear-gradient(0deg, #ffa600, #b35600);
-          box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35); }
-        #hero .slogan .cta a:active, #hero .slogan .cta a:hover {
-          transition: .2s;
-          transform: scale(0.98);
-          letter-spacing: normal; }
-          #hero .slogan .cta a:active::before, #hero .slogan .cta a:hover::before {
-            opacity: 0; }
-          #hero .slogan .cta a:active::after, #hero .slogan .cta a:hover::after {
-            opacity: 1; }
-    #hero .slogan figure {
-      overflow: hidden;
-      border-radius: 5px; }
-      #hero .slogan figure img {
-        width: 100%; }
-    #hero .slogan h1 {
-      font-size: 3em;
-      margin-bottom: 1rem;
-      color: #fff000; }
-    #hero .slogan p {
+  #hero .hero-title {
+    position: absolute;
+    left: 50%;
+    top: 30vh;
+    width: 90%;
+    transform: translate(-50%, -50%); }
+    #hero .hero-title h1 {
+      color: #ffa500;
       text-align: center;
-      color: #ffa500; }
-    @media (max-width: 767px) {
-      #hero .slogan {
-        text-align: center;
-        border-radius: 5px;
-        flex-direction: column; }
-        #hero .slogan figure {
-          width: 20rem;
-          height: auto;
-          object-fit: cover;
-          object-fit: contain; } }
-  @media (min-width: 768px) {
-    #hero {
-      background-size: cover; }
-      #hero .slogan {
-        z-index: 3;
-        justify-content: space-around; }
-        #hero .slogan figure {
-          width: 25rem;
-          height: auto;
-          overflow: hidden;
-          border-radius: 5px; }
-          #hero .slogan figure img {
-            width: 100%;
-            height: 100%;
-            border-radius: 5px; } }
+      font-size: 2rem;
+      width: auto;
+      text-transform: uppercase; }
+      #hero .hero-title h1 span {
+        color: #fff; }
+    #hero .hero-title ul {
+      margin-top: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none; }
+      #hero .hero-title ul li {
+        color: #fff;
+        font-size: 1.5rem; }
+        #hero .hero-title ul li:nth-child(odd) {
+          color: #ffa500; }
+  #hero .cta {
+    text-align: center;
+    position: absolute;
+    bottom: 30vh;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      #hero .cta {
+        margin: 0; } }
+    #hero .cta a {
+      font-size: 1.5rem;
+      color: #fff;
+      border: none;
+      padding: .5rem;
+      width: 20rem;
+      display: block;
+      position: relative;
+      text-decoration: none;
+      text-transform: capitalize;
+      border-radius: 20px;
+      background: #ffa500;
+      isolation: isolate;
+      letter-spacing: .1rem;
+      transition: .3s; }
+      #hero .cta a::after, #hero .cta a::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .2s;
+        border-radius: 20px;
+        z-index: -1; }
+      #hero .cta a::before {
+        background: linear-gradient(0deg, #b35600, #ffa600);
+        box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25); }
+      #hero .cta a::after {
+        opacity: 0;
+        background: linear-gradient(0deg, #ffa600, #b35600);
+        box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35); }
+      #hero .cta a:active, #hero .cta a:hover {
+        transition: .2s;
+        transform: scale(0.98);
+        letter-spacing: normal; }
+        #hero .cta a:active::before, #hero .cta a:hover::before {
+          opacity: 0; }
+        #hero .cta a:active::after, #hero .cta a:hover::after {
+          opacity: 1; }
 
 #about .about-article {
   background: #ffff;
@@ -425,7 +415,7 @@
       padding: .5rem 0;
       color: #ffa500;
       transition: 1s;
-      background: #fffa;
+      background: #fff;
       z-index: 2; }
       #services .service-container .service-item h3[data-scroll] {
         transform: scale(1);

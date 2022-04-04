@@ -3,14 +3,13 @@
         background-size: cover;
     }
     height: 100vh;
+    // border: 2px solid blue;
     background-image: url(../img/work-min.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center top;
     position: relative;
     isolation: isolate;
-    display: grid;
-    align-items: center;
 
     // OVERLAY
     &::after {
@@ -21,128 +20,98 @@
         width: 100%;
         height: 100%;
         background-image: $brand-overlay;
+        background-image: $brand-overlay-dark;
         opacity: .5;
+        opacity: .8;
         z-index: -1;
     }
 
-    .slogan {
-        overflow: hidden;
-        z-index: 3;
-        display: flex;
-        align-items: center;
-
-        .cta {
-            margin: 5vh auto;
-            text-align: center;
-            @media (min-width: 768px) {
-                margin: 0;
-            }
-            a {
-                font-size: 1.5rem;
-                color: #fff;
-                border: none;
-                padding: .5rem;
-                width: 20rem;
-                display: block;
-                position: relative;
-                text-decoration: none;
-                text-transform: capitalize;
-                border-radius: 20px;
-                background: $brand;
-                isolation: isolate;
-                letter-spacing: .1rem;
-                transition: .3s;
-                
-                &::after, &::before {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    transition: .2s;
-                    border-radius: 20px;
-                    z-index: -1;
-                }
-                &::before {
-                    background: $cta-btn;
-                    box-shadow: $btn-shadow;
-                }
-                &::after {
-                    opacity: 0;
-                    background: $cta-btn-hover;
-                    box-shadow: $btn-shadow-hover;
-                }
-                
-                &:active, &:hover {
-                    transition: .2s;
-                    transform: scale(.98);
-                    letter-spacing: normal;
-                    &::before {opacity: 0;}
-                    &::after {opacity: 1;}
-                }
-            }
-        }
-
-        figure {
-            overflow: hidden;
-            border-radius: 5px;
-
-            img {
-                width: 100%;
-            }
-        }
-
+    .hero-title {
+        position: absolute;
+        left: 50%;
+        top: 30vh;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        // border: 1px solid #fff;
         h1 {
-            font-size: 3em;
-            margin-bottom: 1rem;
-            color: #fff000;
-        }
-
-        p {
-            text-align: center;
             color: $brand;
-        }
-        @media (max-width: 767px) {
-            // top: 50%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-            // width: 70vw; 
-            // height: 40vh;
             text-align: center;
-            border-radius: 5px;
-            flex-direction: column;
-
-            figure {
-                width: 20rem;
-                height: auto;
-                object-fit: cover;
-                object-fit: contain;
+            font-size: 2rem;
+            width: auto;
+            text-transform: uppercase;
+            span {
+                color: #fff;
             }
-
         }
-        
-    }
-    @media (min-width: 768px) {
-        background-size: cover;
-
-        .slogan {
-            z-index: 3;
-            justify-content: space-around;
-    
-            figure {
-                width: 25rem;
-                height: auto;
-                overflow: hidden;
-                border-radius: 5px;
-    
-    
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 5px;
-                }
+        ul {
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            // border: 1px solid blue;
+            li {
+                color: #fff;
+                font-size: 1.5rem;
+                &:nth-child(odd){
+                    color:$brand;
                 }
             }
+        }
+    }
+    .cta {
+        text-align: center;
+        position: absolute;
+        bottom: 30vh;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+        a {
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            padding: .5rem;
+            width: 20rem;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            text-transform: capitalize;
+            border-radius: 20px;
+            background: $brand;
+            isolation: isolate;
+            letter-spacing: .1rem;
+            transition: .3s;
+            
+            &::after, &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .2s;
+                border-radius: 20px;
+                z-index: -1;
+            }
+            &::before {
+                background: $cta-btn;
+                box-shadow: $btn-shadow;
+            }
+            &::after {
+                opacity: 0;
+                background: $cta-btn-hover;
+                box-shadow: $btn-shadow-hover;
+            }
+            
+            &:active, &:hover {
+                transition: .2s;
+                transform: scale(.98);
+                letter-spacing: normal;
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
     }
 }
