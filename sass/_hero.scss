@@ -7,6 +7,7 @@
     background-image: url(../img/work-min.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
     background-position: center top;
     position: relative;
     isolation: isolate;
@@ -48,7 +49,7 @@
             }
         }
         ul {
-            margin-top: 5vh;
+            margin-top: 2vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -71,16 +72,18 @@
         position: absolute;
         bottom: 30vh;
         left: 50%;
+        width: 15rem;
         transform: translateX(-50%);
         @media (min-width: 768px) {
             margin: 0;
         }
         a {
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: #fff;
             border: none;
-            padding: .5rem;
-            width: 20rem;
+            padding: .5rem 0;
+            width: 15rem;
+            width: 100%;
             display: block;
             position: relative;
             text-decoration: none;
@@ -119,6 +122,13 @@
                 &::before {opacity: 0;}
                 &::after {opacity: 1;}
             }
+        }
+
+        p {
+            color: #ddd;
+            margin-top: 1rem;
+            text-transform: capitalize;
+            text-align: center;
         }
     }
 }

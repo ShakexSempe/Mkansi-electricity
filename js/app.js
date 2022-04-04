@@ -49,7 +49,9 @@ toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
     main.classList.toggle("active");
-    header.classList.remove("scroll");
+    if(!header.classList.contains("active-header")){
+        header.classList.add("active-header");
+    }
 });
 
 links.forEach(link => {
@@ -57,6 +59,7 @@ links.forEach(link => {
         aside.classList.remove("active");
         toggle.classList.remove("active");
         main.classList.remove("active");
+        
     });
 });
 
