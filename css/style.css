@@ -44,45 +44,35 @@
   width: 100%;
   max-height: 8vh;
   background-color: #000;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
   font-family: "Ubuntu", sans-serif;
-  transition: background-color 1s; }
+  transition: background-color .5s; }
   #header.active-header {
-    background: #ffa500; }
-    #header.active-header .logo figure img {
-      transform: translateY(0); }
-  #header .brand {
-    border: 1px solid #ffa500;
-    padding: .2em;
-    border-radius: 5px;
-    display: grid;
-    place-items: center; }
-    #header .brand a {
-      color: #ffa500;
-      text-decoration: none; }
-      #header .brand a span {
-        color: #fff; }
+    background: #ffa500;
+    background: #000; }
   #header .logo {
-    overflow: hidden;
-    width: 30vw;
-    height: 100%;
-    border-radius: 5px; }
-    #header .logo figure {
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      overflow: hidden; }
-      #header .logo figure img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: left;
-        border-radius: 5px;
-        transform: translateY(-2rem);
-        transition: .3s; }
+    width: 15rem;
+    position: relative; }
+    #header .logo a h1 {
+      color: #ffa500;
+      position: absolute;
+      top: -.5rem;
+      left: 0;
+      font-size: .8rem;
+      text-transform: uppercase;
+      transition: .5s;
+      font-family: "Ubuntu", sans-serif; }
+      #header .logo a h1 span {
+        color: #fff; }
+    #header .logo.active-logo a h1 {
+      transform: scale(2) translateX(13vw) translateY(7vh); }
+      @media (min-width: 1024px) {
+        #header .logo.active-logo a h1 {
+          transform: scale(3) translateX(13vw) translateY(10vh); } }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -90,24 +80,6 @@
     #header {
       height: 7vh;
       padding: 1vh 1rem; }
-      #header .brand a {
-        font-size: 1.2em; }
-      #header .logo {
-        overflow: hidden;
-        width: 13rem;
-        height: 100%;
-        border-radius: 5px; }
-        #header .logo figure {
-          width: 100%;
-          height: 100%;
-          border-radius: 5px;
-          overflow: hidden; }
-          #header .logo figure img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: left;
-            border-radius: 5px; }
       #header .navigation {
         border: none; }
         #header .navigation nav {
@@ -119,6 +91,7 @@
           width: 100%;
           height: 100vh;
           background-color: #161616;
+          background-color: #000;
           padding: 1em;
           transition: 1s;
           z-index: -1;
@@ -222,12 +195,7 @@
   @media (min-width: 768px) {
     #header {
       height: 10vh;
-      padding: .5em 5vw;
-      overflow: hidden; }
-      #header .brand a {
-        font-size: 1.5em; }
-      #header .logo {
-        width: 15rem; }
+      padding: .5em 5vw; }
       #header .navigation {
         display: grid;
         place-items: center;
@@ -294,11 +262,12 @@
   #hero .hero-title {
     position: absolute;
     left: 50%;
-    top: 30vh;
+    top: 50vh;
     width: 90%;
     transform: translate(-50%, -50%);
     overflow: hidden; }
     #hero .hero-title h1 {
+      display: none;
       color: #ffa500;
       text-align: center;
       font-size: 1.5rem;
@@ -317,16 +286,20 @@
       list-style: none; }
       #hero .hero-title ul li {
         color: #fff;
-        font-size: 1.15rem; }
-        #hero .hero-title ul li:nth-child(odd) {
-          color: #ffa500; }
+        opacity: .2;
+        font-size: 1.15rem;
+        transition: 1s; }
         @media (min-width: 1024px) {
           #hero .hero-title ul li {
             font-size: 1.9rem; } }
+    #hero .hero-title.active-hero-title ul li {
+      opacity: 1; }
+      #hero .hero-title.active-hero-title ul li:nth-child(odd) {
+        color: #ffa500; }
   #hero .cta {
     text-align: center;
     position: absolute;
-    bottom: 30vh;
+    bottom: 20vh;
     left: 50%;
     width: 15rem;
     transform: translateX(-50%); }
@@ -817,13 +790,11 @@
   font-family: "Ubuntu", sans-serif; }
   #container #main {
     width: 100%;
-    margin-top: 5vh;
     padding: 0;
     min-height: 100vh;
     background-color: #ffff; }
     @media (min-width: 768px) {
       #container #main {
-        margin-top: 5vh;
         padding: 0; } }
     #container #main::after {
       position: fixed;

@@ -4,61 +4,54 @@
     width: 100%;
     max-height: 8vh;
     background-color: $header-bg;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
     font-family: $font-ubuntu;
-    transition: background-color 1s;
+    transition: background-color .5s;
     // SCROLL BG
     &.active-header {
         background: $brand;
-        .logo {
-            figure {
-                img {
-                    transform: translateY(0);
-                }
-            }
-        }
-    }
-    .brand {
-        border: 1px solid $text-brand;
-        padding: .2em;
-        border-radius: 5px;
-        display: grid;
-        place-items: center;
-        
-        a {
-            color: $text-brand;
-            text-decoration: none;
-            
-            span {
-                color: #fff;
-            }
-        }
+        background: #000;
     }
     .logo {
         // display: none;
-        overflow: hidden;
-        width: 30vw;
-        height: 100%;
-        border-radius: 5px;
+        // height: 100%;
+        width: 15rem;
         // border: 1px solid $brand;
+        position: relative;
+        a {
+            // border: 2px solid yellow;
+            
+            h1 {
+                // color: red;
+                color: $brand;
+                // border: 1px solid blue;
+                position: absolute;
+                top: -.5rem;
+                left: 0;
+                font-size: .8rem;
+                text-transform: uppercase;
+                transition: .5s;
+                font-family: $font-ubuntu;
 
-        figure {
-            width: 100%;
-            height: 100%;
-            border-radius: 5px;
-            overflow: hidden;
+                span {
+                    color: #fff;
+                }
+            }
+        }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-position: left;
-                border-radius: 5px;
-                transform: translateY(-2rem);
-                transition: .3s;
+        &.active-logo {
+            a {
+                h1 {
+                    transform: scale(2) translateX(13vw) translateY(7vh);
+
+                    @media (min-width: 1024px) {
+                        transform: scale(3) translateX(13vw) translateY(10vh);
+                    }
+                }
             }
         }
     }
@@ -72,36 +65,7 @@
     @media (max-width: 768px) {
         height: 7vh;
         padding: 1vh 1rem;
-        .brand {
-            a {
-                font-size: 1.2em;
-            }
-        }
-        .logo {
-            // display: none;
-            overflow: hidden;
-            width: 13rem;
-            height: 100%;
-            border-radius: 5px;
-
-            // border: 1px solid blue;
-
-            figure {
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-                    object-position: left;
-                border-radius: 5px;
-
-                }
-            }
-        }
+        
         .navigation {
             border: none;
             nav {
@@ -114,6 +78,7 @@
                 width: 100%;
                 height: 100vh;
                 background-color: $nav-bg;
+                background-color: #000;
                 padding: 1em;
                 transition: 1s;
                 z-index: -1;
@@ -273,17 +238,8 @@
         height: 10vh;
         // display: none;
         padding: .5em 5vw;
-        overflow: hidden;
-        .brand {
-            a {
-                font-size: 1.5em;
-            }
-        }
-        .logo {
-            // display: none;
-            width: 15rem;
-            // border: 1px solid red;
-        }
+        // overflow: hidden;
+
 
         .navigation {
             // border: 1px solid yellow;

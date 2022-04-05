@@ -30,12 +30,13 @@
     .hero-title {
         position: absolute;
         left: 50%;
-        top: 30vh;
+        top: 50vh;
         width: 90%;
         transform: translate(-50%, -50%);
         overflow: hidden;
         // border: 1px solid #fff;
         h1 {
+            display: none;
             color: $brand;
             text-align: center;
             font-size: 1.5rem;
@@ -57,12 +58,25 @@
             // border: 1px solid blue;
             li {
                 color: #fff;
+                opacity: .2;
                 font-size: 1.15rem;
-                &:nth-child(odd){
-                    color:$brand;
-                }
+                transition: 1s;
+                // &:nth-child(odd){
+                //     color:$brand;
+                // }
                 @media (min-width: 1024px) {
                     font-size: 1.9rem;
+                }
+            }
+        }
+
+        &.active-hero-title {
+            ul {
+                li {
+                    opacity: 1;
+                    &:nth-child(odd){
+                        color: $brand;
+                    }
                 }
             }
         }
@@ -70,7 +84,7 @@
     .cta {
         text-align: center;
         position: absolute;
-        bottom: 30vh;
+        bottom: 20vh;
         left: 50%;
         width: 15rem;
         transform: translateX(-50%);

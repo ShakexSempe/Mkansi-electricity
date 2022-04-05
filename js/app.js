@@ -4,6 +4,8 @@ const main = document.getElementById("main");
 const topBtn = document.getElementById("top-btn");
 const aside = document.getElementById("aside");
 const links = document.querySelectorAll('#aside ul li a');
+const logo = document.querySelector(".logo");
+const heroTitle = document.querySelector(".hero-title");
 // console.log(links);
 
 // document.addEventListener("scroll", () => {
@@ -22,7 +24,7 @@ const links = document.querySelectorAll('#aside ul li a');
 // HERO INTERSECTION OBSERVER
 const hero = document.getElementById("hero");
 const heroOptions = {
-    rootMargin: "-50% 0px 0% 0px"
+    rootMargin: "-90% 0px 0% 0px"
 }
 console.log(hero);
 
@@ -34,10 +36,14 @@ const heroObserver = new IntersectionObserver(
                 console.log("header NOT IO");
                 topBtn.classList.add("active-top-btn");
                 header.classList.add("active-header");
+                logo.classList.remove("active-logo");
+                heroTitle.classList.add("active-hero-title");
             } else {
                 console.log("header IS IO");
                 topBtn.classList.remove("active-top-btn");
                 header.classList.remove("active-header");
+                logo.classList.add("active-logo");
+                heroTitle.classList.remove("active-hero-title");
             }
         })
     }, heroOptions
@@ -52,6 +58,7 @@ toggle.addEventListener("click",  () => {
     if(!header.classList.contains("active-header")){
         header.classList.add("active-header");
     }
+    logo.classList.remove("active-logo");
 });
 
 links.forEach(link => {
