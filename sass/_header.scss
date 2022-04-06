@@ -22,9 +22,12 @@
         width: 15rem;
         // border: 1px solid $brand;
         position: relative;
+        opacity: .5;
+        &.sidebar-logo {
+            opacity: 1;
+        }
         a {
             // border: 2px solid yellow;
-            
             h1 {
                 // color: red;
                 color: $brand;
@@ -44,9 +47,10 @@
         }
 
         &.active-logo {
+            opacity: 1;
             a {
                 h1 {
-                    transform: scale(2) translateX(13vw) translateY(7vh);
+                    transform: scale(2) translateX(14vw) translateY(15vh);
 
                     @media (min-width: 1024px) {
                         transform: scale(3) translateX(13vw) translateY(10vh);

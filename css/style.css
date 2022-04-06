@@ -56,7 +56,10 @@
     background: #000; }
   #header .logo {
     width: 15rem;
-    position: relative; }
+    position: relative;
+    opacity: .5; }
+    #header .logo.sidebar-logo {
+      opacity: 1; }
     #header .logo a h1 {
       color: #ffa500;
       position: absolute;
@@ -68,11 +71,13 @@
       font-family: "Ubuntu", sans-serif; }
       #header .logo a h1 span {
         color: #fff; }
-    #header .logo.active-logo a h1 {
-      transform: scale(2) translateX(13vw) translateY(7vh); }
-      @media (min-width: 1024px) {
-        #header .logo.active-logo a h1 {
-          transform: scale(3) translateX(13vw) translateY(10vh); } }
+    #header .logo.active-logo {
+      opacity: 1; }
+      #header .logo.active-logo a h1 {
+        transform: scale(2) translateX(14vw) translateY(15vh); }
+        @media (min-width: 1024px) {
+          #header .logo.active-logo a h1 {
+            transform: scale(3) translateX(13vw) translateY(10vh); } }
   #header .navigation {
     position: relative;
     text-transform: uppercase; }
@@ -256,7 +261,6 @@
     height: 100%;
     background-image: linear-gradient(40deg, orange, #000);
     background-image: linear-gradient(30deg, #000, #000a);
-    opacity: .5;
     opacity: .8;
     z-index: -1; }
   #hero .hero-title {
@@ -286,16 +290,25 @@
       list-style: none; }
       #hero .hero-title ul li {
         color: #fff;
-        opacity: .2;
+        opacity: .4;
         font-size: 1.15rem;
-        transition: 1s; }
+        transition: 1s;
+        cursor: pointer; }
         @media (min-width: 1024px) {
           #hero .hero-title ul li {
             font-size: 1.9rem; } }
+        #hero .hero-title ul li:hover {
+          transition: .3s;
+          opacity: 1;
+          color: #ffa500; }
     #hero .hero-title.active-hero-title ul li {
       opacity: 1; }
+      #hero .hero-title.active-hero-title ul li:hover {
+        color: #ffa500; }
       #hero .hero-title.active-hero-title ul li:nth-child(odd) {
         color: #ffa500; }
+        #hero .hero-title.active-hero-title ul li:nth-child(odd):hover {
+          color: #fff; }
   #hero .cta {
     text-align: center;
     position: absolute;

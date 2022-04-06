@@ -55,6 +55,7 @@ toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
     main.classList.toggle("active");
+    logo.classList.toggle("sidebar-logo")
     if(!header.classList.contains("active-header")){
         header.classList.add("active-header");
     }
@@ -66,12 +67,25 @@ links.forEach(link => {
         aside.classList.remove("active");
         toggle.classList.remove("active");
         main.classList.remove("active");
-        
+        logo.classList.remove("sidebar-logo");
     });
 });
 
+logo.addEventListener("click", () => {
+    if(aside.classList.contains("active")){
+        aside.classList.remove("active");
+        toggle.classList.remove("active");
+        main.classList.remove("active");
+        logo.classList.remove("sidebar-logo");
+    }
+})
+
 main.addEventListener("click", () => {
-    aside.classList.remove("active");
-    toggle.classList.remove("active");
-    main.classList.remove("active");
+    
+    if(aside.classList.contains("active")){
+        aside.classList.remove("active");
+        toggle.classList.remove("active");
+        main.classList.remove("active");
+        logo.classList.remove("sidebar-logo");
+    }
 });
