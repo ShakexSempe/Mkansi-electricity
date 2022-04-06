@@ -230,13 +230,15 @@
                   bottom: 0;
                   left: 50%;
                   width: 0;
-                  height: .2rem;
+                  height: .1rem;
                   background: #f4f4f4;
+                  background: #ffa500;
                   border-radius: 5px;
                   transform: translateX(-50%);
                   transition: .5s; }
                 #header .navigation nav ul li a:hover {
-                  color: #fffa; }
+                  color: #fffa;
+                  color: #ffa500; }
                   #header .navigation nav ul li a:hover::after {
                     width: 50%; } }
 
@@ -335,6 +337,9 @@
       isolation: isolate;
       letter-spacing: .1rem;
       transition: .3s; }
+      @media (min-width: 1024px) {
+        #hero .cta a {
+          font-size: 1.5rem; } }
       #hero .cta a::after, #hero .cta a::before {
         position: absolute;
         content: '';
