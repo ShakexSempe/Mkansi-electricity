@@ -99,12 +99,11 @@
                     height: auto;
 
                     li {
-                        // padding-bottom: 5vh;
-                        border: 1px solid $brand;
+                        border: 1px solid hsla(39, 100%, 20%, .5);
                         border-radius: 5px;
-                        margin: 0 auto 1rem;
+                        margin: .5rem auto 1rem;
                         width: 90%;
-                        padding: 1em .8em ;
+                        padding: .5em .8em;
                         list-style: none;
                         display: flex;
                         justify-content: flex-start;
@@ -137,17 +136,18 @@
                             position: relative;
                             display: flex;
                             flex-direction: column;
-                            background: #f4f4f4;
+                            // background: #f4f4f4;
                             transition: 1s;
 
                             .dropdown-btn {
-                                padding: 1em 0;
+                                padding: .5rem 0;
                                 border: none;
+                                border: 1px solid hsla(39, 100%, 20%, .5);
                                 width: 100%;
                                 font-size: 1rem;
                                 text-transform: uppercase;
                                 // border-radius: 5px;
-                                background: $nav-bg;
+                                background: #000;
                                 color: #fff;
                                 display: flex;
                                 float: left;
@@ -167,6 +167,7 @@
                                 top: 0;
                                 width: 100%;
                                 background: $nav-bg;
+                                background: #111;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
