@@ -913,14 +913,11 @@
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  text-align: center;
+  text-align: left;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -945,8 +942,8 @@
   line-height: 1.5;
   background: #ffa500;
   border-radius: 20px;
-  padding: 0.5rem 1rem;
-  margin: 0 auto;
+  padding: 0.5rem;
+  margin-left: 1rem;
   width: auto;
   text-transform: uppercase;
   transition: 0.3s;
@@ -988,7 +985,7 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p {
   color: #000;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p a {
   color: #000;
@@ -997,6 +994,17 @@
 #footer .contact-form .footer-contact .contact-item .contact-info p a:hover {
   color: #ffa500;
   text-decoration: underline;
+}
+@media (min-width: 768px) {
+  #footer .contact-form .footer-contact .contact-item {
+    text-align: center;
+  }
+  #footer .contact-form .footer-contact .contact-item header {
+    text-align: center;
+  }
+  #footer .contact-form .footer-contact .contact-item .contact-info button a {
+    margin: 0 auto;
+  }
 }
 #footer .footer-copyright {
   margin: 5vh auto 0;

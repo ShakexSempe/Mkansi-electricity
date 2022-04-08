@@ -14,7 +14,7 @@
     .footer-contact {
         // background: pink;
         flex-basis: 50%;
-        // border: 2px solid $text-brand;
+        // border: 2px solid blue;
         // border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -32,24 +32,18 @@
             width: 100%;
             transition: .2s;
 
-
             header {
                 color: $text-brand;
                 font-size: 1.3rem;
                 font-weight: 500;
                 letter-spacing: .1em;
-                text-align: center;
+                text-align: left;
                 text-transform: capitalize;
                 margin-bottom: .5rem;
             }
             .contact-info {
-                display: flex;
-                // background: yellow;
-                flex-direction: column;
-                align-items: center;
                 font-family: $font-open-sans;
                 font-weight: 600;
-                
                 button {
                     border: 1px solid red;
                     border: none;
@@ -76,8 +70,8 @@
                         line-height: 1.5;
                         background: $brand;
                         border-radius: 20px;
-                        padding: .5rem 1rem;
-                        margin: 0 auto;
+                        padding: .5rem;
+                        margin-left: 1rem;
                         width: auto;
                         // margin: 1rem auto;
                         text-transform: uppercase;
@@ -121,7 +115,7 @@
                 }
                 p {
                     color: $text-second;
-                    margin: .5rem auto;
+                    margin: 1rem auto;
                     // width: 50%;
                     a {
                         color: $text-second;
@@ -129,6 +123,19 @@
                         &:hover {
                             color: $brand;
                             text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 768px) {
+                text-align: center;
+                header {
+                    text-align: center;
+                }
+                .contact-info {
+                    button {
+                        a {
+                            margin: 0 auto;
                         }
                     }
                 }
