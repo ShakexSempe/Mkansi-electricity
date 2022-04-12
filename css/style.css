@@ -88,7 +88,7 @@
   opacity: 1;
 }
 #header .logo.active-logo a h1 {
-  transform: scale(2) translateX(14vw) translateY(15vh);
+  transform: scale(2) translateX(12vw) translateY(15vh);
 }
 @media (min-width: 1024px) {
   #header .logo.active-logo a h1 {
