@@ -77,26 +77,27 @@
             }
             aside {
                 position: fixed;
-                top: 5vh;
+                top: 6vh;
                 right: -100vw;
                 width: 100%;
                 height: 100vh;
                 background-color: $nav-bg;
                 background-color: #000;
-                padding: 1em;
+                // padding: 1em;
                 transition: 1s;
-                z-index: -1;
+                z-index: 1;
                 overflow-y: auto;
 
 
                 ul {
                     // border: 2px solid $text-brand;
-                    position: absolute;
-                    padding: 1rem;
-                    top: 10vh;
-                    right: 30vw;
-                    width: 70vw;
+                    position: relative;
+                    // padding: 1rem;
+                    // top: 5vh;
+                    // right: 30vw;
+                    width: 60vw;
                     height: auto;
+                    margin: 10vh 0 5vh;
 
                     li {
                         border: 1px solid hsla(39, 100%, 20%, .5);
@@ -208,7 +209,30 @@
                         }
                     }
                 }
-                
+                .contact-links {
+                    // border: 1px solid blue;
+                    margin: 5vh 0;
+                    padding: .5rem;
+                    // width: 60vw;
+                    text-transform: none;
+                    overflow: hidden;
+                    a {
+                        display: block;
+                        padding: .5rem 1rem;
+                        text-decoration: none;
+                        color: $brand;
+                        transform: translateY(-2rem);
+                        opacity: 0;
+                        transition: 1s;
+
+                        i {
+                            // border: 1px solid red;
+                            width: 2.5rem;
+                            color: #f4f4f4;
+                            font-weight: 900;
+                        }
+                    }
+                }
                 &.active {
                     right: -30vw;
                     ul {
@@ -230,7 +254,21 @@
                         }
 
                     }
-
+                    .contact-links {
+                        a {
+                            transform: translateY(0);
+                            opacity: 1;
+                            &:nth-child(1){
+                                transition-delay: 1s;
+                            }
+                            &:nth-child(2){
+                                transition-delay: 1.2s;
+                            }
+                            &:nth-child(3){
+                                transition-delay: 1.4s;
+                            }
+                        }
+                    }
                 }
             }
             
