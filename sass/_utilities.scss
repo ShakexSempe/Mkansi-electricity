@@ -39,8 +39,8 @@
 
     &.active {
         transform: rotate(90deg);
-
-        background-color: $toggle;
+        border: 2px solid $active-toggle;
+        background-color: $active-toggle;
         .bar {
             background-color: $text-second;
         }

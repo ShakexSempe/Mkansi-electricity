@@ -4,7 +4,7 @@
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
-  border: 2px solid orange;
+  border: 2px solid #f4f4f4;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -35,6 +35,7 @@
 }
 #toggle.active {
   transform: rotate(90deg);
+  border: 2px solid orange;
   background-color: orange;
 }
 #toggle.active .bar {
@@ -516,7 +517,7 @@
   text-shadow: 2px 2px 0px #ffa500;
 }
 .about .about-article p strong {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .about .about-article p strong.active-io {
   animation: strong 2s ease-in forwards;
