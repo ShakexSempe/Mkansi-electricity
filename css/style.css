@@ -859,9 +859,10 @@
   margin: 0.5rem auto 1rem;
   display: block;
   text-transform: uppercase;
-  border-radius: 15px;
+  border-radius: 5px;
   position: relative;
   color: #f4f4f4;
+  font-family: "Ubuntu", sans-serif;
   border: none;
   outline: none;
   isolation: isolate;
@@ -877,15 +878,15 @@
   height: 100%;
   transition: 0.3s;
   z-index: -1;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 #form button::before {
-  background: linear-gradient(0deg, #ff7b00, #ffa500);
+  background: linear-gradient(0deg, #b35600, #ffa600);
   box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 #form button::after {
   opacity: 0;
-  background: #ffa500;
+  background: linear-gradient(0deg, #ffa600, #b35600);
   box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 #form button:hover {
@@ -978,7 +979,7 @@
   border-radius: 5px;
   padding: 0.5rem;
   margin-left: 1rem;
-  width: auto;
+  width: 10rem;
   text-transform: uppercase;
   transition: 0.3s;
   position: relative;
@@ -997,7 +998,7 @@
   border: none;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a::before {
-  background: linear-gradient(0deg, #ff7b00, #ffa500);
+  background: linear-gradient(0deg, #b35600, #ffa600);
   box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25);
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a::after {
@@ -1045,6 +1046,7 @@
   text-align: center;
   text-transform: capitalize;
   background: #ff7b00;
+  background: linear-gradient(0deg, #b35600, #ffa600);
   padding: 5vh 0;
 }
 #footer .footer-copyright[data-scroll] {

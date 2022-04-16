@@ -73,7 +73,7 @@
                         border-radius: 5px;
                         padding: .5rem;
                         margin-left: 1rem;
-                        width: auto;
+                        width: 10rem;
                         // margin: 1rem auto;
                         text-transform: uppercase;
                         transition: .3s;
@@ -92,7 +92,7 @@
                             border: none;
                         }
                         &::before {
-                            background: $brand-btn;
+                            background: $cta-btn;
                             box-shadow: $btn-shadow;
                         }
                         &::after {
@@ -145,6 +145,7 @@
         text-align: center;
         text-transform: capitalize;
         background: $brand-dark;
+        background: $cta-btn;
         padding: 5vh 0;
         // DATA-SCROLL
         &[data-scroll] {

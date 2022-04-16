@@ -111,9 +111,10 @@
         margin: .5rem auto 1rem;
         display: block;
         text-transform: uppercase;
-        border-radius: 15px;
+        border-radius: 5px;
         position: relative;
         color: $text-main;
+        font-family: $font-ubuntu;
         border: none;
         outline: none;
         isolation: isolate;
@@ -128,17 +129,17 @@
             height: 100%;
             transition: .3s;
             z-index: -1;
-            border-radius: 15px;
+            border-radius: 5px;
         }
         &::before {
-            background: $brand-btn;
+            background: $cta-btn;
             box-shadow: inset 2px 2px 2px #fffa,
                         inset -2px -2px 2px #000a,
                         4px 4px 4px rgba(0, 0, 0, 0.150);
         }
         &::after {
             opacity: 0;
-            background: $brand-btn-hover;
+            background: $cta-btn-hover;
             box-shadow: inset 2px 2px 2px #fffa,
                         inset -2px -2px 2px #000a,
                         2px 2px 2px rgba(0, 0, 0, 0.250);
