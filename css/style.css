@@ -486,7 +486,7 @@
   text-align: center;
 }
 
-#about .about-article {
+.about .about-article {
   background: #ffff;
   border-radius: 5px;
   margin: 5vh 1rem;
@@ -497,14 +497,14 @@
   font-family: "Open Sans", sans-serif;
 }
 @media (min-width: 768px) {
-  #about .about-article {
+  .about .about-article {
     margin: 5vh 5vw;
   }
 }
-#about .about-article p {
+.about .about-article p {
   margin-bottom: 2rem;
 }
-#about .about-article p span {
+.about .about-article p span {
   font-size: 2rem;
   padding-right: 0.1em;
   background: #000;
@@ -515,13 +515,40 @@
   color: #fff;
   text-shadow: 2px 2px 0px #ffa500;
 }
+.about .about-article p strong {
+  opacity: 0.3;
+}
+.about .about-article p strong.active-io {
+  animation: strong 2s ease-in forwards;
+}
+@keyframes strong {
+  5%, 25% {
+    opacity: 0.2;
+  }
+  20%, 35% {
+    opacity: 0.5;
+    color: #ffa500;
+  }
+  30%, 70% {
+    color: #ffa500;
+    opacity: 7;
+  }
+  40%, 55% {
+    color: #000;
+    opacity: 0.6;
+  }
+  50%, 60%, 100% {
+    opacity: 1;
+    color: #ffa500;
+  }
+}
 @media (max-width: 768px) {
-  #about .about-article {
+  .about .about-article {
     font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
-  #about .about-article {
+  .about .about-article {
     font-size: 1.2rem;
   }
 }

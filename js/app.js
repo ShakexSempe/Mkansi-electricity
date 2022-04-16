@@ -89,3 +89,25 @@ main.addEventListener("click", () => {
         logo.classList.remove("sidebar-logo");
     }
 });
+
+const ioItem = document.querySelectorAll('.io-item');
+console.log(ioItem);
+ioItem.forEach(item => {
+    itemOptions = {
+        rootMargin: "0px 0px -30% 0px",
+    }
+    const itemObserver = new IntersectionObserver(
+        function(entries, itemObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    console.log("Item NOT IO");
+                    item.classList.remove("active-io");
+                } else {
+                    console.log("Item IS IO");
+                    item.classList.add("active-io");
+                }
+            })
+        }, itemOptions
+    );
+    itemObserver.observe(item);
+});

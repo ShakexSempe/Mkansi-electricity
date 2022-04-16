@@ -1,4 +1,4 @@
-#about {
+.about {
     .about-article {
         // border: 1px solid $brand;
         background: $bg-main;
@@ -26,6 +26,35 @@
 
                 color: #fff;
                 text-shadow: 2px 2px 0px $brand;
+            }
+
+            strong {
+                opacity: .3;
+
+                &.active-io {
+                    animation: strong 2s ease-in forwards;
+                    @keyframes strong {
+                        5%, 25% {
+                            opacity: .2;
+                        }
+                        20%, 35% {
+                            opacity: .5;
+                            color: $brand;
+                        }
+                        30%, 70% {
+                            color: $brand;
+                            opacity: 7;
+                        }
+                        40%, 55% {
+                            color: #000;
+                            opacity: .6;
+                        }
+                        50%, 60%, 100% {
+                            opacity: 1;
+                            color: $brand;
+                        }
+                    }
+                }
             }
         }
     }
