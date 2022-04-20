@@ -653,14 +653,33 @@
   }
 }
 
-.parallax {
+.section-pad {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
   position: relative;
   isolation: isolate;
 }
-.parallax .scroll-bg {
+.section-pad .section-cta {
+  position: sticky;
+  top: 40vh;
+  left: 50vw;
+  padding: 1rem;
+  background-color: #000a;
+}
+.section-pad .section-cta a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 10rem;
+  background: #000;
+  color: #ffa500;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+}
+.section-pad .scroll-bg {
   height: 95vh;
   position: sticky;
   top: 5vh;
@@ -672,19 +691,19 @@
   background-color: #000;
   z-index: -1;
 }
-.parallax figure {
+.section-pad figure {
   height: 95vh;
   width: 100%;
   background: #000;
 }
-.parallax figure img {
+.section-pad figure img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center;
 }
 @media (min-width: 1024px) {
-  .parallax {
+  .section-pad {
     background-image: url(../img/mkansi.png);
     background-size: 50%;
     background-size: contain;
@@ -694,7 +713,7 @@
     background-color: #000;
     position: relative;
   }
-  .parallax::after {
+  .section-pad::after {
     position: absolute;
     content: "";
     background-image: url(../img/work-min.jpg);
@@ -710,10 +729,10 @@
     opacity: 0.7;
     z-index: -1;
   }
-  .parallax .scroll-bg {
+  .section-pad .scroll-bg {
     display: none;
   }
-  .parallax figure {
+  .section-pad figure {
     display: none;
   }
 }
