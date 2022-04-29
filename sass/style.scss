@@ -93,7 +93,7 @@
             background: linear-gradient(90deg, $brand-dark, $brand);
             border-radius: 5px;
             opacity: 0;
-            transition: 1s .1s;
+            transition: 1s ;
             
         }
         &[data-scroll]{
@@ -106,7 +106,7 @@
             &::after {
                 opacity: 1;
                 width: 20%;
-                transition-delay: .8s;
+                transition-delay: .5s;
                 @media (min-width: 768px) {
                     width: 5%;
                 }
