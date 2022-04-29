@@ -815,7 +815,7 @@
 #form .contact-title {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #ff7b00;
+  color: #000;
   position: relative;
   width: max-content;
 }
@@ -1009,12 +1009,12 @@
   width: 50%;
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.2s;
   background: #fff;
   position: relative;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button i {
-  transition: 0.5s;
+  transition: 0.2s;
   color: #ff7b00;
   font-size: 1.5rem;
 }
@@ -1050,11 +1050,17 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a::after {
   opacity: 0;
-  background: #ffa500;
+  background: linear-gradient(0deg, #ffa600, #b35600);
   box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35);
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
-  transform: scale(0.99);
+  transform: scale(0.97);
+}
+#footer .contact-form .footer-contact .contact-item .contact-info button a:hover::before {
+  opacity: 0;
+}
+#footer .contact-form .footer-contact .contact-item .contact-info button a:hover::after {
+  opacity: 1;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a:active {
   transform: scale(0.95);
@@ -1183,7 +1189,7 @@
 #container .section-title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 #container .section-title h2 {
   position: relative;
