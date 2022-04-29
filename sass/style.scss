@@ -97,13 +97,16 @@
             
         }
         &[data-scroll]{
-            transform: scale(1);
-            opacity: 1;
+            transform: scale(1) translateY(-10vh);
+            opacity: 0;
         }
         &[data-scroll="in"]{
+            transform: scale(1) translateY(0);
+            opacity: 1;
             &::after {
                 opacity: 1;
                 width: 20%;
+                transition-delay: .8s;
                 @media (min-width: 768px) {
                     width: 5%;
                 }
@@ -176,13 +179,14 @@
 
 // SCROLL OUT
 [data-scroll] {
-    transition: 1s ease;
-    transform: scale(.5);
+    transition: 1.5s ease;
+    transform: scale(1) translateY(10vh);
+    opacity: 0;
 }
 
 [data-scroll="in"] {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translateY(0);
 }
 
 [data-scroll="out"] {

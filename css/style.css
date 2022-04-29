@@ -1203,12 +1203,17 @@
   transition: 1s 0.1s;
 }
 #container .section-title h2[data-scroll] {
-  transform: scale(1);
+  transform: scale(1) translateY(-10vh);
+  opacity: 0;
+}
+#container .section-title h2[data-scroll=in] {
+  transform: scale(1) translateY(0);
   opacity: 1;
 }
 #container .section-title h2[data-scroll=in]::after {
   opacity: 1;
   width: 20%;
+  transition-delay: 0.8s;
 }
 @media (min-width: 768px) {
   #container .section-title h2[data-scroll=in]::after {
@@ -1272,13 +1277,14 @@
 }
 
 [data-scroll] {
-  transition: 1s ease;
-  transform: scale(0.5);
+  transition: 1.5s ease;
+  transform: scale(1) translateY(10vh);
+  opacity: 0;
 }
 
 [data-scroll=in] {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateY(0);
 }
 
 [data-scroll=out] {
