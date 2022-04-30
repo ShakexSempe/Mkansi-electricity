@@ -16,7 +16,11 @@
             // DATA-SCROLL
             &[data-scroll] {
                 transition: 1.5s;
-                transform: scale(1);
+                transform: scale(1) translateY(15vh);
+            }
+            &[data-scroll="in"] {
+                transition: 1.5s;
+                transform: scale(1) translateY(0);
             }
             figure {
                 // border: 3px solid yellow;
