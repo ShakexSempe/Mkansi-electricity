@@ -630,8 +630,8 @@
   padding: 1rem 0.1rem;
   text-transform: capitalize;
   list-style-type: square;
-  font-size: 1.1rem;
-  transition: 0.3s;
+  font-size: 1rem;
+  transition: 0.2s;
   border: 1px solid #fff;
   cursor: pointer;
 }
@@ -641,7 +641,13 @@
 }
 #services .service-container .service-item .service-type ul li:hover::marker {
   color: #ffa500;
-  transition: 0.3s;
+  transition: 0.2s;
+}
+#services .service-container .service-item .service-type ul li[data-scroll=in] {
+  transition: 1s;
+}
+#services .service-container .service-item .service-type ul li[data-scroll=in]:hover {
+  transition: 0.2s;
 }
 @media (min-width: 768px) {
   #services .section-description {
@@ -1192,6 +1198,7 @@
   font-size: 1.35rem;
 }
 #container .section-title h2 {
+  font-weight: 500;
   position: relative;
 }
 #container .section-title h2::after {
