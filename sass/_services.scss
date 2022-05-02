@@ -18,7 +18,7 @@
                 top: 7vh;
                 font-size: 1.5rem;
                 padding: .5rem 0;
-                color: $brand;
+                color: #000;
                 transition: 1s;
                 background: #fff;
                 z-index:2;
@@ -69,6 +69,7 @@
             .service-type {
                 // border: 1px solid black;
                 background-color: #f4f4f4;
+                background-color: #fff;
                 ul {
                     margin-left: .5rem;
                     @media (min-width: 768px) {
@@ -81,7 +82,11 @@
                         font-size: 1rem;
                         transition: .2s;
                         border: 1px solid #fff;
+                        color: $brand;
                         cursor: pointer;
+                        &::marker {
+                            color: rgba(0,0,0,.200);
+                        }
 
                         &:hover {
                             background-color: $brand;

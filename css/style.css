@@ -589,7 +589,7 @@
   top: 7vh;
   font-size: 1.5rem;
   padding: 0.5rem 0;
-  color: #ffa500;
+  color: #000;
   transition: 1s;
   background: #fff;
   z-index: 2;
@@ -634,6 +634,7 @@
 }
 #services .service-container .service-item .service-type {
   background-color: #f4f4f4;
+  background-color: #fff;
 }
 #services .service-container .service-item .service-type ul {
   margin-left: 0.5rem;
@@ -650,7 +651,11 @@
   font-size: 1rem;
   transition: 0.2s;
   border: 1px solid #fff;
+  color: #ffa500;
   cursor: pointer;
+}
+#services .service-container .service-item .service-type ul li::marker {
+  color: rgba(0, 0, 0, 0.2);
 }
 #services .service-container .service-item .service-type ul li:hover {
   background-color: #ffa500;
