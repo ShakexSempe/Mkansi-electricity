@@ -76,6 +76,8 @@
   opacity: 1;
 }
 #header .logo a h1 {
+  border: 1px solid transparent;
+  border-radius: 10px;
   color: #ffa500;
   position: absolute;
   top: -0.5rem;
@@ -92,6 +94,9 @@
   opacity: 1;
 }
 #header .logo.active-logo a h1 {
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  padding: 0.5rem 0.2rem;
+  backdrop-filter: blur(0.1rem);
   transform: scale(2) translateX(12vw) translateY(15vh);
 }
 @media (min-width: 1024px) {
@@ -363,6 +368,11 @@
   width: 20rem;
   transform: translate(-50%, -50%);
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #hero .hero-title {
+    width: 70%;
+  }
 }
 #hero .hero-title h1 {
   display: none;
