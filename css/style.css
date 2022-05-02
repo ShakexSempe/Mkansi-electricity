@@ -4,7 +4,7 @@
   border-radius: 50%;
   height: 1.5em;
   width: 1.5em;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #ffa500;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -62,13 +62,12 @@
   transition: background-color 0.5s;
 }
 #header.active-header {
-  background: #ffa500;
-  background: #000;
+  background: #000a;
+  backdrop-filter: blur(0.1rem);
 }
 #header .logo {
   width: 15rem;
   position: relative;
-  opacity: 0.5;
 }
 #header .logo.sidebar-logo {
   opacity: 1;

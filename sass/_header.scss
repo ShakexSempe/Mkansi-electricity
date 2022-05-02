@@ -13,8 +13,8 @@
     transition: background-color .5s;
     // SCROLL BG
     &.active-header {
-        background: $brand;
-        background: #000;
+        background: #000a;
+        backdrop-filter: blur(.1rem);
     }
     .logo {
         // display: none;
@@ -22,7 +22,6 @@
         width: 15rem;
         // border: 1px solid $brand;
         position: relative;
-        opacity: .5;
         &.sidebar-logo {
             opacity: 1;
         }
