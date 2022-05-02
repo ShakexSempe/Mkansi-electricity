@@ -56,9 +56,7 @@ toggle.addEventListener("click",  () => {
     toggle.classList.toggle("active");
     main.classList.toggle("active");
     logo.classList.toggle("sidebar-logo")
-    if(!header.classList.contains("active-header")){
-        header.classList.add("active-header");
-    }
+    header.classList.toggle("active-aside");
     logo.classList.remove("active-logo");
 });
 
@@ -68,6 +66,7 @@ links.forEach(link => {
         toggle.classList.remove("active");
         main.classList.remove("active");
         logo.classList.remove("sidebar-logo");
+        header.classList.remove("active-aside");
     });
 });
 
@@ -77,6 +76,8 @@ logo.addEventListener("click", () => {
         toggle.classList.remove("active");
         main.classList.remove("active");
         logo.classList.remove("sidebar-logo");
+        header.classList.remove("active-aside");
+
     }
 })
 
@@ -87,6 +88,7 @@ main.addEventListener("click", () => {
         toggle.classList.remove("active");
         main.classList.remove("active");
         logo.classList.remove("sidebar-logo");
+        header.classList.remove("active-aside");
     }
 });
 
