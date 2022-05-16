@@ -349,10 +349,14 @@
 }
 #hero figure {
   width: 17rem;
-  width: 65%;
   float: right;
   border-bottom-left-radius: 50%;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #hero figure {
+    width: 25rem;
+  }
 }
 #hero figure img {
   width: 100%;

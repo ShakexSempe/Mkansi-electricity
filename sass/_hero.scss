@@ -15,11 +15,13 @@
 
     figure {
         width: 17rem;
-        width: 65%;
+        // width: 65%;
         float: right;
         border-bottom-left-radius: 50%;
         overflow: hidden;
-        
+        @media (min-width: 768px){
+            width: 25rem;
+        }
         // margin: 0 auto;
         // position: sticky;
         // top: 0;
