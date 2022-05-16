@@ -75,6 +75,9 @@
 #header .logo.sidebar-logo {
   opacity: 1;
 }
+#header .logo a {
+  overflow: hidden;
+}
 #header .logo a h1 {
   border: 1px solid transparent;
   border-radius: 10px;
@@ -95,19 +98,8 @@
 }
 #header .logo.active-logo a h1 {
   border: 1px solid rgba(255, 255, 255, 0.349);
-  padding: 0.5rem 0.2rem;
-  backdrop-filter: blur(0.1rem);
-  transform: scale(2) translateX(11vw) translateY(15vh);
-}
-@media (min-width: 550px) {
-  #header .logo.active-logo a h1 {
-    transform: scale(2.5) translateX(13vw) translateY(10vh);
-  }
-}
-@media (min-width: 1024px) {
-  #header .logo.active-logo a h1 {
-    transform: scale(3) translateX(13vw) translateY(10vh);
-  }
+  transform: translateY(-10vh);
+  transition: 1s;
 }
 #header .navigation {
   position: relative;
@@ -341,6 +333,7 @@
 
 #hero {
   height: 100vh;
+  width: 100%;
   background-image: url(../img/work-min.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -353,6 +346,16 @@
   #hero {
     background-size: cover;
   }
+}
+#hero figure {
+  width: 17rem;
+  width: 65%;
+  float: right;
+  border-bottom-left-radius: 50%;
+  overflow: hidden;
+}
+#hero figure img {
+  width: 100%;
 }
 #hero::after {
   position: absolute;
@@ -507,7 +510,7 @@
 .about .about-article {
   background: #ffff;
   border-radius: 5px;
-  margin: 5vh 1rem;
+  margin: 5vh 5vw;
   text-transform: none;
   line-height: 1.6;
   overflow: hidden;
@@ -575,12 +578,12 @@
   background-color: #fff;
 }
 #services .section-description {
-  padding: 5vh 1rem;
+  padding: 5vh 5vw;
   font-family: "Open Sans", sans-serif;
 }
 #services .service-container .service-item {
   margin: 10vh 0;
-  padding: 0 1rem;
+  padding: 0 5vw;
   position: relative;
   isolation: isolate;
 }
@@ -842,7 +845,7 @@
 
 #form {
   width: 100%;
-  padding: 5vh 1rem;
+  padding: 5vh 5vw;
 }
 #form .contact-title {
   font-size: 1.5rem;
@@ -1010,7 +1013,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5vh 1rem;
+  padding: 5vh 5vw;
 }
 #footer .contact-form .footer-contact .contact-item {
   border: 1px solid rgba(255, 166, 0, 0.4);
@@ -1192,7 +1195,7 @@
 }
 
 #container {
-  max-width: 100%;
+  max-width: 100vw;
   font-family: "Ubuntu", sans-serif;
 }
 #container #main {

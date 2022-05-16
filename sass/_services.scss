@@ -2,7 +2,7 @@
     background-color: #fff;
 
     .section-description {
-        padding: 5vh 1rem;
+        padding: 5vh 5vw;
         font-family: $font-open-sans;
     }
     .service-container {
@@ -10,7 +10,7 @@
 
         .service-item {
             margin: 10vh 0;
-            padding: 0 1rem;
+            padding: 0 5vw;
             position: relative;
             isolation: isolate;
             h3 {

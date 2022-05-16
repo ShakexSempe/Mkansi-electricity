@@ -30,6 +30,7 @@
         }
         a {
             // border: 2px solid yellow;
+            overflow: hidden;
             h1 {
                 // color: red;
                 border: 1px solid transparent;
@@ -42,6 +43,7 @@
                 text-transform: uppercase;
                 transition: .5s;
                 font-family: $font-ubuntu;
+                // transform: translateY(-1.5rem);
 
                 span {
                     color: #fff;
@@ -54,16 +56,17 @@
             a {
                 h1 {
                     border: 1px solid rgba(255, 255, 255, 0.349);
-                    padding: .5rem .2rem;
-                    backdrop-filter: blur(.1rem);
-                    transform: scale(2) translateX(11vw) translateY(15vh);
-                    
-                    @media (min-width: 550px) {
-                        transform: scale(2.5) translateX(13vw) translateY(10vh);
-                    }
-                    @media (min-width: 1024px) {
-                        transform: scale(3) translateX(13vw) translateY(10vh);
-                    }
+                    // padding: .5rem .2rem;
+                    // backdrop-filter: blur(.1rem);
+                    // transform: scale(2) translateX(11vw) translateY(15vh);
+                    transform: translateY(-10vh);
+                    transition: 1s;
+                    // @media (min-width: 550px) {
+                    //     transform: scale(2.5) translateX(13vw) translateY(10vh);
+                    // }
+                    // @media (min-width: 1024px) {
+                    //     transform: scale(3) translateX(13vw) translateY(10vh);
+                    // }
                 }
             }
         }
