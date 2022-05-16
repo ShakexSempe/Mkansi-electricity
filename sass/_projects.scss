@@ -5,7 +5,7 @@
         // border: 1px solid red;
         display: grid;
         grid-template-columns: 1fr;
-        gap: .5rem;
+        gap: 5vh;
         margin: 5vh 1rem;
         padding: .5rem;
         height: auto;
@@ -38,18 +38,18 @@
                     transition: .5s;
                 }
                 // FIGURE BOX SHADOW
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: .6;
-                    transition: .5s;
-                    box-shadow: inset 3px 3px 3px #fffa, 
-                                inset -3px -3px 3px #000a;
-                }
+                // &::after {
+                //     position: absolute;
+                //     content: '';
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     height: 100%;
+                //     opacity: .6;
+                //     transition: .5s;
+                //     box-shadow: inset 3px 3px 3px #fffa, 
+                //                 inset -3px -3px 3px #000a;
+                // }
                 // END OF FIGURE BOX SHADOW
 
                 &:hover {
@@ -70,6 +70,7 @@
 
         .gallery {
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
             .project-item {
                 height: auto;
                 width: 100%;
