@@ -348,7 +348,7 @@
   }
 }
 #hero figure {
-  width: 17rem;
+  width: 15rem;
   float: right;
   border-bottom-left-radius: 50%;
   overflow: hidden;
@@ -441,7 +441,7 @@
 #hero .cta {
   text-align: center;
   position: absolute;
-  bottom: 30vh;
+  bottom: 25vh;
   left: 50%;
   width: 20rem;
   transform: translateX(-50%);
