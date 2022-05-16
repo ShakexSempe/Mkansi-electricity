@@ -245,8 +245,9 @@
                         }
                     }
                 }
+                // ACTIVE SIDEBAR NAVIGATION
                 &.active {
-                    right: -30vw;
+                    right: -20vw;
                     ul {
                         li {
                             transform: translateX(0);
