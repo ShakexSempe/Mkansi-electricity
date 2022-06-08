@@ -341,6 +341,7 @@
   background-position: center top;
   position: relative;
   isolation: isolate;
+  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   #hero {
@@ -352,6 +353,7 @@
   float: right;
   border-bottom-left-radius: 50%;
   overflow: hidden;
+  transition: 1s;
 }
 @media (min-width: 768px) {
   #hero figure {
@@ -360,6 +362,10 @@
 }
 #hero figure img {
   width: 100%;
+}
+#hero figure.active-hero-title {
+  transform: translateX(100%);
+  transform-origin: right;
 }
 #hero::after {
   position: absolute;
@@ -372,71 +378,6 @@
   background-image: linear-gradient(30deg, #000, #000a);
   opacity: 0.5;
   z-index: -1;
-}
-#hero .hero-title {
-  position: absolute;
-  left: 50%;
-  top: 60vh;
-  width: 20rem;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  #hero .hero-title {
-    width: 70%;
-  }
-}
-#hero .hero-title h1 {
-  display: none;
-  color: #ffa500;
-  text-align: center;
-  font-size: 1.5rem;
-  width: auto;
-  text-transform: uppercase;
-}
-@media (min-width: 1024px) {
-  #hero .hero-title h1 {
-    font-size: 2.5rem;
-  }
-}
-#hero .hero-title h1 span {
-  color: #fff;
-}
-#hero .hero-title ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0.5rem 0;
-}
-#hero .hero-title ul li {
-  color: #fff;
-  opacity: 0.4;
-  font-size: 1.15rem;
-  transition: 1s;
-  cursor: pointer;
-}
-@media (min-width: 1024px) {
-  #hero .hero-title ul li {
-    font-size: 1.9rem;
-  }
-}
-#hero .hero-title ul li:hover {
-  transition: 0.3s;
-  opacity: 1;
-  color: #ffa500;
-}
-#hero .hero-title.active-hero-title ul li {
-  opacity: 1;
-}
-#hero .hero-title.active-hero-title ul li:hover {
-  color: #ffa500;
-}
-#hero .hero-title.active-hero-title ul li:nth-child(odd) {
-  color: #ffa500;
-}
-#hero .hero-title.active-hero-title ul li:nth-child(odd):hover {
-  color: #fff;
 }
 #hero .cta {
   text-align: center;

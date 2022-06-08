@@ -24,7 +24,7 @@ const heroTitle = document.querySelector(".hero-title");
 // HERO INTERSECTION OBSERVER
 const hero = document.getElementById("hero");
 const heroOptions = {
-    rootMargin: "-90% 0px 0% 0px"
+    rootMargin: "-100% 0px 0% 0px"
 }
 console.log(hero);
 
