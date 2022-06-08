@@ -18,14 +18,15 @@
         width: 100%;
         // float: right;
         border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
+        // border-bottom-right-radius: 50%;
         border: 1px solid $brand;
         overflow: hidden;
         transition: 1s;
-        // position: sticky;
-        // top: 0;
         @media (min-width: 768px){
-            width: 25rem;
+            width: 30rem;
+            position: sticky;
+            top: 0;
+            float: right;
         }
         // margin: 0 auto;
         // position: sticky;

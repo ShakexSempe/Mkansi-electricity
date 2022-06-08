@@ -351,14 +351,16 @@
   width: 15rem;
   width: 100%;
   border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
   border: 1px solid #ffa500;
   overflow: hidden;
   transition: 1s;
 }
 @media (min-width: 768px) {
   #hero figure {
-    width: 25rem;
+    width: 30rem;
+    position: sticky;
+    top: 0;
+    float: right;
   }
 }
 #hero figure img {
