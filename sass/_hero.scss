@@ -23,15 +23,16 @@
         // border-bottom-left-radius: 50%;
         // border-bottom-right-radius: 50%;
 
-        border-bottom: 1px solid $brand;
+        // border-bottom: 1px solid $brand;
         overflow: hidden;
         transition: 1s;
         
         
         
-        @media (min-width: 768px) {
+        @media (min-width: 820px) {
             width: 30rem;
-            border-bottom-right-radius: 0;
+            height: auto;
+            border-bottom-left-radius: 50%;
             position: sticky;
             top: 0;
             float: right;
