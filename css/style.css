@@ -332,13 +332,9 @@
 }
 
 #hero {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background-image: url(../img/work-min.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-size: cover;
-  background-position: center top;
+  border: 2px solid blue;
   position: relative;
   isolation: isolate;
 }
@@ -349,24 +345,27 @@
 }
 #hero figure {
   width: 15rem;
-  float: right;
-  position: sticky;
-  top: 0;
-  border-bottom-left-radius: 50%;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   transition: 1s;
 }
-@media (min-width: 768px) {
-  #hero figure {
-    width: 25rem;
-  }
-}
 #hero figure img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-#hero figure.active-hero-title {
-  transform: translateY(-100%);
-  transform-origin: right;
+#hero figure figcaption {
+  position: absolute;
+  top: 10vh;
+  z-index: 10;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 70%;
+}
+#hero figure.hero-img-1 img {
+  object-fit: contain;
+  object-position: top;
 }
 #hero::after {
   position: absolute;
