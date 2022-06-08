@@ -341,7 +341,6 @@
   background-position: center top;
   position: relative;
   isolation: isolate;
-  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   #hero {
@@ -351,6 +350,8 @@
 #hero figure {
   width: 15rem;
   float: right;
+  position: sticky;
+  top: 0;
   border-bottom-left-radius: 50%;
   overflow: hidden;
   transition: 1s;
@@ -1144,6 +1145,10 @@
   * {
     scroll-padding-top: 7vh;
   }
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #container {
