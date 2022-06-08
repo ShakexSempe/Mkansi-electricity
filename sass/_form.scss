@@ -63,7 +63,7 @@
 
         }
         input, textarea {
-            padding: 1rem .5rem;
+            padding: .5rem;
             transition: .2s;
             border-radius: 5px;
             border: none;
@@ -73,6 +73,9 @@
             transition: .5s;
             &::placeholder {
                 text-transform: capitalize;
+                opacity: 0;
+                letter-spacing: .1rem;
+                transition: .25s;
             }
 
             &:invalid {
@@ -81,8 +84,19 @@
 
             &:focus {
                 border-radius: 10px;
+                &::placeholder {
+                    opacity: 1;
+                    letter-spacing: normal;
+                }
             }
-
+            @media (min-width: 820px){
+                &:hover {
+                    &::placeholder {
+                        opacity: 1;
+                        letter-spacing: normal;
+                    }
+                }
+            }
             
         }
         &.message {
@@ -93,13 +107,6 @@
                 margin-bottom: 1rem;
             }
             
-        }
-        // HOVER STATE
-        &:hover, &:focus {
-            label {
-                color: $brand-dark;
-                transform: translateY(-.2em) translateX(.5rem);
-            }
         }
 
     }
