@@ -399,7 +399,7 @@
   position: absolute;
   bottom: 25vh;
   left: 50%;
-  width: 20rem;
+  width: 18rem;
   transform: translateX(-50%);
 }
 @media (min-width: 768px) {
@@ -411,14 +411,14 @@
   font-size: 1rem;
   color: #fff;
   border: none;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   margin: 1rem 0;
   width: 100%;
   display: block;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #ffa500;
   isolation: isolate;
   letter-spacing: 0.1rem;
@@ -437,7 +437,7 @@
   width: 100%;
   height: 100%;
   transition: 0.2s;
-  border-radius: 10px;
+  border-radius: 20px;
   z-index: -1;
 }
 #hero .cta a::before {
@@ -505,7 +505,7 @@
 #menu .menu-section figure figcaption {
   position: absolute;
   left: 50%;
-  width: 80%;
+  width: 18rem;
   transform: translateX(-50%);
   z-index: 5;
 }
@@ -531,18 +531,62 @@
 #menu .menu-section figure figcaption.cta a {
   padding: 1rem 0;
   margin: 0.5rem 0;
-  border: 2px solid #fff;
   border-radius: 20px;
   text-align: center;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
+  isolation: isolate;
 }
 #menu .menu-section figure figcaption.cta a.enquiry {
   background-color: #000a;
 }
 #menu .menu-section figure figcaption.cta a.view {
+  position: relative;
+}
+#menu .menu-section figure figcaption.cta a.view::before, #menu .menu-section figure figcaption.cta a.view::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+  z-index: -1;
+}
+#menu .menu-section figure figcaption.cta a.view::before {
   background: linear-gradient(0deg, #b35600, #ffa600);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+#menu .menu-section figure figcaption.cta a.view::after {
+  background: linear-gradient(0deg, #ffa600, #b35600);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+}
+@media (max-width: 820px) {
+  #menu .menu-section figure figcaption.cta a.view:active {
+    transform: scale(0.98);
+    letter-spacing: normal;
+  }
+  #menu .menu-section figure figcaption.cta a.view:active::before {
+    opacity: 0;
+  }
+  #menu .menu-section figure figcaption.cta a.view:active::after {
+    opacity: 1;
+  }
+}
+@media (min-width: 820px) {
+  #menu .menu-section figure figcaption.cta a.view:hover {
+    transform: scale(0.98);
+    letter-spacing: normal;
+  }
+  #menu .menu-section figure figcaption.cta a.view:hover::before {
+    opacity: 0;
+  }
+  #menu .menu-section figure figcaption.cta a.view:hover::after {
+    opacity: 1;
+  }
 }
 #menu .menu-section figure .page-link {
   position: absolute;
