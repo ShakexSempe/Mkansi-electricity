@@ -342,7 +342,7 @@
   position: relative;
   isolation: isolate;
 }
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   #hero {
     background-size: cover;
   }
@@ -350,14 +350,16 @@
 #hero figure {
   width: 15rem;
   width: 100%;
-  border-bottom-left-radius: 50%;
-  border: 1px solid #ffa500;
+  height: 20rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #ffa500;
   overflow: hidden;
   transition: 1s;
 }
 @media (min-width: 768px) {
   #hero figure {
     width: 30rem;
+    border-bottom-right-radius: 0;
     position: sticky;
     top: 0;
     float: right;
@@ -400,7 +402,7 @@
   width: 18rem;
   transform: translateX(-50%);
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   #hero .cta {
     margin: 0;
   }
@@ -614,17 +616,28 @@
 }
 #menu .menu-section figure .page-link {
   position: absolute;
+  display: block;
   bottom: 20vh;
   z-index: 5;
-  border: 2px solid #000;
   background-color: #000a;
   border-radius: 50%;
   font-size: 1rem;
   padding: 0.5rem;
   text-decoration: none;
   color: #ffa500;
+  transition: 0.2s;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 820px) {
+  #menu .menu-section figure .page-link:active {
+    transform: translateX(-50%) scale(0.97);
+  }
+}
+@media (min-width: 820px) {
+  #menu .menu-section figure .page-link:hover {
+    transform: translateX(-50%) scale(0.97);
+  }
 }
 #menu .menu-section figure::after {
   content: "";
