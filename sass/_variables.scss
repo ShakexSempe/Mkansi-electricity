@@ -37,10 +37,10 @@ $brand-btn-hover: $brand;
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-open-sans: 'Open Sans', sans-serif;
 
-$btn-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.400),
+$btn-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
             inset -2px -2px 2px rgba(0, 0, 0, 0.300),
                 4px 4px 2px rgba(0, 0, 0, .200);
 
 $btn-shadow-hover: inset 2px 2px 2px rgba(0, 0, 0, .300),
-                inset -2px -2px 2px rgba(255, 255, 255, 0.400),
+                inset -2px -2px 2px rgba(255, 255, 255, 0.200),
                     2px 2px 3px rgba(0, 0, 0, .350);
