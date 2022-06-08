@@ -512,6 +512,7 @@
 #menu .menu-section figure figcaption.menu-title {
   top: 10vh;
   text-align: center;
+  width: 100%;
 }
 #menu .menu-section figure figcaption.menu-title h2 {
   color: #fff;
