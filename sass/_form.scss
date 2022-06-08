@@ -105,7 +105,7 @@
     }
 
     button {
-        padding: .7rem 1rem;
+        padding: 1rem;
         width: 100%;
         font-size: 1rem;
         margin: .5rem auto 1rem;
@@ -115,6 +115,7 @@
         position: relative;
         color: $text-main;
         font-family: $font-ubuntu;
+        letter-spacing: .05rem;
         border: none;
         outline: none;
         isolation: isolate;
@@ -133,30 +134,40 @@
         }
         &::before {
             background: $cta-btn;
-            box-shadow: inset 2px 2px 2px #fffa,
-                        inset -2px -2px 2px #000a,
-                        4px 4px 4px rgba(0, 0, 0, 0.150);
+            box-shadow: $btn-shadow;
         }
         &::after {
             opacity: 0;
             background: $cta-btn-hover;
-            box-shadow: inset 2px 2px 2px #fffa,
-                        inset -2px -2px 2px #000a,
-                        2px 2px 2px rgba(0, 0, 0, 0.250);
+            box-shadow: $btn-shadow-hover;
         }
-
-        &:hover {
-            transform: scale(.98);
-            &::before {
-                opacity: 0;
+        // HOVER AND ACTIVE MEDIA QUERY
+        @media (max-width: 820px){
+            &:active {
+                letter-spacing: normal;
+                transform: scale(.98);
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                }
             }
-            &::after {
-                opacity: 1;
+        }
+        
+        @media (min-width: 820px){
+            &:hover {
+                letter-spacing: normal;
+                transform: scale(.98);
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                }
             }
         }
-        &:active {
-            transform: scale(.95);
-        }
+        
     }
     @media (min-width: 768px) {
         padding: 0 5vw;
