@@ -16,7 +16,7 @@
             h3 {
                 position: sticky;
                 top: 7vh;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 padding: .5rem 0;
                 color: #111;
                 transition: 1s;
@@ -36,7 +36,7 @@
                 
 
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     margin: .5rem 0;
                 }
                 i {
@@ -79,9 +79,11 @@
                         padding: 1rem .1rem;
                         text-transform: capitalize;
                         list-style-type: square;
+                        list-style-type: none;
                         font-size: 1rem;
                         transition: .2s;
                         border: 1px solid #fff;
+                        border-radius: 5px;
                         color: $brand;
                         cursor: pointer;
                         &::marker {

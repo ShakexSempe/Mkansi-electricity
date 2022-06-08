@@ -486,12 +486,12 @@
 }
 #hero .cta a::before {
   background: linear-gradient(0deg, #b35600, #ffa600);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 4px 4px 2px rgba(0, 0, 0, 0.2);
 }
 #hero .cta a::after {
   opacity: 0;
   background: linear-gradient(0deg, #ffa600, #b35600);
-  box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.35);
 }
 @media (max-width: 1024px) {
   #hero .cta a:active {
@@ -609,7 +609,7 @@
 #services .service-container .service-item h3 {
   position: sticky;
   top: 7vh;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 0.5rem 0;
   color: #111;
   transition: 1s;
@@ -627,7 +627,7 @@
   margin: 5vh 0;
 }
 #services .service-container .service-item .service-core p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0.5rem 0;
 }
 #services .service-container .service-item .service-core i {
@@ -670,9 +670,11 @@
   padding: 1rem 0.1rem;
   text-transform: capitalize;
   list-style-type: square;
+  list-style-type: none;
   font-size: 1rem;
   transition: 0.2s;
   border: 1px solid #fff;
+  border-radius: 5px;
   color: #ffa500;
   cursor: pointer;
 }
@@ -1098,12 +1100,12 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a::before {
   background: linear-gradient(0deg, #b35600, #ffa600);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 4px 4px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 4px 4px 2px rgba(0, 0, 0, 0.2);
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a::after {
   opacity: 0;
   background: linear-gradient(0deg, #ffa600, #b35600);
-  box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px #fffa, 2px 2px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.4), 2px 2px 3px rgba(0, 0, 0, 0.35);
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
   transform: scale(0.97);
