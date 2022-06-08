@@ -33,7 +33,7 @@
         }
 
         &.active-hero-title {
-            transform: translateX(100%);
+            transform: translateY(-100%);
             transform-origin: right;
         }
     }

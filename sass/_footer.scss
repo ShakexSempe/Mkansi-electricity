@@ -152,18 +152,33 @@
     }
     }
     .footer-copyright {
+        height: 70vh;
         margin: 5vh auto 0;
         text-align: center;
+        text-align: left;
         text-transform: capitalize;
-        background: $brand-dark;
-        background: $cta-btn;
-        padding: 5vh 0;
-        // DATA-SCROLL
-        &[data-scroll] {
-            transform: translateY(50%);
-        }
-        &[data-scroll="in"] {
-            transform: translateY(0);
+        // background: $brand-dark;
+        // background: $cta-btn;
+        // padding: 5vh 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // border: 2px solid blue;
+        
+        .copyright-content {
+            // border: 2px solid red;
+            width: 100%;
+            height: 100%;
+            padding: 5vh 5vw;
+            flex-basis: 50%;
+
+            p {
+                color: #000;
+                a {
+                    color: inherit;
+                }
+            }
         }
 
         p {
@@ -178,35 +193,62 @@
                 }
             }
         }
-    }
-    @media (min-width: 768px) {
-        padding: 5vh 0 0;
-
-        // h2 {
-        //     font-size: 2rem;
-        //     padding: 5vh 0;
-        // }
-        .contact-form {
-            flex-direction: row;
-        
-        .footer-contact {
-            // padding: 10vh 5vw;
-            display: flex;
-            // flex-direction: row;
-            // align-items: flex-end;
-            // margin: 5vh 0;
-
-            .contact-item {
-                // width: 30%;
-                margin: 0;
+        .footer-logo {
+            width: 10rem;
+            width: 100%;
+            flex-basis: 50%;
+            height: 10rem;
+            overflow: hidden;
+            background: #000;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
-        .footer-copyright {
-            background: $brand;
-            width: 100%;
-            
+
+        @media (min-width: 820px){
+            flex-direction: row-reverse;
+            height: 50vh;
+            .footer-logo {
+                width: 50%;
+                height: 100%;
+            }
+            .copyright-content {
+                width: 50%;
+            }
         }
     }
-    }
+    // @media (min-width: 768px) {
+    //     padding: 5vh 0 0;
+
+    //     // h2 {
+    //     //     font-size: 2rem;
+    //     //     padding: 5vh 0;
+    //     // }
+    //     .contact-form {
+    //         flex-direction: row;
+        
+    //     .footer-contact {
+    //         // padding: 10vh 5vw;
+    //         display: flex;
+    //         // flex-direction: row;
+    //         // align-items: flex-end;
+    //         // margin: 5vh 0;
+
+    //         .contact-item {
+    //             // width: 30%;
+    //             margin: 0;
+    //         }
+    //     }
+    //     .footer-copyright {
+    //         // flex-direction: row-reverse;
+    //         justify-content: space-between;
+    //         // width: 100%;
+            
+    //     }
+    // }
+    // }
     
 }
