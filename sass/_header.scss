@@ -78,7 +78,7 @@
         
     }
     // MOBILE HEADER 
-    @media (max-width: 768px) {
+    @media (max-width: 820px) {
         height: 7vh;
         padding: 0 1rem;
         
@@ -290,7 +290,7 @@
     // END OF MOBILE HEADER 
     
     // DESKTOP HEADER
-    @media (min-width: 768px) {
+    @media (min-width: 820px) {
         height: 10vh;
         // display: none;
         padding: .5em 5vw;

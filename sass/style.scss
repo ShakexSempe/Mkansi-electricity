@@ -120,15 +120,16 @@ body {
 
     #top-btn {
         position: fixed;
-        bottom: 2rem;
-        right: 0;
+        bottom: 5vh;
+        right: 1rem;
         width: 2.5rem;
         height: 2.5rem;
         background: transparent;
         background: #fffa;
         outline: none;
         border: 2px solid $brand;
-        border-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
         padding: .2rem;
         z-index: 5;
         transition: 1s;
