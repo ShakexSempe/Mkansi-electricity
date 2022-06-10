@@ -58,7 +58,7 @@
 
 #top-btn {
     position: fixed;
-    bottom: 5vh;
+    bottom: 0vh;
     right: 1rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -86,7 +86,7 @@
     }
     @media (min-width: 768px) {
         right: 0;
-        bottom: 5vh;
+        bottom: 0;
         height: 2.5rem;
         width: 2.5rem;
 
