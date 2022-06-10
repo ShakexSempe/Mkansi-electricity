@@ -598,14 +598,31 @@
   text-align: center;
   width: 100%;
 }
-#menu .menu-section figure figcaption.menu-title h2 {
+#menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
+  transition: 1.5s;
 }
-#menu .menu-section figure figcaption.menu-title a {
+#menu .menu-section figure figcaption.menu-title .cta-content a {
+  display: block;
   color: #ddd;
+  transition: 1.5s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item h2 {
+  opacity: 0.1;
+  letter-spacing: 0.05rem;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item a {
+  transform: translateY(2rem);
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.active-io h2 {
+  opacity: 1;
+  letter-spacing: normal;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.active-io a {
+  transform: translateY(0);
 }
 #menu .menu-section figure figcaption.cta {
   bottom: 30vh;

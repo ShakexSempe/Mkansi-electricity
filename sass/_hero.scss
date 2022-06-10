@@ -210,18 +210,41 @@
                 top: 10vh;
                 text-align: center;
                 width: 100%;
-
+                .cta-content {
                 h2 {
                     color: #fff;
                     font-size: 2rem;
                     font-weight: 500;
                     text-transform: capitalize;
+                    transition: 1.5s;
                 }
-
                 a {
+                    display: block;
                     color: #ddd;
+                    transition: 1.5s;
                     // text-decoration: none;
                 }
+                &.io-item {
+                    h2 {
+                        opacity: .1;
+                        letter-spacing: .05rem;
+                    }
+
+                    a {
+                        transform: translateY(2rem);
+                    }
+                }
+                &.active-io {
+                    h2 {
+                        opacity: 1;
+                        letter-spacing: normal;
+                    }
+
+                    a {
+                        transform: translateY(0);
+                    }
+                }
+            }
                 }
                 &.cta {
                     bottom: 30vh;
