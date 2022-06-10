@@ -27,14 +27,11 @@ const heroOptions = {
     rootMargin: "-100% 0px 0% 0px"
 }
 console.log(hero);
-
-
 const heroObserver = new IntersectionObserver(
     function(entries, heroObserver){
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("header NOT IO");
-                topBtn.classList.add("active-top-btn");
                 header.classList.add("active-header");
                 logo.classList.remove("active-logo");
                 heroTitle.classList.add("active-hero-title");
@@ -50,7 +47,30 @@ const heroObserver = new IntersectionObserver(
 );
 heroObserver.observe(hero);
 
+// MAIN SECTION OBSERVER
+const mainOptions = {
+    rootMargin: '0% 0px -85% 0px',
+}
+const mainObserver = new IntersectionObserver(
+    function(
+        entries, mainObserver){
+            entries.forEach(entry => {
+                if(!entry.isIntersecting) {
+                    console.log("main NOT io");
+                    header.classList.remove("main-header");
+                topBtn.classList.remove("active-top-btn");
 
+                } else {
+                    console.log("main IS IO");
+                    header.classList.add("main-header");
+                topBtn.classList.add("active-top-btn");
+                }
+            })
+        }, mainOptions
+);
+mainObserver.observe(main);
+
+// TOGGLE 
 toggle.addEventListener("click",  () => {
     aside.classList.toggle("active");
     toggle.classList.toggle("active");
@@ -59,7 +79,7 @@ toggle.addEventListener("click",  () => {
     header.classList.toggle("active-aside");
     logo.classList.remove("active-logo");
 });
-
+// TOGGLE CLICK EVENT
 links.forEach(link => {
     link.addEventListener("click", () => {
         aside.classList.remove("active");
@@ -69,7 +89,7 @@ links.forEach(link => {
         header.classList.remove("active-aside");
     });
 });
-
+// LOGO CLICK EVENT
 logo.addEventListener("click", () => {
     if(aside.classList.contains("active")){
         aside.classList.remove("active");
@@ -80,7 +100,7 @@ logo.addEventListener("click", () => {
 
     }
 })
-
+// MAIN CLICK EVENT LISTENER
 main.addEventListener("click", () => {
     
     if(aside.classList.contains("active")){
@@ -91,7 +111,7 @@ main.addEventListener("click", () => {
         header.classList.remove("active-aside");
     }
 });
-
+// ITEM IO
 const ioItem = document.querySelectorAll('.io-item');
 console.log(ioItem);
 ioItem.forEach(item => {

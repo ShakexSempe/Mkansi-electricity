@@ -14,39 +14,57 @@
     // SCROLL BG
     &.active-header {
         background: #000a;
+        background: transparent;
         backdrop-filter: blur(.1rem);
+    }
+    &.main-header {
+        background-color: #000;
+        transition: background-color .2s;
+        
     }
     &.active-aside {
         background: #000;
     }
     .logo {
         // display: none;
-        // height: 100%;
-        width: 15rem;
         // border: 1px solid #fffa;
+        height: 100%;
+        width: 15rem;
         position: relative;
+        // DISPLAY LOGO AS FLEX TO CENTER H1 DOWN Y AXIS
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         &.sidebar-logo {
             opacity: 1;
         }
         a {
             // border: 2px solid yellow;
             overflow: hidden;
+            text-decoration: none;
             h1 {
                 // color: red;
                 border: 1px solid transparent;
+                // border: 2px solid blue;
                 border-radius: 10px;
                 color: $brand;
-                position: absolute;
-                top: -.5rem;
+                // position: absolute;
+                // top: -.5rem;
                 left: 0;
                 font-size: .8rem;
                 text-transform: uppercase;
                 transition: .5s;
                 font-family: $font-ubuntu;
+                background: #000a;
+                letter-spacing: .05rem;
+                padding: .5rem;
+                border-radius: 15px;
                 // transform: translateY(-1.5rem);
 
                 span {
+                    // display: inline-block;
                     color: #fff;
+                    overflow: hidden;
                 }
             }
         }
