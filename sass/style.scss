@@ -17,9 +17,9 @@
     // font-family: sans-serif;
     // font-family: $font-ubuntu;
     scroll-behavior: smooth;
-    scroll-padding-top: 8vh;
+    // scroll-padding-top: 8vh;
     @media (max-width:768px) {
-        scroll-padding-top: 7vh;
+        // scroll-padding-top: 7vh;
     }
 }
 body {
@@ -68,8 +68,10 @@ body {
 
         section {
             min-height: 100vh;
-            padding: 5vh 0 0;
-
+            padding: 10vh 0 0;
+            @media (min-width: 820px){
+                padding-top: 15vh;
+            }
 
             
         }

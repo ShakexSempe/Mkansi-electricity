@@ -551,6 +551,7 @@
     background-size: 100%;
     background-size: cover;
     background-position: center top;
+    background-attachment: fixed;
   }
   #hero::after {
     position: absolute;
@@ -751,6 +752,25 @@
   height: 100%;
   background: #000a;
   background: rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 820px) {
+  #menu .menu-section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #menu .menu-section.electrical {
+    background-image: url("../img/electric.jpg");
+  }
+  #menu .menu-section.building {
+    background-image: url("../img/work.jpg");
+  }
+  #menu .menu-section.painting {
+    background-image: url("../img/work-6-min.jpg");
+  }
+  #menu .menu-section figure img {
+    display: none;
+  }
 }
 
 .about .about-article {
@@ -1473,14 +1493,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 8vh;
 }
-@media (max-width: 768px) {
-  * {
-    scroll-padding-top: 7vh;
-  }
-}
-
 body {
   overflow-x: hidden;
 }
@@ -1518,7 +1531,12 @@ body {
 }
 #container #main section {
   min-height: 100vh;
-  padding: 5vh 0 0;
+  padding: 10vh 0 0;
+}
+@media (min-width: 820px) {
+  #container #main section {
+    padding-top: 15vh;
+  }
 }
 #container .section-title {
   text-align: center;
