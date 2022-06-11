@@ -419,9 +419,25 @@
 @media (max-width: 500px) {
   #hero figure {
     height: 50vh;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
     border-bottom: 1px solid #ffa500;
+    animation: hero 10s infinite;
+  }
+  @keyframes hero {
+    50% {
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+  }
+  #hero figure img {
+    animation: hero-img 10s infinite;
+    transform: scale(0.85);
+  }
+  @keyframes hero-img {
+    50% {
+      transform: scale(1);
+    }
   }
 }
 @media (min-width: 500px) {
@@ -982,7 +998,7 @@
   height: 95vh;
   position: sticky;
   top: 5vh;
-  background-image: url(../img/emmanuel-ikwuegbu--0-kl1BjvFc-unsplash.jpg);
+  background-image: url("../img/electric.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: cover;
