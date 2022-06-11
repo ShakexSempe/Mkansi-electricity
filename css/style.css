@@ -60,7 +60,7 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   padding: 0.2rem;
-  z-index: 5;
+  z-index: 2;
   transition: 1s;
   opacity: 1;
   cursor: pointer;
@@ -420,25 +420,9 @@
 @media (max-width: 500px) {
   #hero figure {
     height: 50vh;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     border-bottom: 1px solid #ffa500;
-    animation: hero 10s infinite;
-  }
-  @keyframes hero {
-    50% {
-      border-bottom-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-    }
-  }
-  #hero figure img {
-    animation: hero-img 10s infinite;
-    transform: scale(0.85);
-  }
-  @keyframes hero-img {
-    50% {
-      transform: scale(1);
-    }
   }
 }
 @media (min-width: 500px) {

@@ -17,28 +17,28 @@
         transition: 1s;
         @media (max-width: 500px){
             height: 50vh;
-            border-bottom-left-radius: 25%;
-            border-bottom-right-radius: 25%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
             border-bottom: 1px solid $brand;
-            animation: hero 10s  infinite;
+            // animation: hero 10s  infinite;
 
-            @keyframes hero {
-                50% {
-                    border-bottom-left-radius: 50%;
-                    border-bottom-right-radius: 50%;
-                }
-            }
+            // @keyframes hero {
+            //     50% {
+            //         border-bottom-left-radius: 50%;
+            //         border-bottom-right-radius: 50%;
+            //     }
+            // }
 
-            img {
-                animation: hero-img 10s infinite;
-                transform: scale(.85);
-                @keyframes hero-img {
+            // img {
+            //     animation: hero-img 10s infinite;
+            //     transform: scale(.85);
+            //     @keyframes hero-img {
                     
-                    50% {
-                        transform: scale(1);
-                    }
-                }
-            }
+            //         50% {
+            //             transform: scale(1);
+            //         }
+            //     }
+            // }
         }
         @media (min-width: 500px){
             width: 100%;
