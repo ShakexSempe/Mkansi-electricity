@@ -1102,12 +1102,14 @@
 }
 
 #form {
+  min-height: 100vh;
   width: 100%;
   padding: 5vh 5vw;
+  overflow: hidden;
 }
 #form .contact-title {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5vh;
   color: #000;
   position: relative;
   width: max-content;
@@ -1167,7 +1169,7 @@
   border-radius: 5px;
   border: none;
   font-size: 1rem;
-  outline: 2px solid #ffa500;
+  outline: 1px solid #000;
   font-family: "Open Sans", sans-serif;
   transition: 0.5s;
 }
@@ -1178,10 +1180,11 @@
   transition: 0.25s;
 }
 #form .input-div input:invalid, #form .input-div textarea:invalid {
-  outline: 2px solid #000;
+  outline: 1px solid #ffa500;
 }
 #form .input-div input:focus, #form .input-div textarea:focus {
   border-radius: 10px;
+  background-color: #f4f4f4;
 }
 #form .input-div input:focus::placeholder, #form .input-div textarea:focus::placeholder {
   opacity: 1;
@@ -1208,11 +1211,11 @@
   margin: 0.5rem auto 1rem;
   display: block;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 20px;
   position: relative;
   color: #f4f4f4;
   font-family: "Ubuntu", sans-serif;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
   border: none;
   outline: none;
   isolation: isolate;
@@ -1228,7 +1231,7 @@
   height: 100%;
   transition: 0.3s;
   z-index: -1;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 #form button::before {
   background: linear-gradient(0deg, #b35600, #ffa600);

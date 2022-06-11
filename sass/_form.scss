@@ -1,10 +1,12 @@
 #form {
     // border: 2px solid red;
+    min-height: 100vh;
     width: 100%;
     padding: 5vh 5vw;
+    overflow: hidden;
     .contact-title {
         font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 5vh;
         color: #000;
         position: relative;
         width: max-content;
@@ -68,7 +70,7 @@
             border-radius: 5px;
             border: none;
             font-size: 1rem;
-            outline: 2px solid $brand;
+            outline: 1px solid #000;
             font-family: $font-open-sans;
             transition: .5s;
             &::placeholder {
@@ -79,11 +81,12 @@
             }
 
             &:invalid {
-                outline: 2px solid #000;
+                outline: 1px solid $brand;
             }
 
             &:focus {
                 border-radius: 10px;
+                background-color: #f4f4f4;
                 &::placeholder {
                     opacity: 1;
                     letter-spacing: normal;
@@ -118,11 +121,11 @@
         margin: .5rem auto 1rem;
         display: block;
         text-transform: uppercase;
-        border-radius: 5px;
+        border-radius: 20px;
         position: relative;
         color: $text-main;
         font-family: $font-ubuntu;
-        letter-spacing: .05rem;
+        letter-spacing: .1rem;
         border: none;
         outline: none;
         isolation: isolate;
@@ -137,7 +140,7 @@
             height: 100%;
             transition: .3s;
             z-index: -1;
-            border-radius: 5px;
+            border-radius: 20px;
         }
         &::before {
             background: $cta-btn;
