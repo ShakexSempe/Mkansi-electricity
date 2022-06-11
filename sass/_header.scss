@@ -114,7 +114,7 @@
                 background-color: $nav-bg;
                 background-color: #000;
                 // padding: 1em;
-                transition: 1s;
+                transition: .5s;
                 z-index: 1;
                 overflow-y: auto;
 
@@ -265,6 +265,7 @@
                 }
                 // ACTIVE SIDEBAR NAVIGATION
                 &.active {
+                    transition: 1s;
                     right: -20vw;
                     ul {
                         li {
@@ -290,13 +291,13 @@
                             transform: translateY(0);
                             opacity: 1;
                             &:nth-child(1){
-                                transition-delay: 1s;
+                                transition-delay: .85s;
                             }
                             &:nth-child(2){
-                                transition-delay: 1.2s;
+                                transition-delay: .95s;
                             }
                             &:nth-child(3){
-                                transition-delay: 1.4s;
+                                transition-delay: 1.05s;
                             }
                         }
                     }
