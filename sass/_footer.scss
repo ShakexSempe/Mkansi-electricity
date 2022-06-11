@@ -4,7 +4,9 @@
     .contact-form {
         display: flex;
         flex-direction: column;
-
+        @media (min-width: 820px) {
+            flex-direction: row-reverse;
+        }
         // border: 1px solid red;
         .form {
             flex-basis: 50%;
@@ -25,10 +27,13 @@
             justify-content: space-evenly;
             align-items: center;
             padding: 5vh 5vw;
-
+            @media (min-width: 820px) {
+                justify-content: center;
+            }
             .contact-item {
                 // background: $nav-bg;
                 border: 1px solid $brand-trans;
+                border: 1px solid #000;
                 border-radius: 5px;
                 margin: 1rem auto;
                 padding: 1rem .5rem;
@@ -168,7 +173,6 @@
 
                 @media (min-width: 768px) {
                     text-align: center;
-
                     header {
                         text-align: center;
                     }

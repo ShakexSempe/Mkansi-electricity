@@ -1288,6 +1288,11 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 820px) {
+  #footer .contact-form {
+    flex-direction: row-reverse;
+  }
+}
 #footer .contact-form .form {
   flex-basis: 50%;
   display: flex;
@@ -1304,8 +1309,14 @@
   align-items: center;
   padding: 5vh 5vw;
 }
+@media (min-width: 820px) {
+  #footer .contact-form .footer-contact {
+    justify-content: center;
+  }
+}
 #footer .contact-form .footer-contact .contact-item {
   border: 1px solid rgba(255, 166, 0, 0.4);
+  border: 1px solid #000;
   border-radius: 5px;
   margin: 1rem auto;
   padding: 1rem 0.5rem;
