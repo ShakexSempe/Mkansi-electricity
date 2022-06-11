@@ -1280,6 +1280,10 @@
   }
 }
 
+#footer {
+  overflow: hidden;
+  min-height: 100vh;
+}
 #footer .contact-form {
   display: flex;
   flex-direction: column;
@@ -1303,15 +1307,15 @@
 #footer .contact-form .footer-contact .contact-item {
   border: 1px solid rgba(255, 166, 0, 0.4);
   border-radius: 5px;
-  margin: 0.5rem auto;
-  padding: 1rem 0;
+  margin: 1rem auto;
+  padding: 1rem 0.5rem;
   height: auto;
   width: 100%;
   transition: 0.2s;
 }
 #footer .contact-form .footer-contact .contact-item[data-scroll] {
   transition: 1.5s;
-  transform: scale(1) translateY(15vh);
+  transform: scale(1) translateY(0vh);
 }
 #footer .contact-form .footer-contact .contact-item[data-scroll=in] {
   transition: 1.5s;
@@ -1401,7 +1405,7 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p {
   color: #000;
-  margin: 1rem auto;
+  margin: 0.5rem auto 1rem;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p a {
   color: #000;

@@ -1,4 +1,6 @@
 #footer {
+    overflow: hidden;
+    min-height: 100vh;
     .contact-form {
         display: flex;
         flex-direction: column;
@@ -28,15 +30,15 @@
                 // background: $nav-bg;
                 border: 1px solid $brand-trans;
                 border-radius: 5px;
-                margin: .5rem auto;
-                padding: 1rem 0;
+                margin: 1rem auto;
+                padding: 1rem .5rem;
                 height: auto;
                 width: 100%;
                 transition: .2s;
 
                 &[data-scroll] {
                     transition: 1.5s;
-                    transform: scale(1) translateY(15vh);
+                    transform: scale(1) translateY(0vh);
                 }
 
                 &[data-scroll="in"] {
@@ -149,7 +151,7 @@
 
                     p {
                         color: $text-second;
-                        margin: 1rem auto;
+                        margin: .5rem auto 1rem;
 
                         // width: 50%;
                         a {
