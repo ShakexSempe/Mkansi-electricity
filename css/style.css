@@ -344,6 +344,9 @@
   #header .navigation aside.active .contact-links a:nth-child(3) {
     transition-delay: 1.05s;
   }
+  #header .navigation aside.active .contact-links a:nth-child(4) {
+    transition-delay: 1.15s;
+  }
 }
 @media (min-width: 1024px) {
   #header {
