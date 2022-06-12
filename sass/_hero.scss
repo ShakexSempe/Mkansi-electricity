@@ -7,7 +7,6 @@
     isolation: isolate;
 
     figure {
-        width: 15rem;
         width: 100%;
         height: 20rem;
         margin: 0 auto;
@@ -17,35 +16,18 @@
         transition: 1s;
         @media (max-width: 500px){
             height: 50vh;
+            width: 100%;
             border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
             border-bottom: 1px solid $brand;
-            // animation: hero 10s  infinite;
-
-            // @keyframes hero {
-            //     50% {
-            //         border-bottom-left-radius: 50%;
-            //         border-bottom-right-radius: 50%;
-            //     }
-            // }
-
-            // img {
-            //     animation: hero-img 10s infinite;
-            //     transform: scale(.85);
-            //     @keyframes hero-img {
-                    
-            //         50% {
-            //             transform: scale(1);
-            //         }
-            //     }
-            // }
+            
         }
         @media (min-width: 500px){
-            width: 100%;
+            width: 25rem;
             height: 50vh;
         }
         
-        @media (min-width: 820px) {
+        @media (min-width: 1024px) {
             width: 30rem;
             height: auto;
             border-bottom-left-radius: 50%;
@@ -165,7 +147,7 @@
         }
     }
     // DESKTOP STYLE
-    @media (min-width: 820px) {
+    @media (min-width: 1024px) {
         background-image: url(../img/work-min.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
