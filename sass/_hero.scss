@@ -207,6 +207,7 @@
                 &.menu-title {
                 top: 10vh;
                 text-align: center;
+                text-transform: capitalize;
                 width: 100%;
                 .cta-content {
                 h2 {
@@ -217,11 +218,28 @@
                     text-transform: capitalize;
                     transition: 1.5s;
                 }
-                a {
-                    display: block;
-                    color: #ddd;
+                p {
+                    color: #eee;
                     transition: 1.5s;
-                    // text-decoration: none;
+                    a {
+                        color: #eee;
+                        text-decoration: none;
+                        position: relative;
+                        transition: .5s;
+                        // PSEUDO UNDERLINE
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: -.2rem;
+                            left: 0;
+                            width: 100%;
+                            height: .1rem;
+                            background: #eee;
+                            border-radius: 50%;
+                            transform: translateY(.5rem);
+                            transition: .5s;
+                        }
+                    }
                 }
                 &.io-item {
                     h2 {
@@ -229,9 +247,14 @@
                         letter-spacing: .05rem;
                     }
 
-                    a {
+                    p {
                         transform: translateY(2rem);
                         opacity: 0;
+                        a {
+                            &::after {
+                                opacity: 0;
+                            }
+                        }
                     }
                 }
                 &.active-io {
@@ -240,9 +263,17 @@
                         letter-spacing: normal;
                     }
 
-                    a {
+                    p {
                         transform: translateY(0);
                         opacity: 1;
+
+                        a {
+                            &::after {
+                                opacity: 1;
+                                transition-delay: .5s;
+                                transform: translateY(0);
+                            }
+                        }
                     }
                 }
             }
@@ -252,8 +283,8 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 1rem;
-                    width: 100%;
+                    gap: 0rem;
+                    // width: 100%;
                     a {
                         width: 18rem;
                         padding: 1rem 0;
@@ -370,6 +401,8 @@
                     // DESKTOP CTA BUTTONS ROW FLEX
                     @media (min-width: 820px) {
                         flex-direction: row;
+                        width: 100%;
+                        gap: 1rem;
                     }
                 }
             }

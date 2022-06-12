@@ -598,6 +598,7 @@
 #menu .menu-section figure figcaption.menu-title {
   top: 10vh;
   text-align: center;
+  text-transform: capitalize;
   width: 100%;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
@@ -608,34 +609,58 @@
   text-transform: capitalize;
   transition: 1.5s;
 }
-#menu .menu-section figure figcaption.menu-title .cta-content a {
-  display: block;
-  color: #ddd;
+#menu .menu-section figure figcaption.menu-title .cta-content p {
+  color: #eee;
   transition: 1.5s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content p a {
+  color: #eee;
+  text-decoration: none;
+  position: relative;
+  transition: 0.5s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content p a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background: #eee;
+  border-radius: 50%;
+  transform: translateY(0.5rem);
+  transition: 0.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content.io-item h2 {
   opacity: 0;
   letter-spacing: 0.05rem;
 }
-#menu .menu-section figure figcaption.menu-title .cta-content.io-item a {
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item p {
   transform: translateY(2rem);
+  opacity: 0;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.io-item p a::after {
   opacity: 0;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content.active-io h2 {
   opacity: 1;
   letter-spacing: normal;
 }
-#menu .menu-section figure figcaption.menu-title .cta-content.active-io a {
+#menu .menu-section figure figcaption.menu-title .cta-content.active-io p {
   transform: translateY(0);
   opacity: 1;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content.active-io p a::after {
+  opacity: 1;
+  transition-delay: 0.5s;
+  transform: translateY(0);
 }
 #menu .menu-section figure figcaption.cta {
   bottom: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  width: 100%;
+  gap: 0rem;
 }
 #menu .menu-section figure figcaption.cta a {
   width: 18rem;
@@ -743,6 +768,8 @@
 @media (min-width: 820px) {
   #menu .menu-section figure figcaption.cta {
     flex-direction: row;
+    width: 100%;
+    gap: 1rem;
   }
 }
 #menu .menu-section figure .page-link {
