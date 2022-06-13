@@ -912,8 +912,9 @@
   font-family: "Open Sans", sans-serif;
 }
 #services .service-container .service-item {
-  margin: 10vh 0;
-  padding: 0 5vw;
+  min-height: 90vh;
+  margin: 0;
+  padding: 10vh 5vw 0;
   position: relative;
   isolation: isolate;
 }
@@ -966,11 +967,14 @@
   }
 }
 #services .service-container .service-item .service-type {
+  border: 1px solid black;
   background-color: #f4f4f4;
   background-color: #fff;
+  padding: 1rem 0;
 }
 #services .service-container .service-item .service-type ul {
   margin-left: 0.5rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   #services .service-container .service-item .service-type ul {
@@ -986,7 +990,7 @@
   transition: 0.2s;
   border: 1px solid #fff;
   border-radius: 5px;
-  color: #ffa500;
+  color: #000;
   cursor: pointer;
 }
 #services .service-container .service-item .service-type ul li::marker {
@@ -1006,12 +1010,73 @@
 #services .service-container .service-item .service-type ul li[data-scroll=in]:hover {
   transition: 0.2s;
 }
+#services .service-container .service-item .service-type a {
+  display: block;
+  width: 10rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background: #ffa500;
+  transition: 0.2s;
+  position: relative;
+  isolation: isolate;
+}
+#services .service-container .service-item .service-type a::before, #services .service-container .service-item .service-type a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+  z-index: -1;
+}
+#services .service-container .service-item .service-type a::before {
+  background: linear-gradient(0deg, #b35600, #ffa600);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+#services .service-container .service-item .service-type a::after {
+  background: linear-gradient(0deg, #ffa600, #b35600);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.2), 2px 2px 3px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+}
+@media (max-width: 820px) {
+  #services .service-container .service-item .service-type a:active {
+    letter-spacing: normal;
+    transform: scale(0.98);
+  }
+  #services .service-container .service-item .service-type a:active::before {
+    opacity: 0;
+  }
+  #services .service-container .service-item .service-type a:active::after {
+    opacity: 1;
+  }
+}
+@media (min-width: 820px) {
+  #services .service-container .service-item .service-type a:hover {
+    letter-spacing: normal;
+    transform: scale(0.98);
+  }
+  #services .service-container .service-item .service-type a:hover::before {
+    opacity: 0;
+  }
+  #services .service-container .service-item .service-type a:hover::after {
+    opacity: 1;
+  }
+}
 @media (min-width: 768px) {
   #services .section-description {
     padding: 5vh 5vw;
     font-size: 1.2rem;
   }
   #services .service-container .service-item {
+    min-height: 100vh;
     padding: 0 5vw;
   }
 }
