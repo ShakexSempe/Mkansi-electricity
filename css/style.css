@@ -829,10 +829,13 @@
     background-image: url("../img/electric.jpg");
   }
   #menu .menu-section.building {
+    background-image: url("../img/work-23-min.jpg");
     background-image: url("../img/work.jpg");
   }
   #menu .menu-section.painting {
     background-image: url("../img/work-15.jpg");
+    background-image: url("../img/work-1-min.jpg");
+    background-position: center;
     background-size: cover;
   }
   #menu .menu-section figure img {

@@ -466,11 +466,14 @@
                 background-image: url('../img/electric.jpg');
             }
             &.building {
+                background-image: url('../img/work-23-min.jpg');
                 background-image: url('../img/work.jpg');
+                // background-position: top;
             }
             &.painting {
                 background-image: url('../img/work-15.jpg');
-                // background-position: top;
+                background-image: url('../img/work-1-min.jpg');
+                background-position: center;
                 background-size: cover;
             }
             // HIDE FIGURE ON DSKTOP SIZE TO ENABLE FIXED BG ATTACHMENT
