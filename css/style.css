@@ -591,6 +591,9 @@
   height: 100%;
   object-fit: cover;
 }
+#menu .menu-section figure img.paint-img {
+  object-position: 45%;
+}
 #menu .menu-section figure figcaption {
   position: absolute;
   left: 50%;
@@ -659,7 +662,7 @@
   transform: translateY(0);
 }
 #menu .menu-section figure figcaption.cta {
-  bottom: 25vh;
+  bottom: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -778,7 +781,6 @@
 #menu .menu-section figure .page-link {
   position: absolute;
   display: block;
-  bottom: 20vh;
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -791,6 +793,7 @@
   text-decoration: none;
   color: #ffa500;
   transition: 0.2s;
+  bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
 }
