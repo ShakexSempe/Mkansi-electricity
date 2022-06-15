@@ -960,6 +960,7 @@
 #services .service-container .service-item .service-core p {
   font-size: 1rem;
   margin: 0.5rem 0;
+  font-weight: 500;
 }
 #services .service-container .service-item .service-core i {
   font-size: 2rem;
