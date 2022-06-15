@@ -90,7 +90,7 @@
   color: #000;
   transition: 0.3s;
   margin: 0 auto;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 #top-btn.active-top-btn {
   opacity: 1;
@@ -98,10 +98,10 @@
 }
 #top-btn.active-top-btn:hover {
   transition: 0.3s;
-  transform: scale(1.1);
+  transform: scale(0.97);
 }
 #top-btn:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 #header {
@@ -469,18 +469,19 @@
   width: 18rem;
   transform: translateX(-50%);
 }
-@media (min-width: 820px) {
-  #hero .cta {
-    margin: 0;
-  }
+#hero .cta p {
+  color: #ddd;
+  margin: 1rem 0;
+  text-transform: capitalize;
+  text-align: center;
 }
 #hero .cta a {
   font-size: 1rem;
   color: #fff;
   border: none;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  width: 100%;
+  padding: 0.7rem 0;
+  margin: 1rem auto;
+  width: 20rem;
   display: block;
   position: relative;
   text-decoration: none;
@@ -542,11 +543,15 @@
     opacity: 1;
   }
 }
-#hero .cta p {
-  color: #ddd;
-  margin: 1rem 0;
-  text-transform: capitalize;
-  text-align: center;
+@media (min-width: 820px) {
+  #hero .cta {
+    margin: 0;
+    bottom: 30vh;
+    width: 100%;
+  }
+  #hero .cta p {
+    font-size: 1.15rem;
+  }
 }
 @media (min-width: 1024px) {
   #hero {
@@ -610,7 +615,7 @@
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
   color: #fff;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   transition: 1.5s;
@@ -634,8 +639,16 @@
   height: 0.1rem;
   background: #eee;
   border-radius: 5px;
-  transform: translateY(0.5rem);
   transition: 0.5s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content p a:hover {
+  color: #ffa500;
+  transition: 0.2s;
+}
+#menu .menu-section figure figcaption.menu-title .cta-content p a:hover::after {
+  transform: scale(0.5);
+  background-color: #ffa500;
+  transition: 0.2s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content.io-item h2 {
   opacity: 0;
@@ -643,9 +656,6 @@
 }
 #menu .menu-section figure figcaption.menu-title .cta-content.io-item p {
   transform: translateY(2rem);
-  opacity: 0;
-}
-#menu .menu-section figure figcaption.menu-title .cta-content.io-item p a::after {
   opacity: 0;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content.active-io h2 {
@@ -656,11 +666,6 @@
   transform: translateY(0);
   opacity: 1;
 }
-#menu .menu-section figure figcaption.menu-title .cta-content.active-io p a::after {
-  opacity: 1;
-  transition-delay: 0.5s;
-  transform: translateY(0);
-}
 #menu .menu-section figure figcaption.cta {
   bottom: 20vh;
   display: flex;
@@ -670,7 +675,7 @@
 }
 #menu .menu-section figure figcaption.cta a {
   width: 18rem;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   margin: 0.5rem 0;
   border-radius: 20px;
   text-align: center;
@@ -680,7 +685,7 @@
   position: relative;
   isolation: isolate;
   letter-spacing: 0.05rem;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 #menu .menu-section figure figcaption.cta a.enquiry {
   background-color: #000a;
@@ -709,6 +714,12 @@
     letter-spacing: normal;
     transform: scale(0.98);
     letter-spacing: normal;
+  }
+  #menu .menu-section figure figcaption.cta a.enquiry:active::before {
+    opacity: 0;
+  }
+  #menu .menu-section figure figcaption.cta a.enquiry:active::after {
+    opacity: 1;
   }
 }
 @media (min-width: 820px) {
@@ -1648,6 +1659,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -1698,9 +1710,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.35rem;
+  margin-bottom: 10vh;
 }
 #container .section-title h2 {
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
 }
 #container .section-title h2::after {
