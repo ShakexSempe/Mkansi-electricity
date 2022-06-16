@@ -72,6 +72,7 @@
             font-size: 1rem;
             outline: 1px solid #000;
             font-family: $font-open-sans;
+            resize: none;
             transition: .5s;
             &::placeholder {
                 text-transform: capitalize;
@@ -81,12 +82,10 @@
             }
 
             &:invalid {
-                outline: 1px dashed $brand;
+                outline: 1px dashed #000;
             }
 
             &:focus {
-                outline: 1px solid $brand;
-                border-radius: 10px;
                 background-color: #f4f4f4;
                 &::placeholder {
                     opacity: 1;

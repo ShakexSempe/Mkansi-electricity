@@ -1318,6 +1318,7 @@
   font-size: 1rem;
   outline: 1px solid #000;
   font-family: "Open Sans", sans-serif;
+  resize: none;
   transition: 0.5s;
 }
 #form .input-div input::placeholder, #form .input-div textarea::placeholder {
@@ -1327,11 +1328,9 @@
   transition: 0.25s;
 }
 #form .input-div input:invalid, #form .input-div textarea:invalid {
-  outline: 1px dashed #ffa500;
+  outline: 1px dashed #000;
 }
 #form .input-div input:focus, #form .input-div textarea:focus {
-  outline: 1px solid #ffa500;
-  border-radius: 10px;
   background-color: #f4f4f4;
 }
 #form .input-div input:focus::placeholder, #form .input-div textarea:focus::placeholder {
