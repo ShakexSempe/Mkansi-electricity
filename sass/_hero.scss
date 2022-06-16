@@ -1,7 +1,7 @@
 #hero {
     min-height: 100vh;
-    width: 100%;
-    // border: 2px solid blue;
+    width: 100vw;
+    // border: 2px solid yellow;
     background-color: #000;
     position: relative;
     isolation: isolate;
@@ -23,7 +23,7 @@
             
         }
         @media (min-width: 500px){
-            width: 25rem;
+            width: 30rem;
             height: 50vh;
         }
         
@@ -67,6 +67,7 @@
         left: 50%;
         width: 18rem;
         transform: translateX(-50%);
+        // border: 2px solid red;
         p {
             color: #ddd;
             margin: 1rem 0;
@@ -77,9 +78,11 @@
             font-size: 1rem;
             color: #fff;
             border: none;
+            // border: 2px solid red;
             padding: .7rem 0;
             margin: 1rem auto;
             width: 20rem;
+            width: 100%;
             display: block;
             position: relative;
             text-decoration: none;
@@ -144,7 +147,7 @@
         @media (min-width: 820px) {
             margin: 0;
             bottom: 30vh;
-            width: 100%;
+            width: 20rem;
 
             p {
                 font-size: 1.15rem;
