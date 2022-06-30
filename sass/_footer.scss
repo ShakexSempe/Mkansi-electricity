@@ -97,8 +97,9 @@
                             padding: .5rem;
                             margin-left: 1rem;
                             width: 10rem;
+                            letter-spacing: .05rem;
                             // margin: 1rem auto;
-                            text-transform: uppercase;
+                            text-transform: capitalize;
                             transition: .3s;
                             position: relative;
                             isolation: isolate;
@@ -127,28 +128,34 @@
                                 background: $cta-btn-hover;
                                 box-shadow: $btn-shadow-hover;
                             }
-
-                            &:hover {
-                                transform: scale(.97);
-
-                                &::before {
-                                    opacity: 0;
-                                }
-
-                                &::after {
-                                    opacity: 1;
+                            // HOVER AND ACTIVE MEDIA QUERY
+                            @media(min-width: 768px){
+                                &:hover {
+                                    letter-spacing: normal;
+                                    transform: scale(.97);
+    
+                                    &::before {
+                                        opacity: 0;
+                                    }
+    
+                                    &::after {
+                                        opacity: 1;
+                                    }
                                 }
                             }
-
-                            &:active {
-                                transform: scale(.95);
-
-                                &::before {
-                                    opacity: 0;
-                                }
-
-                                &::after {
-                                    opacity: 1;
+                            // HOVER AND ACTIVE MEDIA QUERY
+                            @media(max-width: 768px){
+                                &:active {
+                                    letter-spacing: normal;
+                                    transform: scale(.97);
+    
+                                    &::before {
+                                        opacity: 0;
+                                    }
+    
+                                    &::after {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }

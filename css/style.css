@@ -1516,7 +1516,8 @@
   padding: 0.5rem;
   margin-left: 1rem;
   width: 10rem;
-  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
   transition: 0.3s;
   position: relative;
   isolation: isolate;
@@ -1542,23 +1543,29 @@
   background: linear-gradient(0deg, #ffa600, #b35600);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.2), 2px 2px 3px rgba(0, 0, 0, 0.35);
 }
-#footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
-  transform: scale(0.97);
+@media (min-width: 768px) {
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:hover {
+    letter-spacing: normal;
+    transform: scale(0.97);
+  }
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:hover::before {
+    opacity: 0;
+  }
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:hover::after {
+    opacity: 1;
+  }
 }
-#footer .contact-form .footer-contact .contact-item .contact-info button a:hover::before {
-  opacity: 0;
-}
-#footer .contact-form .footer-contact .contact-item .contact-info button a:hover::after {
-  opacity: 1;
-}
-#footer .contact-form .footer-contact .contact-item .contact-info button a:active {
-  transform: scale(0.95);
-}
-#footer .contact-form .footer-contact .contact-item .contact-info button a:active::before {
-  opacity: 0;
-}
-#footer .contact-form .footer-contact .contact-item .contact-info button a:active::after {
-  opacity: 1;
+@media (max-width: 768px) {
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:active {
+    letter-spacing: normal;
+    transform: scale(0.97);
+  }
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:active::before {
+    opacity: 0;
+  }
+  #footer .contact-form .footer-contact .contact-item .contact-info button a:active::after {
+    opacity: 1;
+  }
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p {
   color: #000;
