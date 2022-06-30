@@ -66,8 +66,8 @@
     background: #fffa;
     outline: none;
     border: 2px solid $brand;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
     padding: .2rem;
     z-index: 2;
     transition: 1s;
@@ -108,12 +108,19 @@
     &.active-top-btn {
         opacity: 1;
         transform: translateY(0);
-        &:hover {
-            transition: .3s;
-            transform: scale(.97);
+        @media (min-width: 768px){
+            &:hover {
+                transition: .2s;
+                transform: scale(.96);
+            }
+        }
+        @media (max-width: 768px){
+            &:active {
+                transition: .2s;
+                transform: scale(.96);
+            }
         }
     }
-    &:active {
-        transform: scale(.97);
-    }
+
+    
 }

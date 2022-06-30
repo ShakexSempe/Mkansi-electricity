@@ -34,7 +34,7 @@
                 // background: $nav-bg;
                 border: 1px solid $brand-trans;
                 border: 1px solid #000;
-                border-radius: 5px;
+                border-radius: .25rem;
                 margin: 1rem auto;
                 padding: 1rem .5rem;
                 height: auto;
@@ -93,7 +93,7 @@
                             text-decoration: none;
                             line-height: 1.5;
                             background: $brand;
-                            border-radius: 5px;
+                            border-radius: .5rem;
                             padding: .5rem;
                             margin-left: 1rem;
                             width: 10rem;
@@ -114,7 +114,7 @@
                                 height: 100%;
                                 transition: .2s;
                                 z-index: -1;
-                                border-radius: 5px;
+                                border-radius: .5rem;
                                 border: none;
                             }
 
@@ -225,7 +225,7 @@
                 border: 2px solid $brand;
                 text-align: center;
                 padding: .5rem;
-                border-radius: 5px;
+                border-radius: .25rem;
                 // background-color: #fff;
             }
 

@@ -67,7 +67,7 @@
         input, textarea {
             padding: .5rem;
             transition: .2s;
-            border-radius: 5px;
+            border-radius: .25rem;
             border: none;
             font-size: 1rem;
             outline: 1px solid #000;
@@ -121,7 +121,7 @@
         margin: .5rem auto 1rem;
         display: block;
         text-transform: uppercase;
-        border-radius: 20px;
+        border-radius: 1rem;
         position: relative;
         color: $text-main;
         font-family: $font-ubuntu;
@@ -140,7 +140,7 @@
             height: 100%;
             transition: .3s;
             z-index: -1;
-            border-radius: 20px;
+            border-radius: 1rem;
         }
         &::before {
             background: $cta-btn;
