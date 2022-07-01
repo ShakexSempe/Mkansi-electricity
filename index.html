@@ -34,6 +34,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
 </head>
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
     <div id="container">
         <!-- HEADER -->
         <header id="header"> 
@@ -420,6 +423,12 @@
             </section>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 4000);
+    </script>
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>

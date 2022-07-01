@@ -124,3 +124,35 @@
 
     
 }
+
+.loader_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+
+    .loader {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        width: 3rem;
+        height: 3rem;
+        border: .5rem solid #fff;
+        border-left: .5rem solid $brand;
+        border-right: .5rem solid $brand;
+        border-radius: 50%;
+        animation: loader .25s linear infinite;
+
+        @keyframes loader {
+            100% {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
