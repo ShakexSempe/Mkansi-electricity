@@ -1389,7 +1389,7 @@
   margin: 0.5rem auto 1rem;
   display: block;
   text-transform: uppercase;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   position: relative;
   color: #f4f4f4;
   font-family: "Ubuntu", sans-serif;
@@ -1409,7 +1409,7 @@
   height: 100%;
   transition: 0.3s;
   z-index: -1;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 #form button::before {
   background: linear-gradient(0deg, #b35600, #ffa600);
