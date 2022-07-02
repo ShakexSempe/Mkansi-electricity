@@ -140,7 +140,7 @@
             height: 100%;
             transition: .3s;
             z-index: -1;
-            border-radius: 1rem;
+            border-radius: .5rem;
         }
         &::before {
             background: $cta-btn;
