@@ -117,21 +117,67 @@
   height: 100vh;
   background: #000;
   z-index: 99;
-  display: grid;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .loader_bg .loader {
-  width: 3rem;
-  height: 3rem;
-  border: 0.5rem solid #fff;
-  border-left: 0.5rem solid #ffa500;
-  border-right: 0.5rem solid #ffa500;
+  width: 4rem;
+  height: 4rem;
+  border-top: 0.25rem solid red;
   border-radius: 50%;
-  animation: loader 0.25s linear infinite;
+  animation: loader 5s linear infinite;
 }
 @keyframes loader {
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+  }
+}
+.loader_bg .wave {
+  width: 0.2rem;
+  height: 5rem;
+  background: linear-gradient(45deg, cyan, #fff);
+  background: linear-gradient(45deg, #ffa500, #fff);
+  margin: 0.5rem;
+  animation: wave 1s linear infinite;
+  border-radius: 5rem;
+}
+.loader_bg .wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.loader_bg .wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.loader_bg .wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.loader_bg .wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.loader_bg .wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.loader_bg .wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.loader_bg .wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.loader_bg .wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.loader_bg .wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 
