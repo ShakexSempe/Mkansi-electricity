@@ -133,10 +133,10 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    z-index: 100;
     display: grid;
     place-items: center;
     overflow: hidden;
+    z-index: 100;
 
     .spinner {
         // border: .25rem solid red;
@@ -157,19 +157,54 @@
             border-radius: 50%;
             border: .5rem solid transparent;
             animation: rotate 2s infinite;
-            // mix-blend-mode: overlay;
+            mix-blend-mode: overlay;
 
             &.sector-1 {
                 border-top-color: #f4f4f4f4;
-                animation-delay: .5s;
-                animation-timing-function: ease-in-out;
+                // animation-delay: .5s;
+                animation-timing-function: ease-out;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 1rem;
+                    left: .5rem;
+                    border: 2px solid #fff;
+                    background: #000;
+                    border-radius: 50%;
+                    height: .5rem;
+                    width: .5rem;
+                    z-index: 10;
+                }
+                // &::before {
+                //     position: absolute;
+                //     content: '';
+                //     top: .5rem;
+                //     left: .5rem;
+                //     border: 2px solid #fff;
+                //     background: #000;
+                //     border-radius: 50%;
+                //     height: .5rem;
+                //     width: .5rem;
+                //     z-index: 10;
+                // }
             }
 
             &.sector-2 {
                 border-left-color: $brand;
-                animation-delay: 0;
+                animation-delay: .5;
                 animation-timing-function: ease-in-out;
-
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 1rem;
+                    left: .5rem;
+                    border: 2px solid $brand;
+                    background: #000;
+                    border-radius: 50%;
+                    height: .5rem;
+                    width: .5rem;
+                    z-index: 10;
+                }
             }
 
             // &.sector-3 {
