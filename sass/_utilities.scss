@@ -175,18 +175,18 @@
                     width: .5rem;
                     z-index: 10;
                 }
-                // &::before {
-                //     position: absolute;
-                //     content: '';
-                //     top: .5rem;
-                //     left: .5rem;
-                //     border: 2px solid #fff;
-                //     background: #000;
-                //     border-radius: 50%;
-                //     height: .5rem;
-                //     width: .5rem;
-                //     z-index: 10;
-                // }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 1rem;
+                    right: .5rem;
+                    border: 2px solid #fff;
+                    background: #000;
+                    border-radius: 50%;
+                    height: .5rem;
+                    width: .5rem;
+                    z-index: 10;
+                }
             }
 
             &.sector-2 {
@@ -198,6 +198,18 @@
                     content: '';
                     top: 1rem;
                     left: .5rem;
+                    border: 2px solid $brand;
+                    background: #000;
+                    border-radius: 50%;
+                    height: .5rem;
+                    width: .5rem;
+                    z-index: 10;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    bottom: .9rem;
+                    left: .6rem;
                     border: 2px solid $brand;
                     background: #000;
                     border-radius: 50%;

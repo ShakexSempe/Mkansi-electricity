@@ -156,6 +156,18 @@
   width: 0.5rem;
   z-index: 10;
 }
+.loader_bg .spinner .sector.sector-1::before {
+  position: absolute;
+  content: "";
+  top: 1rem;
+  right: 0.5rem;
+  border: 2px solid #fff;
+  background: #000;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  z-index: 10;
+}
 .loader_bg .spinner .sector.sector-2 {
   border-left-color: #ffa500;
   animation-delay: 0.5;
@@ -166,6 +178,18 @@
   content: "";
   top: 1rem;
   left: 0.5rem;
+  border: 2px solid #ffa500;
+  background: #000;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  z-index: 10;
+}
+.loader_bg .spinner .sector.sector-2:before {
+  position: absolute;
+  content: "";
+  bottom: 0.9rem;
+  left: 0.6rem;
   border: 2px solid #ffa500;
   background: #000;
   border-radius: 50%;
