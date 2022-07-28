@@ -725,19 +725,21 @@
   width: 100%;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
-  color: #fff;
+  color: #000;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  letter-spacing: 0.05rem;
   text-transform: capitalize;
   transition: 1.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
-  color: #eee;
+  color: #111;
   transition: 1.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
-  color: #eee;
+  font-weight: 600;
+  color: #000;
   text-decoration: none;
   position: relative;
   transition: 0.5s;
@@ -749,8 +751,8 @@
   left: 0;
   width: 100%;
   height: 0.1rem;
-  background: #eee;
-  border-radius: 5px;
+  background: #000;
+  border-radius: 1rem;
   transition: 0.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a:hover {
