@@ -11,7 +11,7 @@
         .service-item {
             // border: 2px solid red;
             min-height: 90vh;
-            margin: 0;
+            margin: 10vh 0;
             padding: 10vh 5vw 0;
             position: relative;
             isolation: isolate;
@@ -34,6 +34,32 @@
                     letter-spacing: .05em;
                 }
             }
+
+            // SERVICE IMAGE AND CONTENT DISPLAY FLEX
+            .service-flexbox {
+                // border: 2px solid blue;
+                display: flex;
+                flex-direction: column;
+                @media(min-width: 820px){
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                }
+                .service-box-1 {
+                    flex-basis: 50%;
+                }
+                .service-box-2 {
+                    flex-basis: 50%;
+                    figure {
+                        // width: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+
             .service-core {
                 margin: 5vh 0;
                 
@@ -71,10 +97,16 @@
                 }
             }
             .service-type {
-                border: 1px solid black;
                 background-color: #fff;
                 padding: 1rem 0;
-                border-radius: .25rem;
+                border: none;
+                @media (max-width: 820px){
+                    border: 1px solid black;
+                    border-top-right-radius: .5rem;
+                    border-top-left-radius: .5rem;
+                    border-bottom: none;
+
+                }
                 ul {
                     margin-left: .5rem;
                     margin-bottom: 1rem;
@@ -159,6 +191,21 @@
                     }
                 }
             }
+            .service-image {
+                img {
+                    // border: 2px solid blue;
+                    @media (max-width: 820px) {
+                        border-bottom-right-radius: .5rem;
+                        border-bottom-left-radius: .5rem;
+                        height: 60vh;
+                    }
+                    @media (min-width: 820px) {
+                        border-radius: .5rem;
+                        height: 70vh;
+                        object-fit: cover;
+                    }
+                }
+            }
         }
     }
 
@@ -172,7 +219,27 @@
             .service-item {
                 min-height: 100vh;
                 padding: 0 5vw;
-
+                // width: 50vw;
+                // position: relative;
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     top: 25vh;
+                //     right: -40vw;
+                //     // background-color: red;
+                //     background-image:url("../img/building-1.jpg");
+                //     background-size: cover;
+                //     // border: 2px solid #000;
+                //     border-radius: 1rem;
+                //     width: 80%;
+                //     height: 50%;
+                //     overflow: hidden;
+                // }
+                // &.electric {
+                //     &::after {
+                //         background-image: url("../img/electric.jpg");
+                //     }
+                // }
                 .service-core {
                 }
             }
