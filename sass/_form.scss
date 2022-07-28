@@ -120,11 +120,13 @@
         font-size: 1rem;
         margin: .5rem auto 1rem;
         display: block;
-        text-transform: uppercase;
+        text-transform: capitalize;
         border-radius: .5rem;
         position: relative;
         color: $text-main;
-        font-family: $font-ubuntu;
+        // color: #000;
+        font-weight: 600;
+        // font-family: $font-ubuntu;
         letter-spacing: .1rem;
         border: none;
         outline: none;
