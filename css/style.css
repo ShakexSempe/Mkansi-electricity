@@ -725,7 +725,7 @@
   width: 100%;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content h2 {
-  color: #000;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -739,12 +739,12 @@
   }
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p {
-  color: #111;
+  color: #f4f4f4;
   transition: 1.5s;
 }
 #menu .menu-section figure figcaption.menu-title .cta-content p a {
-  font-weight: 600;
-  color: #000;
+  font-weight: 500;
+  color: #fff;
   text-decoration: none;
   position: relative;
   transition: 0.5s;
