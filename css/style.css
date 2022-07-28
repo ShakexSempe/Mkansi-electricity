@@ -1637,7 +1637,7 @@
   color: #ffa500;
   color: #000;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: capitalize;
@@ -1645,7 +1645,7 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button {
   border: 1px solid red;
