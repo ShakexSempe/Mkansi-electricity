@@ -23,6 +23,7 @@
                 color: #111;
                 transition: 1s;
                 background: #fff;
+                text-transform: capitalize;
                 z-index:2;
 
                 &[data-scroll] {
