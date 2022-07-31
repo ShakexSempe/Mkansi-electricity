@@ -275,7 +275,7 @@
 }
 #header .navigation {
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media (max-width: 1024px) {
   #header {
@@ -327,6 +327,7 @@
     margin-right: auto;
     width: 100%;
     transition: 0.5s;
+    letter-spacing: 0.015rem;
   }
   #header .navigation aside ul li i {
     color: #ffa500;
@@ -346,13 +347,14 @@
     border: 1px solid rgba(102, 66, 0, 0.5);
     width: 100%;
     font-size: 1rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background: #000;
     color: #fff;
     display: flex;
     float: left;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 0.015rem;
   }
   #header .navigation aside ul li.dropdown .dropdown-btn .fa-caret-down {
     transition: 0.4s;
@@ -407,6 +409,7 @@
     transform: translateY(-2rem);
     opacity: 0;
     transition: 1s;
+    letter-spacing: 0.015rem;
   }
   #header .navigation aside .contact-links a i {
     width: 2.5rem;
@@ -1751,6 +1754,7 @@
   text-align: center;
   text-align: left;
   text-transform: capitalize;
+  letter-spacing: 0.015rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1871,6 +1875,7 @@ body {
 #container .section-title {
   text-align: center;
   text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.35rem;
   margin-bottom: 10vh;
 }
