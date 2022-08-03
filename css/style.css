@@ -1620,7 +1620,7 @@
 }
 #footer .contact-form .footer-contact .contact-item {
   border-radius: 0.25rem;
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem;
   padding: 1rem 0.5rem;
   height: auto;
   width: 100%;
@@ -1637,31 +1637,41 @@
 #footer .contact-form .footer-contact .contact-item header {
   color: #ffa500;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
+#footer .contact-form .footer-contact .contact-item header i {
+  width: 2rem;
+}
 #footer .contact-form .footer-contact .contact-item .contact-info {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button {
-  border: 1px solid red;
   border: none;
-  width: 50%;
+  width: max-content;
   display: flex;
   align-items: center;
   transition: 0.2s;
   background: #fff;
   position: relative;
+  margin-left: 2rem;
+}
+@media (min-width: 820px) {
+  #footer .contact-form .footer-contact .contact-item .contact-info button {
+    margin: 0 auto;
+  }
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button i {
   transition: 0.2s;
   color: #ff7b00;
-  font-size: 1.5rem;
+  color: #f4f4f4;
+  font-size: 1rem;
+  margin-left: 0.25rem;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info button a {
   color: #f4f4f4;
@@ -1670,7 +1680,6 @@
   background: #ffa500;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  margin-left: 1rem;
   width: 10rem;
   letter-spacing: 0.05rem;
   text-transform: capitalize;
@@ -1725,7 +1734,7 @@
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p {
   color: #000;
-  margin: 0.5rem auto 1rem;
+  margin: 0.5rem 2rem 1rem;
 }
 #footer .contact-form .footer-contact .contact-item .contact-info p a {
   color: #000;
