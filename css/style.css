@@ -1880,6 +1880,7 @@ body {
 #container .section-title h2 {
   font-weight: 700;
   position: relative;
+  letter-spacing: 0.05rem;
 }
 #container .section-title h2::after {
   position: absolute;
