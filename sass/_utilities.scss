@@ -146,8 +146,11 @@
         display: grid;
         place-items: center;
         isolation: isolate;
-        color: #f4f4f4;
-        text-transform: capitalize;
+        p {
+            color: $brand;
+            opacity: .4;
+            text-transform: capitalize;
+        }
 
         .sector {
             position: absolute;

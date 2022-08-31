@@ -128,7 +128,10 @@
   display: grid;
   place-items: center;
   isolation: isolate;
-  color: #f4f4f4;
+}
+.loader_bg .spinner p {
+  color: #ffa500;
+  opacity: 0.4;
   text-transform: capitalize;
 }
 .loader_bg .spinner .sector {
@@ -1778,7 +1781,7 @@
 }
 #footer .footer-copyright .copyright-content .content-grid {
   border: 2px solid #ffa500;
-  text-align: center;
+  text-align: left;
   padding: 0.5rem;
   border-radius: 0.25rem;
 }
@@ -1795,9 +1798,10 @@
 #footer .footer-copyright p a {
   color: #f4f4f4;
   text-decoration: none;
+  transition: 0.25s;
 }
 #footer .footer-copyright p a:hover {
-  color: #000;
+  color: #ffa500;
 }
 #footer .footer-copyright .footer-logo {
   width: 10rem;
