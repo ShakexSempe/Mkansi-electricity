@@ -268,6 +268,14 @@
   color: #fff;
   overflow: hidden;
 }
+#header .logo.active-logo {
+  opacity: 1;
+}
+#header .logo.active-logo a h1 {
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  transform: translateY(-10vh);
+  transition: 1s;
+}
 #header .navigation {
   position: relative;
   text-transform: capitalize;
@@ -515,6 +523,11 @@
   position: relative;
   isolation: isolate;
 }
+@media (max-width: 768px) {
+  #hero {
+    background: #161616;
+  }
+}
 #hero::after {
   position: absolute;
   content: "";
@@ -594,12 +607,12 @@
   margin: 1rem 0;
   text-transform: capitalize;
   text-align: center;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 #hero .cta p span {
   display: block;
-  font-size: 1.05rem;
+  font-size: 1rem;
   opacity: 0.7;
 }
 #hero .cta a {

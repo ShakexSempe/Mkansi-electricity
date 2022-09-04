@@ -69,16 +69,16 @@
             }
         }
 
-        // &.active-logo {
-        //     opacity: 1;
-        //     a {
-        //         h1 {
-        //             border: 1px solid rgba(255, 255, 255, 0.349);
-        //             transform: translateY(-10vh);
-        //             transition: 1s;
-        //         }
-        //     }
-        // }
+        &.active-logo {
+            opacity: 1;
+            a {
+                h1 {
+                    border: 1px solid rgba(255, 255, 255, 0.349);
+                    transform: translateY(-10vh);
+                    transition: 1s;
+                }
+            }
+        }
     }
     .navigation {
         // border: 1px solid yellow;

@@ -1,4 +1,10 @@
 #hero {
+    @media (max-width: 768px) {
+        // background-image: url(../img/work-min.jpg);
+        // background-size: cover;
+        // background-position: 50%;
+        background: #161616;
+    }
     min-height: 100vh;
     width: 100vw;
     // border: 2px solid yellow;
@@ -91,12 +97,12 @@
             margin: 1rem 0;
             text-transform: capitalize;
             text-align: center;
-            font-size: 1.35rem;
+            font-size: 1.5rem;
             font-weight: 500;
             // font-family: $font-title;
             span {
                 display: block;
-                font-size: 1.05rem;
+                font-size: 1rem;
                 opacity: .7;
             }
         }
