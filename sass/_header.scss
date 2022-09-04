@@ -69,25 +69,16 @@
             }
         }
 
-        &.active-logo {
-            opacity: 1;
-            a {
-                h1 {
-                    border: 1px solid rgba(255, 255, 255, 0.349);
-                    // padding: .5rem .2rem;
-                    // backdrop-filter: blur(.1rem);
-                    // transform: scale(2) translateX(11vw) translateY(15vh);
-                    transform: translateY(-10vh);
-                    transition: 1s;
-                    // @media (min-width: 550px) {
-                    //     transform: scale(2.5) translateX(13vw) translateY(10vh);
-                    // }
-                    // @media (min-width: 1024px) {
-                    //     transform: scale(3) translateX(13vw) translateY(10vh);
-                    // }
-                }
-            }
-        }
+        // &.active-logo {
+        //     opacity: 1;
+        //     a {
+        //         h1 {
+        //             border: 1px solid rgba(255, 255, 255, 0.349);
+        //             transform: translateY(-10vh);
+        //             transition: 1s;
+        //         }
+        //     }
+        // }
     }
     .navigation {
         // border: 1px solid yellow;

@@ -268,14 +268,6 @@
   color: #fff;
   overflow: hidden;
 }
-#header .logo.active-logo {
-  opacity: 1;
-}
-#header .logo.active-logo a h1 {
-  border: 1px solid rgba(255, 255, 255, 0.349);
-  transform: translateY(-10vh);
-  transition: 1s;
-}
 #header .navigation {
   position: relative;
   text-transform: capitalize;
@@ -520,6 +512,26 @@
   position: relative;
   isolation: isolate;
 }
+@media (max-width: 768px) {
+  #hero {
+    background-color: none;
+    background-image: url(../img/work-min.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+}
+#hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(30deg, #000, #000a);
+  background: #000;
+  background: linear-gradient(0deg, #000 10%, transparent 100%);
+  z-index: -1;
+}
 #hero figure {
   width: 100%;
   height: 20rem;
@@ -529,11 +541,9 @@
 }
 @media (max-width: 500px) {
   #hero figure {
+    display: none;
     height: 50vh;
     width: 100%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom: 1px solid #ffa500;
   }
 }
 @media (min-width: 500px) {
@@ -581,7 +591,7 @@
 #hero .cta {
   text-align: center;
   position: absolute;
-  bottom: 25vh;
+  bottom: 15vh;
   left: 50%;
   width: 18rem;
   transform: translateX(-50%);
@@ -591,6 +601,11 @@
   margin: 1rem 0;
   text-transform: capitalize;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#hero .cta p span {
+  display: block;
 }
 #hero .cta a {
   font-size: 1rem;
@@ -679,18 +694,6 @@
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-  }
-  #hero::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(30deg, #000, #000a);
-    background: #000;
-    opacity: 0.9;
-    z-index: -1;
   }
 }
 

@@ -1,11 +1,31 @@
 #hero {
+    @media (max-width: 768px) {
+        background-color: none;
+        background-image: url(../img/work-min.jpg);
+        background-size: cover;
+        background-position: 50%;
+    }
     min-height: 100vh;
     width: 100vw;
     // border: 2px solid yellow;
     background-color: #000;
     position: relative;
     isolation: isolate;
-
+    // OVERLAY
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: $brand-overlay;
+        background-image: $brand-overlay-dark;
+        background: #000;
+        background: linear-gradient(0deg, #000 10%, transparent 100%);
+        // opacity: .5;
+        z-index: -1;
+    }
     figure {
         width: 100%;
         height: 20rem;
@@ -13,22 +33,9 @@
         overflow: hidden;
         transition: 1s;
         @media (max-width: 500px){
+            display: none;
             height: 50vh;
             width: 100%;
-            border-bottom-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-            border-bottom: 1px solid $brand;
-            // animation: figure 6s linear 6s;
-            // @keyframes figure {
-            //     0%, 50% {
-            //         border-bottom-left-radius: 0%;
-            //         border-bottom-right-radius: 0%;
-            //     }
-            //     100% {
-            //         border-bottom-left-radius: 50%;
-            //         border-bottom-right-radius: 50%;
-            //     }
-            // }
         }
         @media (min-width: 500px){
             width: 30rem;
@@ -80,7 +87,7 @@
     .cta {
         text-align: center;
         position: absolute;
-        bottom: 25vh;
+        bottom: 15vh;
         left: 50%;
         width: 18rem;
         transform: translateX(-50%);
@@ -90,6 +97,11 @@
             margin: 1rem 0;
             text-transform: capitalize;
             text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+            span {
+                display: block;
+            }
         }
         a {
             font-size: 1rem;
@@ -182,21 +194,6 @@
         background-size: cover;
         background-position: center top;
         background-attachment: fixed;
-
-        // OVERLAY
-        &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            // background-image: $brand-overlay;
-            background-image: $brand-overlay-dark;
-            background: #000;
-            opacity: .9;
-            z-index: -1;
-        }
     }
 }
 
