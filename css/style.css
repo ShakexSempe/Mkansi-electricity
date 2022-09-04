@@ -525,7 +525,7 @@
 }
 @media (max-width: 768px) {
   #hero {
-    background: #333;
+    background: linear-gradient(0deg, #333, #000 50%);
   }
 }
 #hero::after {
@@ -544,6 +544,8 @@
   height: 20rem;
   margin: 0 auto;
   overflow: hidden;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   transition: 1s;
 }
 @media (max-width: 500px) {

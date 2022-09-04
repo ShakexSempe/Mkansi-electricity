@@ -3,7 +3,7 @@
         // background-image: url(../img/work-min.jpg);
         // background-size: cover;
         // background-position: 50%;
-        background: #333;
+        background: linear-gradient(0deg, #333 , #000 50%);
     }
     min-height: 100vh;
     width: 100vw;
@@ -31,6 +31,8 @@
         height: 20rem;
         margin: 0 auto;
         overflow: hidden;
+        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: .5rem;
         transition: 1s;
         @media (max-width: 500px){
             // display: none;
