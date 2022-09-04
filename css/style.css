@@ -515,14 +515,6 @@
   position: relative;
   isolation: isolate;
 }
-@media (max-width: 768px) {
-  #hero {
-    background-color: none;
-    background-image: url(../img/work-min.jpg);
-    background-size: cover;
-    background-position: 50%;
-  }
-}
 #hero::after {
   position: absolute;
   content: "";
@@ -543,7 +535,6 @@
 }
 @media (max-width: 500px) {
   #hero figure {
-    display: none;
     height: 50vh;
     width: 100%;
   }

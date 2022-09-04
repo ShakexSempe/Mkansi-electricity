@@ -1,10 +1,4 @@
 #hero {
-    @media (max-width: 768px) {
-        background-color: none;
-        background-image: url(../img/work-min.jpg);
-        background-size: cover;
-        background-position: 50%;
-    }
     min-height: 100vh;
     width: 100vw;
     // border: 2px solid yellow;
@@ -33,7 +27,7 @@
         overflow: hidden;
         transition: 1s;
         @media (max-width: 500px){
-            display: none;
+            // display: none;
             height: 50vh;
             width: 100%;
         }
