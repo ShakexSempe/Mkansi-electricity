@@ -225,9 +225,15 @@
 
                             &:hover {
                                 // height: 35vh;
+                                .dropdown-btn {
+                                    .fa-caret-down {
+                                        rotate: 180deg;
+                                    }
+                                }
                                 .dropdown-content {
                                     height: 25vh;
                                 }
+                                
                             }
                         }
                     }
