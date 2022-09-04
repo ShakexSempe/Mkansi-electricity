@@ -983,6 +983,9 @@
   }
 }
 
+.about {
+  position: relative;
+}
 .about .about-article {
   background: #ffff;
   border-radius: 5px;
@@ -996,6 +999,21 @@
 @media (min-width: 768px) {
   .about .about-article {
     margin: 5vh 5vw;
+    width: 45%;
+  }
+  .about .about-article::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 5vw;
+    width: 40%;
+    height: 50%;
+    background: #fff000;
+    background-image: url("../img/mkansi.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.5rem;
   }
 }
 .about .about-article p {
