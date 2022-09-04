@@ -525,7 +525,7 @@
 }
 @media (max-width: 768px) {
   #hero {
-    background: #161616;
+    background: #333;
   }
 }
 #hero::after {
