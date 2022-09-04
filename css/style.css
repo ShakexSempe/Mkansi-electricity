@@ -678,11 +678,16 @@
 @media (min-width: 820px) {
   #hero .cta {
     margin: 0;
-    bottom: 30vh;
-    width: 20rem;
+    bottom: 10vh;
+    width: 25rem;
   }
   #hero .cta p {
-    font-size: 1.15rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  #hero .cta p span {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 }
 @media (min-width: 1024px) {
@@ -1865,7 +1870,6 @@ body {
 
 #container {
   max-width: 100vw;
-  font-family: "Ubuntu", sans-serif;
 }
 #container #main {
   width: 100%;

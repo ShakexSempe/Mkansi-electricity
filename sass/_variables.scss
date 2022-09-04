@@ -3,7 +3,8 @@
 
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-content: 'Lato', sans-serif;
-
+$font-ubuntu: 'Ubuntu', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
 $primary-color: #000;
 $secondary-color: orange;
 $brand: #ffa500;
@@ -38,8 +39,7 @@ $border-second: #0000;
 $brand-btn: linear-gradient(0deg, $brand-dark, $brand);
 $brand-btn-hover: $brand;
 
-$font-ubuntu: 'Ubuntu', sans-serif;
-$font-open-sans: 'Open Sans', sans-serif;
+
 
 $btn-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.250),
             inset -2px -2px 2px rgba(0, 0, 0, 0.300),
