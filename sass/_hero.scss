@@ -11,28 +11,13 @@
     background-color: #000;
     position: relative;
     isolation: isolate;
-    // OVERLAY
-    &::after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background-image: $brand-overlay;
-        // background-image: $brand-overlay-dark;
-        // background: #ff0000;
-        background: linear-gradient(0deg, #000 10%, transparent 100%);
-        opacity: .7;
-        z-index: -1;
-    }
+    
     figure {
         width: 100%;
         height: 20rem;
         margin: 0 auto;
         overflow: hidden;
-        border-bottom-right-radius: .5rem;
-        border-bottom-left-radius: .5rem;
+        
         transition: 1s;
         @media (max-width: 500px){
             // display: none;
@@ -42,6 +27,8 @@
         @media (min-width: 500px){
             width: 30rem;
             height: 50vh;
+            border-bottom-right-radius: .5rem;
+            border-bottom-left-radius: .5rem;
         }
         
         @media (min-width: 1024px) {
@@ -204,6 +191,21 @@
         background-size: cover;
         background-position: center top;
         background-attachment: fixed;
+        // OVERLAY
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // background-image: $brand-overlay;
+            // background-image: $brand-overlay-dark;
+            // background: #ff0000;
+            background: linear-gradient(0deg, #000 10%, transparent 100%);
+            opacity: .7;
+            z-index: -1;
+        }
     }
 }
 
