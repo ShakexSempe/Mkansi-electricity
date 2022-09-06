@@ -525,7 +525,7 @@
 }
 @media (max-width: 768px) {
   #hero {
-    background: #333;
+    background: #111;
   }
 }
 #hero figure {
@@ -535,13 +535,13 @@
   overflow: hidden;
   transition: 1s;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #hero figure {
     height: 50vh;
     width: 100%;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   #hero figure {
     width: 30rem;
     height: 50vh;
