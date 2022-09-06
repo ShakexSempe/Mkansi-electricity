@@ -33,15 +33,19 @@
             margin-bottom: 2rem;
             span {
                 font-size: 2rem;
-                padding-right: .1em;
+                // padding-right: .1em;
+                padding: 0 .05rem;
                 background: #000;
                 float: left;
                 margin-right: .1em;
-                border-radius: 2px;
-                box-shadow: 2px 3px 0 #4855634b;
+                border-top-right-radius: .25rem;
+                border-top-left-radius: .25rem;
+                overflow: hidden;
+                box-shadow: 2px 3px 2px #4855634b;
 
                 color: #fff;
-                text-shadow: 2px 2px 0px $brand;
+                color: $brand;
+                // text-shadow: 2px 2px 0px $brand;
             }
 
             strong {

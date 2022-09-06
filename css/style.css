@@ -1039,14 +1039,16 @@
 }
 .about .about-article p span {
   font-size: 2rem;
-  padding-right: 0.1em;
+  padding: 0 0.05rem;
   background: #000;
   float: left;
   margin-right: 0.1em;
-  border-radius: 2px;
-  box-shadow: 2px 3px 0 #4855634b;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 2px 3px 2px #4855634b;
   color: #fff;
-  text-shadow: 2px 2px 0px #ffa500;
+  color: #ffa500;
 }
 .about .about-article p strong {
   opacity: 0.1;
