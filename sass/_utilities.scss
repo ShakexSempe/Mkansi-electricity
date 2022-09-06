@@ -15,9 +15,11 @@
 
     .bar {
         background-color: $toggle-bar;
+        // background-color: red;
         width: 60%;
-        height: .08em;
+        height: .06em;
         position: relative;
+        border-radius: 2px;
         transition: .3s;
 
         &.bar-1 {
@@ -26,14 +28,16 @@
             content: '';
             top: 0;
             left: 0;
-            width: 100%;
+            width: 99%;
             height: 100%;
             background-color: $toggle-bar;
+            border-radius: 2px;
+
             transition: .3s;
         }
     }
         &::before {
-            transform: translateY(.25em) ;
+            transform: translateY(.23em) ;
         }
     }
 

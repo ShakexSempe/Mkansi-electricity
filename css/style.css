@@ -16,8 +16,9 @@
 #toggle .bar {
   background-color: #f4f4f4;
   width: 60%;
-  height: 0.08em;
+  height: 0.06em;
   position: relative;
+  border-radius: 2px;
   transition: 0.3s;
 }
 #toggle .bar.bar-1::before {
@@ -25,13 +26,14 @@
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
   background-color: #f4f4f4;
+  border-radius: 2px;
   transition: 0.3s;
 }
 #toggle .bar::before {
-  transform: translateY(0.25em);
+  transform: translateY(0.23em);
 }
 #toggle.active {
   transform: rotate(90deg);
