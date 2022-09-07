@@ -133,6 +133,12 @@
         isolation: isolate;
         transition: .2s;
         cursor: pointer;
+
+        i {
+            margin-left: .5rem;
+            transition: .5s;
+            opacity: .6;
+        }
         &::before, &::after {
             position: absolute;
             content: '';
@@ -158,6 +164,10 @@
             &:active {
                 letter-spacing: normal;
                 transform: scale(.98);
+                i {
+                    opacity: 1;
+                    transform: translateX(.25rem) translateY(-.25rem);
+                }
                 &::before {
                     opacity: 0;
                 }
@@ -171,6 +181,10 @@
             &:hover {
                 letter-spacing: normal;
                 transform: scale(.98);
+                i {
+                    opacity: 1;
+                    transform: translateX(.25rem) translateY(-.25rem);
+                }
                 &::before {
                     opacity: 0;
                 }
