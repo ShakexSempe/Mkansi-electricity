@@ -5,6 +5,7 @@
   height: 1.5em;
   width: 1.5em;
   border: 2px solid #ffa500;
+  border: 2px solid transparent;
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -15,6 +16,7 @@
 }
 #toggle .bar {
   background-color: #f4f4f4;
+  background-color: #ffa500;
   width: 60%;
   height: 0.06em;
   position: relative;
@@ -29,6 +31,7 @@
   width: 99%;
   height: 100%;
   background-color: #f4f4f4;
+  background-color: #ffa500;
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -232,7 +235,7 @@
 }
 #header.main-header {
   background-color: #000;
-  transition: background-color 0.2s;
+  transition: background-color 0.5s;
 }
 #header.active-aside {
   background: #000;

@@ -4,6 +4,7 @@
     height: 1.5em;
     width: 1.5em;
     border: 2px solid $toggle;
+    border: 2px solid transparent;
     cursor: pointer;
     display: grid;
     place-items: center;
@@ -15,7 +16,7 @@
 
     .bar {
         background-color: $toggle-bar;
-        // background-color: red;
+        background-color: $brand;
         width: 60%;
         height: .06em;
         position: relative;
@@ -31,6 +32,7 @@
             width: 99%;
             height: 100%;
             background-color: $toggle-bar;
+            background-color: $brand;
             border-radius: 2px;
 
             transition: .3s;
