@@ -396,9 +396,11 @@
     position: absolute;
     left: 0.5rem;
     width: auto;
+    transition: 0.25s;
   }
   #header .navigation aside ul li.dropdown:hover .dropdown-btn .fa-caret-down {
     rotate: 180deg;
+    opacity: 0.4;
   }
   #header .navigation aside ul li.dropdown:hover .dropdown-content {
     height: 25vh;

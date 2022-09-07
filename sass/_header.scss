@@ -219,6 +219,7 @@
                                         position: absolute;
                                         left: .5rem;
                                         width: auto;
+                                        transition: .25s;
                                     }
                                 }
                             }
@@ -228,6 +229,7 @@
                                 .dropdown-btn {
                                     .fa-caret-down {
                                         rotate: 180deg;
+                                        opacity: .4;
                                     }
                                 }
                                 .dropdown-content {
