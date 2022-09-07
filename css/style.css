@@ -403,7 +403,7 @@
   }
   #header .navigation aside ul li.dropdown:hover .dropdown-btn .fa-caret-down {
     transform: rotate(180deg);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   #header .navigation aside ul li.dropdown:hover .dropdown-content {
     height: 25vh;
