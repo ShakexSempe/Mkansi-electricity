@@ -11,6 +11,7 @@
     z-index: 5;
     font-family: $font-ubuntu;
     transition: background-color .5s;
+    
     // SCROLL BG
     &.active-header {
         background: #000a;

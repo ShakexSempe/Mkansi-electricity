@@ -91,7 +91,7 @@
         text-decoration: none;
     }
     @media (min-width: 768px) {
-        right: 0;
+        right: 5vw;
         bottom: 0;
         height: 2.5rem;
         width: 2.5rem;
@@ -246,4 +246,25 @@
         }
     }
 
+}
+
+// SKIP LINK
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: .5rem;
+    background-color: #000;
+    color: $brand;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translateY(-10vh);
+    transition: .5s;
+    z-index: 99;
+    &:focus {
+        transform: translateY(0);
+        outline-color: $brand;
+    }
 }

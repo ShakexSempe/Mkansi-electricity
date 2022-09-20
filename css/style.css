@@ -82,7 +82,7 @@
 }
 @media (min-width: 768px) {
   #top-btn {
-    right: 0;
+    right: 5vw;
     bottom: 0;
     height: 2.5rem;
     width: 2.5rem;
@@ -212,6 +212,26 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #ffa500;
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateY(-10vh);
+  transition: 0.5s;
+  z-index: 99;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline-color: #ffa500;
 }
 
 #header {
