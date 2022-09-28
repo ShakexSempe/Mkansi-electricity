@@ -236,7 +236,7 @@
             flex-basis: 50%;
             display: grid;
             place-items: center;
-            background-color: #000;
+            background: linear-gradient(0deg, #111 20%, #000);
 
             .content-grid {
                 border: 2px solid $brand;
