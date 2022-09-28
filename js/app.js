@@ -2,6 +2,7 @@ const toggle = document.getElementById("toggle");
 const header = document.getElementById("header");
 const main = document.getElementById("main");
 const topBtn = document.getElementById("top-btn");
+const footerNav = document.querySelector(".footer-nav");
 const aside = document.getElementById("aside");
 const links = document.querySelectorAll('#aside ul li a');
 const logo = document.querySelector(".logo");
@@ -37,7 +38,6 @@ const heroObserver = new IntersectionObserver(
                 heroTitle.classList.add("active-hero-title");
             } else {
                 console.log("header IS IO");
-                topBtn.classList.remove("active-top-btn");
                 header.classList.remove("active-header");
                 logo.classList.add("active-logo");
                 heroTitle.classList.remove("active-hero-title");
@@ -58,12 +58,12 @@ const mainObserver = new IntersectionObserver(
                 if(!entry.isIntersecting) {
                     console.log("main NOT io");
                     header.classList.remove("main-header");
-                topBtn.classList.remove("active-top-btn");
+                footerNav.classList.remove("active-footer");
 
                 } else {
                     console.log("main IS IO");
                     header.classList.add("main-header");
-                topBtn.classList.add("active-top-btn");
+                footerNav.classList.add("active-footer");
                 }
             })
         }, mainOptions
