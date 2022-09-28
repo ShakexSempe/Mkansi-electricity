@@ -643,6 +643,7 @@
 @media (max-width: 768px) {
   #hero {
     background: #161616;
+    background: linear-gradient(0deg, #000, #161616);
   }
 }
 #hero figure {
