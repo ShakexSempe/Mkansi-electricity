@@ -1986,6 +1986,7 @@
   }
   #footer .footer-copyright .copyright-content {
     width: 50%;
+    background: linear-gradient(90deg, #111 20%, #000);
   }
 }
 
