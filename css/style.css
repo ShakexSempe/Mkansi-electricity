@@ -344,7 +344,7 @@
   backdrop-filter: blur(0.1rem);
 }
 #header.main-header {
-  background-color: #000;
+  background: #000;
   transition: background-color 0.5s;
 }
 #header.active-aside {
